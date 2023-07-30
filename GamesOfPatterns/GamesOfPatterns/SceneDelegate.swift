@@ -17,6 +17,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let window = UIWindow(windowScene: scene as! UIWindowScene)
+        window.rootViewController = createRootViewController()
+        
+        self.window = window
+        self.window?.makeKeyAndVisible()
+    }
+    
+    func createRootViewController() -> UIViewController {
+        let splitViewController = UISplitViewController()
+//        splitViewController.preferredDisplayMode = .automatic // TEST
+//        splitViewController.maximumPrimaryColumnWidth = 800.0 // TEST
+//        splitViewController.minimumPrimaryColumnWidth = 600.0 // TEST
+        
+        let navigationViewController = UINavigationController(rootViewController: MasterViewController())
+//        navigationViewController.tabBarItem = UITabBarItem(title: "Star",
+//                                                           image: UIImage(systemName: "star.fill"),
+//                                                           tag: 0) // TEST
+        
+        splitViewController.viewControllers = [navigationViewController]
+        
+        return splitViewController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
