@@ -16,6 +16,8 @@
 		7C439A812A7523840093CE64 /* GamesOfPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A802A7523840093CE64 /* GamesOfPatternsTests.swift */; };
 		7C439A8B2A7523840093CE64 /* GamesOfPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */; };
 		7C439A8D2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */; };
+		7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */; };
+		7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7C439A862A7523840093CE64 /* GamesOfPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamesOfPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITests.swift; sourceTree = "<group>"; };
 		7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsNamesModel.swift; sourceTree = "<group>"; };
+		7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVCPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,7 @@
 			children = (
 				7C439A692A7523820093CE64 /* AppDelegate.swift */,
 				7C439A6B2A7523820093CE64 /* SceneDelegate.swift */,
-				7C439A6D2A7523820093CE64 /* MasterViewController.swift */,
+				7CAD85132A7E4C0C00B43252 /* MasterScreen */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -125,6 +129,16 @@
 				7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */,
 			);
 			path = GamesOfPatternsUITests;
+			sourceTree = "<group>";
+		};
+		7CAD85132A7E4C0C00B43252 /* MasterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */,
+				7C439A6D2A7523820093CE64 /* MasterViewController.swift */,
+				7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */,
+			);
+			path = MasterScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,
+				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,
+				7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
