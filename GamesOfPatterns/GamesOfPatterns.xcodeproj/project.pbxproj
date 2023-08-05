@@ -18,6 +18,9 @@
 		7C439A8D2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */; };
 		7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */; };
 		7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */; };
+		7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */; };
+		7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */; };
+		7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsNamesModel.swift; sourceTree = "<group>"; };
 		7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVCPresenter.swift; sourceTree = "<group>"; };
+		7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
+		7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
+		7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,10 @@
 			children = (
 				7C439A692A7523820093CE64 /* AppDelegate.swift */,
 				7C439A6B2A7523820093CE64 /* SceneDelegate.swift */,
+				7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */,
 				7CAD85132A7E4C0C00B43252 /* MasterScreen */,
+				7CAD85182A7E5E3C00B43252 /* FactoryMethodScreen */,
+				7CAD85192A7E5E4B00B43252 /* AbstractFactoryScreen */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -139,6 +148,22 @@
 				7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */,
 			);
 			path = MasterScreen;
+			sourceTree = "<group>";
+		};
+		7CAD85182A7E5E3C00B43252 /* FactoryMethodScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */,
+			);
+			path = FactoryMethodScreen;
+			sourceTree = "<group>";
+		};
+		7CAD85192A7E5E4B00B43252 /* AbstractFactoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */,
+			);
+			path = AbstractFactoryScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */,
+				7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */,
+				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,

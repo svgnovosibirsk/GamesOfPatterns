@@ -9,6 +9,13 @@ import UIKit
 
 class MasterVCPresenter: NSObject {
     let model = PatternsNamesModel()
+    var view: MasterViewController!
+    var router: MasterRouter!
+    
+    init(view: MasterViewController!) {
+        self.view = view
+    }
+    
 }
 
 extension MasterVCPresenter: UITableViewDataSource {
@@ -34,8 +41,9 @@ extension MasterVCPresenter: UITableViewDataSource {
 extension MasterVCPresenter: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-    // TODO: make switching to detail VC via Router
-//        splitViewController?.showDetailViewController(MasterViewController(), sender: self) // TEST
+                
+        let name = model.patterns[indexPath.section][indexPath.row]
+        router = MasterRouter(masterPresenter: self)
+        router.showViewController(name: name)
     }
 }

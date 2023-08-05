@@ -13,7 +13,7 @@ enum CellsIds: String {
 
 class MasterViewController: UIViewController {
     let tableView = UITableView(frame: .zero, style: .insetGrouped)
-    let presenter = MasterVCPresenter()
+    var presenter: MasterVCPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,8 @@ class MasterViewController: UIViewController {
         title = "Design Patterns"
         
         view.backgroundColor = .white
+        
+        presenter = MasterVCPresenter(view: self)
         
         tableView.delegate = presenter
         tableView.dataSource = presenter
