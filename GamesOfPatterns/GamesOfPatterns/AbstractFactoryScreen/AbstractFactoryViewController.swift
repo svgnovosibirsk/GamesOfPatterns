@@ -13,7 +13,7 @@ class AbstractFactoryViewController: UIViewController {
         super.viewDidLoad()
 
         title = "Abstract Factory"
-        view.backgroundColor = .systemMint
+        view.backgroundColor = .systemBackground
     }
 
 }

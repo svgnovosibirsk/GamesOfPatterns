@@ -13,7 +13,7 @@ class FactoryMethodViewController: UIViewController {
         super.viewDidLoad()
 
         title = "Factory Method"
-        view.backgroundColor = .cyan
+        view.backgroundColor = .systemBackground
     }
 
 }

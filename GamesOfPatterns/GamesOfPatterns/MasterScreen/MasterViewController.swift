@@ -20,7 +20,7 @@ class MasterViewController: UIViewController {
         
         title = "Design Patterns"
         
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         presenter = MasterVCPresenter(view: self)
         
@@ -36,7 +36,7 @@ class MasterViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor).isActive = true
-        tableView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
 }
