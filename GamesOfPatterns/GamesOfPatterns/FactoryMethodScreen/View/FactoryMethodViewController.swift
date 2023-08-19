@@ -12,6 +12,7 @@ class FactoryMethodViewController: UIViewController {
     let picker = UIPickerView()
     let chooseFighterLabel = UILabel()
     let createFighterButton = UIButton(type: .system)
+    let fighterImageView = UIImageView(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,7 @@ class FactoryMethodViewController: UIViewController {
         setupChooseFighterLabel()
         setupPicker()
         setupCreateFighterButton()
+        setupFighterImageView()
     }
     
     // TODO: make custom TextField
@@ -35,6 +37,10 @@ class FactoryMethodViewController: UIViewController {
         chooseFighterLabel.textColor = .systemYellow
         chooseFighterLabel.textAlignment = .center
         
+        setChooseFighterLabelConstaraints()
+    }
+    
+    private func setChooseFighterLabelConstaraints() {
         chooseFighterLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(chooseFighterLabel)
     
@@ -60,6 +66,10 @@ class FactoryMethodViewController: UIViewController {
        // createFighterButton.backgroundColor = .secondarySystemBackground
        // createFighterButton.layer.cornerRadius = 10
         
+        setCreateFighterButtonConstaraints()
+    }
+    
+    private func setCreateFighterButtonConstaraints() {
         createFighterButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(createFighterButton)
         
@@ -72,5 +82,21 @@ class FactoryMethodViewController: UIViewController {
     @objc private func createFighterButtonPressed() {
         print(#function)
     }
-
+    
+    private func setupFighterImageView()  {
+        fighterImageView.image = ImagesProvider.mkLogo
+        fighterImageView.layer.borderColor = UIColor.systemGray.cgColor
+        fighterImageView.layer.borderWidth = 1
+        fighterImageView.contentMode = .scaleAspectFill
+        
+       setFighterImageViewConstaraints()
+    }
+    
+    private func setFighterImageViewConstaraints() {
+        fighterImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(fighterImageView)
+        
+        fighterImageView.topAnchor.constraint(equalTo: createFighterButton.bottomAnchor, constant: 5).isActive = true
+        fighterImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
 }

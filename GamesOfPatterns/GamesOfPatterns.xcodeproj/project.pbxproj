@@ -23,6 +23,10 @@
 		7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */; };
 		7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */; };
 		7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A22A907B8800B3229F /* FightersModel.swift */; };
+		7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A72A90921B00B3229F /* mkScorpion.png */; };
+		7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A82A90921C00B3229F /* mkSubzero.png */; };
+		7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A92A90921C00B3229F /* mkLogo.png */; };
+		7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3AF2A9092FC00B3229F /* ImagesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRouter.swift; sourceTree = "<group>"; };
 		7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodVCPresenter.swift; sourceTree = "<group>"; };
 		7CCCE3A22A907B8800B3229F /* FightersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightersModel.swift; sourceTree = "<group>"; };
+		7CCCE3A72A90921B00B3229F /* mkScorpion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mkScorpion.png; sourceTree = "<group>"; };
+		7CCCE3A82A90921C00B3229F /* mkSubzero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mkSubzero.png; sourceTree = "<group>"; };
+		7CCCE3A92A90921C00B3229F /* mkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mkLogo.png; sourceTree = "<group>"; };
+		7CCCE3AF2A9092FC00B3229F /* ImagesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,8 @@
 				7C439A692A7523820093CE64 /* AppDelegate.swift */,
 				7C439A6B2A7523820093CE64 /* SceneDelegate.swift */,
 				7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */,
+				7CCCE3AF2A9092FC00B3229F /* ImagesProvider.swift */,
+				7CCCE3AE2A90924600B3229F /* Images */,
 				7CAD85132A7E4C0C00B43252 /* MasterScreen */,
 				7CAD85182A7E5E3C00B43252 /* FactoryMethodScreen */,
 				7CAD85192A7E5E4B00B43252 /* AbstractFactoryScreen */,
@@ -218,6 +228,24 @@
 				7CCCE3A22A907B8800B3229F /* FightersModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7CCCE3AD2A90923200B3229F /* MortalKombat */ = {
+			isa = PBXGroup;
+			children = (
+				7CCCE3A92A90921C00B3229F /* mkLogo.png */,
+				7CCCE3A72A90921B00B3229F /* mkScorpion.png */,
+				7CCCE3A82A90921C00B3229F /* mkSubzero.png */,
+			);
+			path = MortalKombat;
+			sourceTree = "<group>";
+		};
+		7CCCE3AE2A90924600B3229F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7CCCE3AD2A90923200B3229F /* MortalKombat */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,7 +352,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */,
 				7C439A762A7523840093CE64 /* LaunchScreen.storyboard in Resources */,
+				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
+				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
 				7C439A732A7523840093CE64 /* Assets.xcassets in Resources */,
 				7C439A712A7523820093CE64 /* Main.storyboard in Resources */,
 			);
@@ -353,6 +384,7 @@
 			files = (
 				7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */,
 				7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */,
+				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
