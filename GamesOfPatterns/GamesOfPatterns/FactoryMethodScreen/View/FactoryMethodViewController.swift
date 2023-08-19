@@ -14,6 +14,7 @@ class FactoryMethodViewController: UIViewController {
     let createFighterButton = UIButton(type: .system)
     let fighterImageView = UIImageView(frame: .zero)
     let attackButton = UIButton(type: .system)
+    let attackLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +27,18 @@ class FactoryMethodViewController: UIViewController {
         picker.delegate = presenter
         picker.dataSource = presenter
         
+        setupScreen()
+    }
+    
+    // MARK: - Private methods
+    
+    private func setupScreen() {
         setupChooseFighterLabel()
         setupPicker()
         setupCreateFighterButton()
         setupFighterImageView()
         setupAttackButton()
+        setupAttackLabel()
     }
     
     // TODO: make custom TextField
@@ -124,5 +132,23 @@ class FactoryMethodViewController: UIViewController {
     
     @objc private func attackButtonPressed() {
         print(#function)
+    }
+    
+    // TODO: make custom TextField
+    private func setupAttackLabel() {
+        attackLabel.text = "Fighter is attacking"
+        attackLabel.textColor = .systemYellow
+        attackLabel.textAlignment = .center
+        
+        setAttackLabelConstaraints()
+    }
+    
+    private func setAttackLabelConstaraints() {
+        attackLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(attackLabel)
+    
+        attackLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        attackLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        attackLabel.topAnchor.constraint(equalTo: attackButton.bottomAnchor, constant: 15).isActive = true
     }
 }
