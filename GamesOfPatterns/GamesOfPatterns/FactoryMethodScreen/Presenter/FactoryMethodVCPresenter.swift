@@ -9,10 +9,29 @@ import UIKit
 
 class FactoryMethodVCPresenter: NSObject {
     var viewController: FactoryMethodViewController!
-    let model = FightersModel()
+    var fighterType = FightersTypes.scorpion
+    lazy var fighterCreater = FighterCreater()
+    var selectedFighter: FighterProtocol?
     
     init(viewController: FactoryMethodViewController!) {
         self.viewController = viewController
+    }
+    
+    func createFighterButtonPressed() {
+        print("\(fighterType.rawValue) is created")
+        
+        let fighter = fighterCreater.getFighter(type: fighterType)
+        viewController.fighterImageView.image = fighter.image
+    }
+    
+    func attackButtonPressed() {
+        print(#function)
+        
+        // MARK: - Factory method
+//        let fighter = fighterCreater.getFighter(type: fighterType)
+//        viewController.attackLabel.text = fighter.attack()
+        
+        viewController.attackLabel.text = selectedFighter?.attack()
     }
 }
 
@@ -22,14 +41,22 @@ extension FactoryMethodVCPresenter: UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        model.fighters.count
+        FightersTypes.allCases.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        model.fighters[row]
+        FightersTypes.allCases[row].rawValue
     }
 }
 
 extension FactoryMethodVCPresenter: UIPickerViewDelegate {
-    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        fighterType = FightersTypes.allCases[row]
+        
+        // MARK: - Factory method
+        let fighter = fighterCreater.getFighter(type: fighterType)
+        viewController.fighterImageView.image = fighter.image
+
+        selectedFighter = fighter
+    }
 }

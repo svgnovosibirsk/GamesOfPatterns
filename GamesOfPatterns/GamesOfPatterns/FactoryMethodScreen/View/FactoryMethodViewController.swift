@@ -90,13 +90,13 @@ class FactoryMethodViewController: UIViewController {
     }
     
     @objc private func createFighterButtonPressed() {
-        print(#function)
+        presenter?.createFighterButtonPressed()
     }
     
     private func setupFighterImageView()  {
         fighterImageView.image = ImagesProvider.mkLogo
         fighterImageView.layer.borderColor = UIColor.systemGray.cgColor
-        fighterImageView.layer.borderWidth = 1
+        fighterImageView.layer.borderWidth = 2
         fighterImageView.contentMode = .scaleAspectFill
         
        setFighterImageViewConstaraints()
@@ -131,7 +131,7 @@ class FactoryMethodViewController: UIViewController {
     }
     
     @objc private func attackButtonPressed() {
-        print(#function)
+        presenter?.attackButtonPressed()
     }
     
     // TODO: make custom TextField
