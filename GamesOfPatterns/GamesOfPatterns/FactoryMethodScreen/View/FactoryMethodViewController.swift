@@ -13,6 +13,7 @@ class FactoryMethodViewController: UIViewController {
     let chooseFighterLabel = UILabel()
     let createFighterButton = UIButton(type: .system)
     let fighterImageView = UIImageView(frame: .zero)
+    let attackButton = UIButton(type: .system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ class FactoryMethodViewController: UIViewController {
         setupPicker()
         setupCreateFighterButton()
         setupFighterImageView()
+        setupAttackButton()
     }
     
     // TODO: make custom TextField
@@ -96,7 +98,31 @@ class FactoryMethodViewController: UIViewController {
         fighterImageView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(fighterImageView)
         
-        fighterImageView.topAnchor.constraint(equalTo: createFighterButton.bottomAnchor, constant: 5).isActive = true
+        fighterImageView.topAnchor.constraint(equalTo: createFighterButton.bottomAnchor, constant: 15).isActive = true
         fighterImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
+    
+    // TODO: make custom Button
+    private func setupAttackButton() {
+        attackButton.setTitle("Fight".uppercased(), for: .normal)
+        attackButton.tintColor = .systemYellow
+       // attackButton.backgroundColor = .secondarySystemBackground
+       // attackButton.layer.cornerRadius = 10
+        
+        setAttackButtonConstaraints()
+    }
+    
+    private func setAttackButtonConstaraints() {
+        attackButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(attackButton)
+        
+        attackButton.topAnchor.constraint(equalTo: fighterImageView.bottomAnchor, constant: 15).isActive = true
+        attackButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        attackButton.addTarget(self, action: #selector(attackButtonPressed), for: .touchUpInside)
+    }
+    
+    @objc private func attackButtonPressed() {
+        print(#function)
     }
 }
