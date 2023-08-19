@@ -21,6 +21,8 @@
 		7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */; };
 		7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */; };
 		7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */; };
+		7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */; };
+		7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A22A907B8800B3229F /* FightersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
 		7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRouter.swift; sourceTree = "<group>"; };
+		7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodVCPresenter.swift; sourceTree = "<group>"; };
+		7CCCE3A22A907B8800B3229F /* FightersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightersModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +181,9 @@
 		7CAD85182A7E5E3C00B43252 /* FactoryMethodScreen */ = {
 			isa = PBXGroup;
 			children = (
-				7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */,
+				7CCCE3A62A907C6000B3229F /* Model */,
+				7CCCE3A42A907C3C00B3229F /* View */,
+				7CCCE3A52A907C4500B3229F /* Presenter */,
 			);
 			path = FactoryMethodScreen;
 			sourceTree = "<group>";
@@ -188,6 +194,30 @@
 				7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */,
 			);
 			path = AbstractFactoryScreen;
+			sourceTree = "<group>";
+		};
+		7CCCE3A42A907C3C00B3229F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CCCE3A52A907C4500B3229F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7CCCE3A62A907C6000B3229F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CCCE3A22A907B8800B3229F /* FightersModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +357,8 @@
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,
+				7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */,
+				7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */,
 				7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
 			);

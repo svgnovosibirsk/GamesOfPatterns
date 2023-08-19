@@ -8,25 +8,25 @@
 import UIKit
 
 class FactoryMethodViewController: UIViewController {
+    var presenter: FactoryMethodVCPresenter?
     let picker = UIPickerView()
     let chooseFighterLabel = UILabel()
     let createFighterButton = UIButton(type: .system)
     
-    let fighters = ["Scorpion", "Sub-Zero"] // TODO: move to model and Presenter
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Factory Method"
         view.backgroundColor = .systemBackground
         
-        picker.delegate = self // TODO: change to presenter
-        picker.dataSource = self // TODO: change to presenter
+        presenter = FactoryMethodVCPresenter(viewController: self)
+        
+        picker.delegate = presenter
+        picker.dataSource = presenter
         
         setupChooseFighterLabel()
         setupPicker()
         setupCreateFighterButton()
-        
     }
     
     // TODO: make custom TextField
@@ -65,26 +65,12 @@ class FactoryMethodViewController: UIViewController {
         
         createFighterButton.topAnchor.constraint(equalTo: picker.bottomAnchor, constant: 5).isActive = true
         createFighterButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-
-    }
-
-}
-
-// TODO: move to presenter
-extension FactoryMethodViewController: UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        1
+        
+        createFighterButton.addTarget(self, action: #selector(createFighterButtonPressed), for: .touchUpInside)
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        fighters.count
+    @objc private func createFighterButtonPressed() {
+        print(#function)
     }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        fighters[row]
-    }
-}
 
-extension FactoryMethodViewController: UIPickerViewDelegate {
-    
 }
