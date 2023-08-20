@@ -30,6 +30,10 @@ class FactoryMethodViewController: UIViewController {
         setupScreen()
     }
     
+    func presentAlert(_ alert: UIAlertController) {
+        present(alert, animated: true)
+    }
+    
     // MARK: - Private methods
     
     private func setupScreen() {
@@ -73,8 +77,6 @@ class FactoryMethodViewController: UIViewController {
     private func setupCreateFighterButton() {
         createFighterButton.setTitle("Create fighter".uppercased(), for: .normal)
         createFighterButton.tintColor = .systemYellow
-       // createFighterButton.backgroundColor = .secondarySystemBackground
-       // createFighterButton.layer.cornerRadius = 10
         
         setCreateFighterButtonConstaraints()
     }
@@ -114,8 +116,6 @@ class FactoryMethodViewController: UIViewController {
     private func setupAttackButton() {
         attackButton.setTitle("Fight".uppercased(), for: .normal)
         attackButton.tintColor = .systemYellow
-       // attackButton.backgroundColor = .secondarySystemBackground
-       // attackButton.layer.cornerRadius = 10
         
         setAttackButtonConstaraints()
     }
@@ -136,7 +136,7 @@ class FactoryMethodViewController: UIViewController {
     
     // TODO: make custom TextField
     private func setupAttackLabel() {
-        attackLabel.text = "Fighter is attacking"
+        attackLabel.text = "Finish him".uppercased()
         attackLabel.textColor = .systemYellow
         attackLabel.textAlignment = .center
         

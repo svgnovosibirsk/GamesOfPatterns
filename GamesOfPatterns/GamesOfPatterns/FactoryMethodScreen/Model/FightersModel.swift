@@ -17,6 +17,7 @@ enum FightersTypes: String, CaseIterable {
 protocol FighterProtocol {
     var name: String { get }
     var image: UIImage { get }
+    var color: UIColor { get }
     
     func attack() -> String
 }
@@ -24,6 +25,7 @@ protocol FighterProtocol {
 struct Scorpion: FighterProtocol {
     let name = "Scorpion"
     let image = ImagesProvider.mkScorpion
+    let color = UIColor.systemYellow
     
     func attack() -> String {
         print("Come over here 🔥!!!")
@@ -34,6 +36,7 @@ struct Scorpion: FighterProtocol {
 struct SubZero: FighterProtocol {
     let name = "Sub-Zero"
     let image = ImagesProvider.mkSubzero
+    let color = UIColor.systemBlue
     
     func attack() -> String {
         print("I'm gona freeze you 🧊!!!")

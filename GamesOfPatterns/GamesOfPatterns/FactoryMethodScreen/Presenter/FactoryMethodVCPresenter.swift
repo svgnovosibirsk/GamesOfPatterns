@@ -22,18 +22,40 @@ class FactoryMethodVCPresenter: NSObject {
         
         let fighter = fighterCreater.getFighter(type: fighterType)
         viewController.fighterImageView.image = fighter.image
+        selectedFighter = fighter
     }
     
     func attackButtonPressed() {
-        print(#function)
-        
-        // MARK: - Factory method
-//        let fighter = fighterCreater.getFighter(type: fighterType)
-//        viewController.attackLabel.text = fighter.attack()
-        
         viewController.attackLabel.text = selectedFighter?.attack()
+        
+        guard let selectedFighter = selectedFighter else { return }
+        showAttackAlert(with: selectedFighter)
+    }
+    
+    // MARK: - Private methods
+    
+    private func setupControlsColors(with fighter: FighterProtocol) {
+        viewController.fighterImageView.image = fighter.image
+        viewController.attackLabel.textColor = fighter.color
+        viewController.chooseFighterLabel.textColor = fighter.color
+        viewController.createFighterButton.tintColor = fighter.color
+        viewController.attackButton.tintColor = fighter.color
+    }
+    
+    private func showAttackAlert(with fighter: FighterProtocol) {
+        let alert = UIAlertController(title: "",
+                                      message: fighter.attack(),
+                                      preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Fight".uppercased(), style: .cancel)
+        
+        alert.addAction(action)
+        
+        viewController.presentAlert(alert)
     }
 }
+
+// MARK: - UIPickerViewDataSource
 
 extension FactoryMethodVCPresenter: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -49,14 +71,18 @@ extension FactoryMethodVCPresenter: UIPickerViewDataSource {
     }
 }
 
+// MARK: - UIPickerViewDelegate
+
 extension FactoryMethodVCPresenter: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         fighterType = FightersTypes.allCases[row]
         
-        // MARK: - Factory method
+        viewController.attackLabel.text = ""
+        
+        // MARK: Factory method
         let fighter = fighterCreater.getFighter(type: fighterType)
-        viewController.fighterImageView.image = fighter.image
-
+        
+        setupControlsColors(with: fighter)
         selectedFighter = fighter
     }
 }
