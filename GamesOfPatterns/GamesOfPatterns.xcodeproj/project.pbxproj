@@ -21,6 +21,12 @@
 		7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */; };
 		7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */; };
 		7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */; };
+		7CCAA0D22A99CF9E006549D5 /* Don.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don.png */; };
+		7CCAA0D32A99CF9E006549D5 /* Mike.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike.png */; };
+		7CCAA0D42A99CF9E006549D5 /* Leo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo.png */; };
+		7CCAA0D52A99CF9E006549D5 /* Raph.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D12A99CF9D006549D5 /* Raph.png */; };
+		7CCAA0D82A99DADD006549D5 /* TurtlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D72A99DADD006549D5 /* TurtlesModel.swift */; };
+		7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D92A99DB39006549D5 /* AbstractFactoryPresenter.swift */; };
 		7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */; };
 		7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A22A907B8800B3229F /* FightersModel.swift */; };
 		7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A72A90921B00B3229F /* mkScorpion.png */; };
@@ -65,6 +71,12 @@
 		7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
 		7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRouter.swift; sourceTree = "<group>"; };
+		7CCAA0CE2A99CF9D006549D5 /* Don.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don.png; sourceTree = "<group>"; };
+		7CCAA0CF2A99CF9D006549D5 /* Mike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike.png; sourceTree = "<group>"; };
+		7CCAA0D02A99CF9D006549D5 /* Leo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo.png; sourceTree = "<group>"; };
+		7CCAA0D12A99CF9D006549D5 /* Raph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph.png; sourceTree = "<group>"; };
+		7CCAA0D72A99DADD006549D5 /* TurtlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtlesModel.swift; sourceTree = "<group>"; };
+		7CCAA0D92A99DB39006549D5 /* AbstractFactoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryPresenter.swift; sourceTree = "<group>"; };
 		7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodVCPresenter.swift; sourceTree = "<group>"; };
 		7CCCE3A22A907B8800B3229F /* FightersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightersModel.swift; sourceTree = "<group>"; };
 		7CCCE3A72A90921B00B3229F /* mkScorpion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mkScorpion.png; sourceTree = "<group>"; };
@@ -145,10 +157,7 @@
 		7C439A682A7523820093CE64 /* GamesOfPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				7C439A692A7523820093CE64 /* AppDelegate.swift */,
-				7C439A6B2A7523820093CE64 /* SceneDelegate.swift */,
-				7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */,
-				7CCCE3AF2A9092FC00B3229F /* ImagesProvider.swift */,
+				7CCAA0CD2A99C0D1006549D5 /* SupportingFiles */,
 				7CCCE3AE2A90924600B3229F /* Images */,
 				7CAD85132A7E4C0C00B43252 /* MasterScreen */,
 				7CAD85182A7E5E3C00B43252 /* FactoryMethodScreen */,
@@ -201,9 +210,57 @@
 		7CAD85192A7E5E4B00B43252 /* AbstractFactoryScreen */ = {
 			isa = PBXGroup;
 			children = (
-				7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */,
+				7CCAA0DB2A99DCA5006549D5 /* Model */,
+				7CCAA0DC2A99DCB0006549D5 /* View */,
+				7CCAA0DD2A99DCB8006549D5 /* Presenter */,
 			);
 			path = AbstractFactoryScreen;
+			sourceTree = "<group>";
+		};
+		7CCAA0CD2A99C0D1006549D5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7C439A692A7523820093CE64 /* AppDelegate.swift */,
+				7C439A6B2A7523820093CE64 /* SceneDelegate.swift */,
+				7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */,
+				7CCCE3AF2A9092FC00B3229F /* ImagesProvider.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7CCAA0D62A99CFA9006549D5 /* Turtles */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAA0CE2A99CF9D006549D5 /* Don.png */,
+				7CCAA0D02A99CF9D006549D5 /* Leo.png */,
+				7CCAA0CF2A99CF9D006549D5 /* Mike.png */,
+				7CCAA0D12A99CF9D006549D5 /* Raph.png */,
+			);
+			path = Turtles;
+			sourceTree = "<group>";
+		};
+		7CCAA0DB2A99DCA5006549D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAA0D72A99DADD006549D5 /* TurtlesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CCAA0DC2A99DCB0006549D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CCAA0DD2A99DCB8006549D5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAA0D92A99DB39006549D5 /* AbstractFactoryPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		7CCCE3A42A907C3C00B3229F /* View */ = {
@@ -243,6 +300,7 @@
 		7CCCE3AE2A90924600B3229F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7CCAA0D62A99CFA9006549D5 /* Turtles */,
 				7CCCE3AD2A90923200B3229F /* MortalKombat */,
 			);
 			path = Images;
@@ -353,9 +411,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */,
+				7CCAA0D32A99CF9E006549D5 /* Mike.png in Resources */,
 				7C439A762A7523840093CE64 /* LaunchScreen.storyboard in Resources */,
+				7CCAA0D42A99CF9E006549D5 /* Leo.png in Resources */,
+				7CCAA0D22A99CF9E006549D5 /* Don.png in Resources */,
 				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
+				7CCAA0D52A99CF9E006549D5 /* Raph.png in Resources */,
 				7C439A732A7523840093CE64 /* Assets.xcassets in Resources */,
 				7C439A712A7523820093CE64 /* Main.storyboard in Resources */,
 			);
@@ -383,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */,
+				7CCAA0D82A99DADD006549D5 /* TurtlesModel.swift in Sources */,
 				7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */,
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
@@ -392,6 +455,7 @@
 				7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */,
 				7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */,
 				7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */,
+				7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
