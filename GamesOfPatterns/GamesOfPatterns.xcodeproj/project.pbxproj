@@ -27,6 +27,7 @@
 		7CCAA0D52A99CF9E006549D5 /* Raph.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D12A99CF9D006549D5 /* Raph.png */; };
 		7CCAA0D82A99DADD006549D5 /* TurtlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D72A99DADD006549D5 /* TurtlesModel.swift */; };
 		7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D92A99DB39006549D5 /* AbstractFactoryPresenter.swift */; };
+		7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA0DE2A99E150006549D5 /* TurtleFactory.swift */; };
 		7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */; };
 		7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A22A907B8800B3229F /* FightersModel.swift */; };
 		7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A72A90921B00B3229F /* mkScorpion.png */; };
@@ -77,6 +78,7 @@
 		7CCAA0D12A99CF9D006549D5 /* Raph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph.png; sourceTree = "<group>"; };
 		7CCAA0D72A99DADD006549D5 /* TurtlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtlesModel.swift; sourceTree = "<group>"; };
 		7CCAA0D92A99DB39006549D5 /* AbstractFactoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryPresenter.swift; sourceTree = "<group>"; };
+		7CCAA0DE2A99E150006549D5 /* TurtleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleFactory.swift; sourceTree = "<group>"; };
 		7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodVCPresenter.swift; sourceTree = "<group>"; };
 		7CCCE3A22A907B8800B3229F /* FightersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightersModel.swift; sourceTree = "<group>"; };
 		7CCCE3A72A90921B00B3229F /* mkScorpion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mkScorpion.png; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 		7CAD85192A7E5E4B00B43252 /* AbstractFactoryScreen */ = {
 			isa = PBXGroup;
 			children = (
+				7CCAA0DE2A99E150006549D5 /* TurtleFactory.swift */,
 				7CCAA0DB2A99DCA5006549D5 /* Model */,
 				7CCAA0DC2A99DCB0006549D5 /* View */,
 				7CCAA0DD2A99DCB8006549D5 /* Presenter */,
@@ -450,6 +453,7 @@
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,
+				7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,
 				7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */,

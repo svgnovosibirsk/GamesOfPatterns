@@ -8,6 +8,7 @@
 import UIKit
 
 class ImagesProvider {
+    // MK
     static var mkLogo: UIImage {
         return UIImage(named: "mkLogo")!
     }
@@ -18,5 +19,22 @@ class ImagesProvider {
     
     static var mkSubzero: UIImage {
         return UIImage(named: "mkSubzero")!
+    }
+    
+    // TNMT
+    static var tmntLeonardo: UIImage {
+        return UIImage(named: "Leo")!
+    }
+    
+    static var tmntDonatello: UIImage {
+        return UIImage(named: "Don")!
+    }
+    
+    static var tmntRaphael: UIImage {
+        return UIImage(named: "Raph")!
+    }
+    
+    static var tmntMichelangelo: UIImage {
+        return UIImage(named: "Mike")!
     }
 }
