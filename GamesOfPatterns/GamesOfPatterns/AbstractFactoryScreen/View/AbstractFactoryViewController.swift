@@ -9,7 +9,7 @@ import UIKit
 
 final class AbstractFactoryViewController: UIViewController {
     
-    let presenter = AbstractFactoryPresenter()
+    var presenter: AbstractFactoryPresenter? = nil
     
     let nameLabel = UILabel()
     let turtleImageView = UIImageView(frame: .zero)
@@ -18,27 +18,30 @@ final class AbstractFactoryViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        presenter = AbstractFactoryPresenter(viewController: self)
+        
         title = "Abstract Factory"
         view.backgroundColor = .systemBackground
-        
-        setupSegmentedControl()
-    }
-    
-    private func setupSegmentedControl() {
-        segmentedControl = UISegmentedControl(items: presenter.itemsForSegmentedControl)
-        segmentedControl.backgroundColor = .systemGreen
-        segmentedControl.selectedSegmentTintColor = .green
         
         setupNameLabel()
         setupTurtleImageView()
         
-        setSegmentedControlConstraints()
+        setupSegmentedControl()
+    }
+    
+    // MARK: Segmented Control
+    private func setupSegmentedControl() {
+        segmentedControl = UISegmentedControl(items: presenter?.itemsForSegmentedControl)
+        segmentedControl.backgroundColor = .systemGreen
+        segmentedControl.selectedSegmentTintColor = .green
         
+        setSegmentedControlConstraints()
     }
     
     private func setSegmentedControlConstraints() {
         segmentedControl?.translatesAutoresizingMaskIntoConstraints = false
+        segmentedControl.addTarget(self, action: #selector(segmentedControlDidChange), for: .valueChanged)
         view.addSubview(segmentedControl)
         
         NSLayoutConstraint.activate([
@@ -48,6 +51,11 @@ final class AbstractFactoryViewController: UIViewController {
         ])
     }
     
+    @objc private func segmentedControlDidChange(_ segmentedControl: UISegmentedControl) {
+        presenter?.segmentedControlDidChange(segmentedControl)
+    }
+    
+    // MARK: Name Label
     private func setupNameLabel() {
         nameLabel.text = "TMNT"
         nameLabel.textAlignment = .center
@@ -68,6 +76,7 @@ final class AbstractFactoryViewController: UIViewController {
         ])
     }
     
+    // MARK: Image View
     private func setupTurtleImageView() {
         turtleImageView.image = ImagesProvider.tmntLogo
         turtleImageView.layer.borderColor = UIColor.systemGreen.cgColor
