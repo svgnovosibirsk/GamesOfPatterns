@@ -37,4 +37,8 @@ class ImagesProvider {
     static var tmntMichelangelo: UIImage {
         return UIImage(named: "Mike")!
     }
+    
+    static var tmntLogo: UIImage {
+        return UIImage(named: "TurtlesLogo")!
+    }
 }

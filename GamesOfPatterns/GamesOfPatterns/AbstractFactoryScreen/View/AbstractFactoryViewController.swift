@@ -12,6 +12,7 @@ final class AbstractFactoryViewController: UIViewController {
     let presenter = AbstractFactoryPresenter()
     
     let nameLabel = UILabel()
+    let turtleImageView = UIImageView(frame: .zero)
     
     var segmentedControl: UISegmentedControl! = nil
    
@@ -30,6 +31,8 @@ final class AbstractFactoryViewController: UIViewController {
         segmentedControl.selectedSegmentTintColor = .green
         
         setupNameLabel()
+        setupTurtleImageView()
+        
         setSegmentedControlConstraints()
         
     }
@@ -62,6 +65,25 @@ final class AbstractFactoryViewController: UIViewController {
             nameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
             nameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
             nameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5)
+        ])
+    }
+    
+    private func setupTurtleImageView() {
+        turtleImageView.image = ImagesProvider.tmntLogo
+        turtleImageView.layer.borderColor = UIColor.systemGreen.cgColor
+        turtleImageView.layer.borderWidth = 15
+        turtleImageView.contentMode = .scaleAspectFill
+        
+        setTurtleImageViewConstraints()
+    }
+    
+    private func setTurtleImageViewConstraints() {
+        turtleImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(turtleImageView)
+        
+        NSLayoutConstraint.activate([
+            turtleImageView.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
+            turtleImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
 

@@ -21,13 +21,18 @@
 		7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */; };
 		7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */; };
 		7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */; };
-		7CCAA0D22A99CF9E006549D5 /* Don.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don.png */; };
-		7CCAA0D32A99CF9E006549D5 /* Mike.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike.png */; };
-		7CCAA0D42A99CF9E006549D5 /* Leo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo.png */; };
-		7CCAA0D52A99CF9E006549D5 /* Raph.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D12A99CF9D006549D5 /* Raph.png */; };
+		7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don_50.png */; };
+		7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */; };
+		7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo_50.png */; };
+		7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D12A99CF9D006549D5 /* Raph_50.png */; };
 		7CCAA0D82A99DADD006549D5 /* TurtlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D72A99DADD006549D5 /* TurtlesModel.swift */; };
 		7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D92A99DB39006549D5 /* AbstractFactoryPresenter.swift */; };
 		7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAA0DE2A99E150006549D5 /* TurtleFactory.swift */; };
+		7CCAA10A2A9B25C7006549D5 /* Raph.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA1062A9B25C7006549D5 /* Raph.png */; };
+		7CCAA10B2A9B25C7006549D5 /* Don.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA1072A9B25C7006549D5 /* Don.png */; };
+		7CCAA10C2A9B25C7006549D5 /* Mike.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA1082A9B25C7006549D5 /* Mike.png */; };
+		7CCAA10D2A9B25C7006549D5 /* Leo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA1092A9B25C7006549D5 /* Leo.png */; };
+		7CCAA10F2A9B27AF006549D5 /* TurtlesLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA10E2A9B27AF006549D5 /* TurtlesLogo.png */; };
 		7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */; };
 		7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A22A907B8800B3229F /* FightersModel.swift */; };
 		7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A72A90921B00B3229F /* mkScorpion.png */; };
@@ -72,13 +77,18 @@
 		7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
 		7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRouter.swift; sourceTree = "<group>"; };
-		7CCAA0CE2A99CF9D006549D5 /* Don.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don.png; sourceTree = "<group>"; };
-		7CCAA0CF2A99CF9D006549D5 /* Mike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike.png; sourceTree = "<group>"; };
-		7CCAA0D02A99CF9D006549D5 /* Leo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo.png; sourceTree = "<group>"; };
-		7CCAA0D12A99CF9D006549D5 /* Raph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph.png; sourceTree = "<group>"; };
+		7CCAA0CE2A99CF9D006549D5 /* Don_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don_50.png; sourceTree = "<group>"; };
+		7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike_50.png; sourceTree = "<group>"; };
+		7CCAA0D02A99CF9D006549D5 /* Leo_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo_50.png; sourceTree = "<group>"; };
+		7CCAA0D12A99CF9D006549D5 /* Raph_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph_50.png; sourceTree = "<group>"; };
 		7CCAA0D72A99DADD006549D5 /* TurtlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtlesModel.swift; sourceTree = "<group>"; };
 		7CCAA0D92A99DB39006549D5 /* AbstractFactoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryPresenter.swift; sourceTree = "<group>"; };
 		7CCAA0DE2A99E150006549D5 /* TurtleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleFactory.swift; sourceTree = "<group>"; };
+		7CCAA1062A9B25C7006549D5 /* Raph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph.png; sourceTree = "<group>"; };
+		7CCAA1072A9B25C7006549D5 /* Don.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don.png; sourceTree = "<group>"; };
+		7CCAA1082A9B25C7006549D5 /* Mike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike.png; sourceTree = "<group>"; };
+		7CCAA1092A9B25C7006549D5 /* Leo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo.png; sourceTree = "<group>"; };
+		7CCAA10E2A9B27AF006549D5 /* TurtlesLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TurtlesLogo.png; sourceTree = "<group>"; };
 		7CCCE3A02A90797000B3229F /* FactoryMethodVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodVCPresenter.swift; sourceTree = "<group>"; };
 		7CCCE3A22A907B8800B3229F /* FightersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightersModel.swift; sourceTree = "<group>"; };
 		7CCCE3A72A90921B00B3229F /* mkScorpion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mkScorpion.png; sourceTree = "<group>"; };
@@ -234,10 +244,15 @@
 		7CCAA0D62A99CFA9006549D5 /* Turtles */ = {
 			isa = PBXGroup;
 			children = (
-				7CCAA0CE2A99CF9D006549D5 /* Don.png */,
-				7CCAA0D02A99CF9D006549D5 /* Leo.png */,
-				7CCAA0CF2A99CF9D006549D5 /* Mike.png */,
-				7CCAA0D12A99CF9D006549D5 /* Raph.png */,
+				7CCAA10E2A9B27AF006549D5 /* TurtlesLogo.png */,
+				7CCAA1072A9B25C7006549D5 /* Don.png */,
+				7CCAA1092A9B25C7006549D5 /* Leo.png */,
+				7CCAA1082A9B25C7006549D5 /* Mike.png */,
+				7CCAA1062A9B25C7006549D5 /* Raph.png */,
+				7CCAA0CE2A99CF9D006549D5 /* Don_50.png */,
+				7CCAA0D02A99CF9D006549D5 /* Leo_50.png */,
+				7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */,
+				7CCAA0D12A99CF9D006549D5 /* Raph_50.png */,
 			);
 			path = Turtles;
 			sourceTree = "<group>";
@@ -414,15 +429,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */,
-				7CCAA0D32A99CF9E006549D5 /* Mike.png in Resources */,
+				7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */,
 				7C439A762A7523840093CE64 /* LaunchScreen.storyboard in Resources */,
-				7CCAA0D42A99CF9E006549D5 /* Leo.png in Resources */,
-				7CCAA0D22A99CF9E006549D5 /* Don.png in Resources */,
+				7CCAA10B2A9B25C7006549D5 /* Don.png in Resources */,
+				7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */,
+				7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */,
 				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
-				7CCAA0D52A99CF9E006549D5 /* Raph.png in Resources */,
+				7CCAA10A2A9B25C7006549D5 /* Raph.png in Resources */,
+				7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */,
 				7C439A732A7523840093CE64 /* Assets.xcassets in Resources */,
 				7C439A712A7523820093CE64 /* Main.storyboard in Resources */,
+				7CCAA10F2A9B27AF006549D5 /* TurtlesLogo.png in Resources */,
+				7CCAA10D2A9B25C7006549D5 /* Leo.png in Resources */,
+				7CCAA10C2A9B25C7006549D5 /* Mike.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
