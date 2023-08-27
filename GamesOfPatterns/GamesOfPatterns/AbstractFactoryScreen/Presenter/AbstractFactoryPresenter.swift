@@ -11,6 +11,8 @@ final class AbstractFactoryPresenter {
     let model = TurtlesModel()
     let viewController: AbstractFactoryViewController!
     
+    var factory: TurtleFactory?
+    
     init(viewController: AbstractFactoryViewController!) {
         self.viewController = viewController
     }
@@ -21,16 +23,32 @@ final class AbstractFactoryPresenter {
     }
     
     func segmentedControlDidChange(_ segmentedControl: UISegmentedControl) {
-        var color: UIColor = .green
-        
+        // MARK: Abstract Factory
         switch segmentedControl.selectedSegmentIndex {
-        case 0: color = .systemBlue
-        case 1: color = .systemPurple
-        case 2: color = .systemRed
-        case 3: color = .systemYellow
-        default: color = .green
+        case 0:
+            factory = LeonardoFactory()
+        case 1:
+            factory = DonatelloFactory()
+        case 2:
+            factory = RaphaelFactory()
+        case 3:
+            factory = MichelangeloFactory()
+        default:
+            //fatalError("Unknown switch case")
+            print("Unknown case")
         }
 
-        viewController.segmentedControl.selectedSegmentTintColor = color
+        setupScreen()
+    }
+    
+    private func setupScreen() {
+        // MARK: Abstract Factory
+        viewController.segmentedControl.selectedSegmentTintColor = factory?.createColor()
+        
+        viewController.nameLabel.textColor = factory?.createColor()
+        viewController.nameLabel.text = factory?.createName()
+        
+        viewController.turtleImageView.layer.borderColor = factory?.createColor().cgColor
+        viewController.turtleImageView.image = factory?.createImage()
     }
 }

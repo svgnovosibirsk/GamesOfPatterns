@@ -11,6 +11,7 @@ protocol TurtleFactory {
     func createImage() -> UIImage
     func createName() -> String
     func createWeapon() -> String
+    func createColor() -> UIColor
 }
 
 class LeonardoFactory : TurtleFactory {
@@ -24,6 +25,10 @@ class LeonardoFactory : TurtleFactory {
     
     func createWeapon() -> String {
         "Katana"
+    }
+    
+    func createColor() -> UIColor {
+        .systemBlue
     }
 }
 
@@ -39,6 +44,10 @@ class DonatelloFactory : TurtleFactory {
     func createWeapon() -> String {
         "Bo"
     }
+    
+    func createColor() -> UIColor {
+        .systemPurple
+    }
 }
 
 class RaphaelFactory : TurtleFactory {
@@ -53,6 +62,10 @@ class RaphaelFactory : TurtleFactory {
     func createWeapon() -> String {
         "Sai"
     }
+    
+    func createColor() -> UIColor {
+        .systemRed
+    }
 }
 
 class MichelangeloFactory : TurtleFactory {
@@ -66,5 +79,9 @@ class MichelangeloFactory : TurtleFactory {
     
     func createWeapon() -> String {
         "Nunchaku"
+    }
+    
+    func createColor() -> UIColor {
+        .systemYellow
     }
 }
