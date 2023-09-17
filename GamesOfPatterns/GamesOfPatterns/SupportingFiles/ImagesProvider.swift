@@ -23,22 +23,26 @@ class ImagesProvider {
     
     // TNMT
     static var tmntLeonardo: UIImage {
-        return UIImage(named: "Leo")!
+        return UIImage(named: "Leo2")!
     }
     
     static var tmntDonatello: UIImage {
-        return UIImage(named: "Don")!
+        return UIImage(named: "Don2")!
     }
     
     static var tmntRaphael: UIImage {
-        return UIImage(named: "Raph")!
+        return UIImage(named: "Raph2")!
     }
     
     static var tmntMichelangelo: UIImage {
-        return UIImage(named: "Mike")!
+        return UIImage(named: "Mike2")!
     }
     
+//    static var tmntLogo: UIImage {
+//        return UIImage(named: "TurtlesLogo")!
+//    }
+    
     static var tmntLogo: UIImage {
-        return UIImage(named: "TurtlesLogo")!
+        return UIImage(named: "TMNT")!
     }
 }

@@ -16,6 +16,11 @@
 		7C439A812A7523840093CE64 /* GamesOfPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A802A7523840093CE64 /* GamesOfPatternsTests.swift */; };
 		7C439A8B2A7523840093CE64 /* GamesOfPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */; };
 		7C439A8D2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */; };
+		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
+		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
+		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
+		7C97FAD92AB6C3AA00EADC3B /* TMNT.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD42AB6C3AA00EADC3B /* TMNT.png */; };
+		7C97FADA2AB6C3AA00EADC3B /* Don2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD52AB6C3AA00EADC3B /* Don2.png */; };
 		7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */; };
 		7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */; };
 		7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */; };
@@ -72,6 +77,11 @@
 		7C439A862A7523840093CE64 /* GamesOfPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamesOfPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITests.swift; sourceTree = "<group>"; };
 		7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
+		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
+		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
+		7C97FAD42AB6C3AA00EADC3B /* TMNT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TMNT.png; sourceTree = "<group>"; };
+		7C97FAD52AB6C3AA00EADC3B /* Don2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don2.png; sourceTree = "<group>"; };
 		7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsNamesModel.swift; sourceTree = "<group>"; };
 		7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVCPresenter.swift; sourceTree = "<group>"; };
 		7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +263,11 @@
 				7CCAA0D02A99CF9D006549D5 /* Leo_50.png */,
 				7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */,
 				7CCAA0D12A99CF9D006549D5 /* Raph_50.png */,
+				7C97FAD52AB6C3AA00EADC3B /* Don2.png */,
+				7C97FAD32AB6C3AA00EADC3B /* Leo2.png */,
+				7C97FAD12AB6C3AA00EADC3B /* Mike2.png */,
+				7C97FAD22AB6C3AA00EADC3B /* Raph2.png */,
+				7C97FAD42AB6C3AA00EADC3B /* TMNT.png */,
 			);
 			path = Turtles;
 			sourceTree = "<group>";
@@ -430,12 +445,17 @@
 			files = (
 				7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */,
 				7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */,
+				7C97FADA2AB6C3AA00EADC3B /* Don2.png in Resources */,
 				7C439A762A7523840093CE64 /* LaunchScreen.storyboard in Resources */,
 				7CCAA10B2A9B25C7006549D5 /* Don.png in Resources */,
+				7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */,
 				7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */,
 				7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */,
 				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
+				7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */,
+				7C97FAD92AB6C3AA00EADC3B /* TMNT.png in Resources */,
+				7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */,
 				7CCAA10A2A9B25C7006549D5 /* Raph.png in Resources */,
 				7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */,
 				7C439A732A7523840093CE64 /* Assets.xcassets in Resources */,
