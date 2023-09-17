@@ -21,6 +21,11 @@
 		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
 		7C97FAD92AB6C3AA00EADC3B /* TMNT.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD42AB6C3AA00EADC3B /* TMNT.png */; };
 		7C97FADA2AB6C3AA00EADC3B /* Don2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD52AB6C3AA00EADC3B /* Don2.png */; };
+		7C97FAE42AB6CA9600EADC3B /* weapons.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FADF2AB6CA9500EADC3B /* weapons.png */; };
+		7C97FAE52AB6CA9600EADC3B /* katana.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAE02AB6CA9600EADC3B /* katana.png */; };
+		7C97FAE62AB6CA9600EADC3B /* nunchaku.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAE12AB6CA9600EADC3B /* nunchaku.png */; };
+		7C97FAE72AB6CA9600EADC3B /* bo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAE22AB6CA9600EADC3B /* bo.png */; };
+		7C97FAE82AB6CA9600EADC3B /* sai.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAE32AB6CA9600EADC3B /* sai.png */; };
 		7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */; };
 		7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */; };
 		7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */; };
@@ -82,6 +87,11 @@
 		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
 		7C97FAD42AB6C3AA00EADC3B /* TMNT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TMNT.png; sourceTree = "<group>"; };
 		7C97FAD52AB6C3AA00EADC3B /* Don2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don2.png; sourceTree = "<group>"; };
+		7C97FADF2AB6CA9500EADC3B /* weapons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weapons.png; sourceTree = "<group>"; };
+		7C97FAE02AB6CA9600EADC3B /* katana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katana.png; sourceTree = "<group>"; };
+		7C97FAE12AB6CA9600EADC3B /* nunchaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nunchaku.png; sourceTree = "<group>"; };
+		7C97FAE22AB6CA9600EADC3B /* bo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bo.png; sourceTree = "<group>"; };
+		7C97FAE32AB6CA9600EADC3B /* sai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sai.png; sourceTree = "<group>"; };
 		7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsNamesModel.swift; sourceTree = "<group>"; };
 		7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVCPresenter.swift; sourceTree = "<group>"; };
 		7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +219,60 @@
 			path = GamesOfPatternsUITests;
 			sourceTree = "<group>";
 		};
+		7C97FADB2AB6C72500EADC3B /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAA10E2A9B27AF006549D5 /* TurtlesLogo.png */,
+				7C97FAD42AB6C3AA00EADC3B /* TMNT.png */,
+			);
+			path = Logo;
+			sourceTree = "<group>";
+		};
+		7C97FADC2AB6C74500EADC3B /* Cartoon */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAA1072A9B25C7006549D5 /* Don.png */,
+				7CCAA1092A9B25C7006549D5 /* Leo.png */,
+				7CCAA1082A9B25C7006549D5 /* Mike.png */,
+				7CCAA1062A9B25C7006549D5 /* Raph.png */,
+			);
+			path = Cartoon;
+			sourceTree = "<group>";
+		};
+		7C97FADD2AB6C75300EADC3B /* CartoonSmall */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAA0CE2A99CF9D006549D5 /* Don_50.png */,
+				7CCAA0D02A99CF9D006549D5 /* Leo_50.png */,
+				7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */,
+				7CCAA0D12A99CF9D006549D5 /* Raph_50.png */,
+			);
+			path = CartoonSmall;
+			sourceTree = "<group>";
+		};
+		7C97FADE2AB6C76300EADC3B /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				7C97FAD52AB6C3AA00EADC3B /* Don2.png */,
+				7C97FAD32AB6C3AA00EADC3B /* Leo2.png */,
+				7C97FAD12AB6C3AA00EADC3B /* Mike2.png */,
+				7C97FAD22AB6C3AA00EADC3B /* Raph2.png */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		7C97FAE92AB6CAAB00EADC3B /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				7C97FAE22AB6CA9600EADC3B /* bo.png */,
+				7C97FAE02AB6CA9600EADC3B /* katana.png */,
+				7C97FAE12AB6CA9600EADC3B /* nunchaku.png */,
+				7C97FAE32AB6CA9600EADC3B /* sai.png */,
+				7C97FADF2AB6CA9500EADC3B /* weapons.png */,
+			);
+			path = Weapons;
+			sourceTree = "<group>";
+		};
 		7CAD85132A7E4C0C00B43252 /* MasterScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,20 +318,11 @@
 		7CCAA0D62A99CFA9006549D5 /* Turtles */ = {
 			isa = PBXGroup;
 			children = (
-				7CCAA10E2A9B27AF006549D5 /* TurtlesLogo.png */,
-				7CCAA1072A9B25C7006549D5 /* Don.png */,
-				7CCAA1092A9B25C7006549D5 /* Leo.png */,
-				7CCAA1082A9B25C7006549D5 /* Mike.png */,
-				7CCAA1062A9B25C7006549D5 /* Raph.png */,
-				7CCAA0CE2A99CF9D006549D5 /* Don_50.png */,
-				7CCAA0D02A99CF9D006549D5 /* Leo_50.png */,
-				7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */,
-				7CCAA0D12A99CF9D006549D5 /* Raph_50.png */,
-				7C97FAD52AB6C3AA00EADC3B /* Don2.png */,
-				7C97FAD32AB6C3AA00EADC3B /* Leo2.png */,
-				7C97FAD12AB6C3AA00EADC3B /* Mike2.png */,
-				7C97FAD22AB6C3AA00EADC3B /* Raph2.png */,
-				7C97FAD42AB6C3AA00EADC3B /* TMNT.png */,
+				7C97FAE92AB6CAAB00EADC3B /* Weapons */,
+				7C97FADB2AB6C72500EADC3B /* Logo */,
+				7C97FADC2AB6C74500EADC3B /* Cartoon */,
+				7C97FADD2AB6C75300EADC3B /* CartoonSmall */,
+				7C97FADE2AB6C76300EADC3B /* Movie */,
 			);
 			path = Turtles;
 			sourceTree = "<group>";
@@ -445,8 +500,10 @@
 			files = (
 				7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */,
 				7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */,
+				7C97FAE82AB6CA9600EADC3B /* sai.png in Resources */,
 				7C97FADA2AB6C3AA00EADC3B /* Don2.png in Resources */,
 				7C439A762A7523840093CE64 /* LaunchScreen.storyboard in Resources */,
+				7C97FAE62AB6CA9600EADC3B /* nunchaku.png in Resources */,
 				7CCAA10B2A9B25C7006549D5 /* Don.png in Resources */,
 				7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */,
 				7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */,
@@ -460,9 +517,12 @@
 				7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */,
 				7C439A732A7523840093CE64 /* Assets.xcassets in Resources */,
 				7C439A712A7523820093CE64 /* Main.storyboard in Resources */,
+				7C97FAE72AB6CA9600EADC3B /* bo.png in Resources */,
 				7CCAA10F2A9B27AF006549D5 /* TurtlesLogo.png in Resources */,
 				7CCAA10D2A9B25C7006549D5 /* Leo.png in Resources */,
+				7C97FAE52AB6CA9600EADC3B /* katana.png in Resources */,
 				7CCAA10C2A9B25C7006549D5 /* Mike.png in Resources */,
+				7C97FAE42AB6CA9600EADC3B /* weapons.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

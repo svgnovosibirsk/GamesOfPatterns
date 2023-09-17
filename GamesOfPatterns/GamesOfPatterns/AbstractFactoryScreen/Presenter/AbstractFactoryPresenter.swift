@@ -50,5 +50,9 @@ final class AbstractFactoryPresenter {
         
         viewController.turtleImageView.layer.borderColor = factory?.createColor().cgColor
         viewController.turtleImageView.image = factory?.createImage()
+        
+        viewController.weaponImageView.image = factory?.createWeaponImage()
+        viewController.weaponNameLabel.text = factory?.createWeaponName()
+        viewController.weaponNameLabel.textColor = factory?.createColor()
     }
 }

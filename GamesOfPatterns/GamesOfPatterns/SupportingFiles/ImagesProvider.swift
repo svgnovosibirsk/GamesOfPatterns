@@ -45,4 +45,24 @@ class ImagesProvider {
     static var tmntLogo: UIImage {
         return UIImage(named: "TMNT")!
     }
+    
+    static var tmntWeapons: UIImage {
+        return UIImage(named: "weapons")!
+    }
+    
+    static var tmntBo: UIImage {
+        return UIImage(named: "bo")!
+    }
+    
+    static var tmntKatana: UIImage {
+        return UIImage(named: "katana")!
+    }
+    
+    static var tmntSai: UIImage {
+        return UIImage(named: "sai")!
+    }
+    
+    static var tmntNunchaku: UIImage {
+        return UIImage(named: "nunchaku")!
+    }
 }

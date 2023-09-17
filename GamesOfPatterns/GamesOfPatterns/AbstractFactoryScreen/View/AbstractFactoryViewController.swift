@@ -12,7 +12,9 @@ final class AbstractFactoryViewController: UIViewController {
     var presenter: AbstractFactoryPresenter? = nil
     
     let nameLabel = UILabel()
+    let weaponNameLabel = UILabel()
     let turtleImageView = UIImageView(frame: .zero)
+    let weaponImageView = UIImageView(frame: .zero)
     
     var segmentedControl: UISegmentedControl! = nil
    
@@ -24,9 +26,14 @@ final class AbstractFactoryViewController: UIViewController {
         title = "Abstract Factory"
         view.backgroundColor = .systemBackground
         
+        setupScreen()
+    }
+    
+    private func setupScreen() {
         setupNameLabel()
         setupTurtleImageView()
-        
+        setupWeaponImageView()
+        setupWeaponNameLabel()
         setupSegmentedControl()
     }
     
@@ -93,6 +100,45 @@ final class AbstractFactoryViewController: UIViewController {
         NSLayoutConstraint.activate([
             turtleImageView.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
             turtleImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+    }
+    
+    // MARK: Weapon Image View
+    private func setupWeaponImageView() {
+        weaponImageView.image = ImagesProvider.tmntWeapons
+        weaponImageView.contentMode = .scaleAspectFill
+        
+        setWeaponImageViewConstraints()
+    }
+    
+    private func setWeaponImageViewConstraints() {
+        weaponImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(weaponImageView)
+        
+        NSLayoutConstraint.activate([
+            weaponImageView.topAnchor.constraint(equalTo: turtleImageView.bottomAnchor, constant: 15),
+            weaponImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+    }
+    
+    // MARK: Weapon Name Label
+    private func setupWeaponNameLabel() {
+        weaponNameLabel.text = "Weapon"
+        weaponNameLabel.textAlignment = .center
+        weaponNameLabel.textColor = .systemGreen
+        weaponNameLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        
+        setWeaponNameLabelConstraints()
+    }
+    
+    private func setWeaponNameLabelConstraints() {
+        weaponNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(weaponNameLabel)
+        
+        NSLayoutConstraint.activate([
+            weaponNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
+            weaponNameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            weaponNameLabel.topAnchor.constraint(equalTo: weaponImageView.bottomAnchor, constant: 15)
         ])
     }
 

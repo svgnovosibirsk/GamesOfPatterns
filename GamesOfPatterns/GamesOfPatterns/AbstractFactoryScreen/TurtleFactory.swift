@@ -10,7 +10,8 @@ import UIKit
 protocol TurtleFactory {
     func createImage() -> UIImage
     func createName() -> String
-    func createWeapon() -> String
+    func createWeaponName() -> String
+    func createWeaponImage() -> UIImage
     func createColor() -> UIColor
 }
 
@@ -23,8 +24,12 @@ class LeonardoFactory : TurtleFactory {
         "Leonardo"
     }
     
-    func createWeapon() -> String {
+    func createWeaponName() -> String {
         "Katana"
+    }
+    
+    func createWeaponImage() -> UIImage {
+        ImagesProvider.tmntKatana
     }
     
     func createColor() -> UIColor {
@@ -41,8 +46,12 @@ class DonatelloFactory : TurtleFactory {
         "Donatello"
     }
     
-    func createWeapon() -> String {
+    func createWeaponName() -> String {
         "Bo"
+    }
+    
+    func createWeaponImage() -> UIImage {
+        ImagesProvider.tmntBo
     }
     
     func createColor() -> UIColor {
@@ -59,8 +68,12 @@ class RaphaelFactory : TurtleFactory {
         "Raphael"
     }
     
-    func createWeapon() -> String {
+    func createWeaponName() -> String {
         "Sai"
+    }
+    
+    func createWeaponImage() -> UIImage {
+        ImagesProvider.tmntSai
     }
     
     func createColor() -> UIColor {
@@ -77,8 +90,12 @@ class MichelangeloFactory : TurtleFactory {
         "Michelangelo"
     }
     
-    func createWeapon() -> String {
+    func createWeaponName() -> String {
         "Nunchaku"
+    }
+    
+    func createWeaponImage() -> UIImage {
+        ImagesProvider.tmntNunchaku
     }
     
     func createColor() -> UIColor {
