@@ -8,7 +8,7 @@
 import UIKit
 
 class ImagesProvider {
-    // MK
+    // Mortal Kombat
     static var mkLogo: UIImage {
         return UIImage(named: "mkLogo")!
     }
@@ -64,5 +64,10 @@ class ImagesProvider {
     
     static var tmntNunchaku: UIImage {
         return UIImage(named: "nunchaku")!
+    }
+    
+    //Star Wars
+    static var swBackgroundBlack: UIImage {
+        return UIImage(named: "swBgBlack")!
     }
 }

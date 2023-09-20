@@ -29,6 +29,7 @@
 		7C97FAFE2AB80E7900EADC3B /* MikelangeloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C97FAFD2AB80E7900EADC3B /* MikelangeloTests.swift */; };
 		7C97FB002AB966AE00EADC3B /* RaphaelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C97FAFF2AB966AE00EADC3B /* RaphaelTests.swift */; };
 		7C97FB022ABAB06500EADC3B /* BuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C97FB012ABAB06500EADC3B /* BuilderViewController.swift */; };
+		7C97FB052ABAB54200EADC3B /* swBgBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FB042ABAB54200EADC3B /* swBgBlack.png */; };
 		7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */; };
 		7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */; };
 		7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */; };
@@ -98,6 +99,7 @@
 		7C97FAFD2AB80E7900EADC3B /* MikelangeloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MikelangeloTests.swift; sourceTree = "<group>"; };
 		7C97FAFF2AB966AE00EADC3B /* RaphaelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaphaelTests.swift; sourceTree = "<group>"; };
 		7C97FB012ABAB06500EADC3B /* BuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderViewController.swift; sourceTree = "<group>"; };
+		7C97FB042ABAB54200EADC3B /* swBgBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swBgBlack.png; sourceTree = "<group>"; };
 		7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsNamesModel.swift; sourceTree = "<group>"; };
 		7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVCPresenter.swift; sourceTree = "<group>"; };
 		7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
@@ -290,6 +292,14 @@
 			path = BuilderScreen;
 			sourceTree = "<group>";
 		};
+		7C97FB062ABAB55000EADC3B /* StarWars */ = {
+			isa = PBXGroup;
+			children = (
+				7C97FB042ABAB54200EADC3B /* swBgBlack.png */,
+			);
+			path = StarWars;
+			sourceTree = "<group>";
+		};
 		7CAD85132A7E4C0C00B43252 /* MasterScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				7CCAA0D62A99CFA9006549D5 /* Turtles */,
+				7C97FB062ABAB55000EADC3B /* StarWars */,
 				7CCCE3AD2A90923200B3229F /* MortalKombat */,
 			);
 			path = Images;
@@ -529,6 +540,7 @@
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
 				7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */,
 				7C97FAD92AB6C3AA00EADC3B /* TMNT.png in Resources */,
+				7C97FB052ABAB54200EADC3B /* swBgBlack.png in Resources */,
 				7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */,
 				7CCAA10A2A9B25C7006549D5 /* Raph.png in Resources */,
 				7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */,
