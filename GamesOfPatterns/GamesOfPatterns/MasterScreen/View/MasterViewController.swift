@@ -31,6 +31,15 @@ class MasterViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: CellsIds.cellId.rawValue)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.systemGray,
+                              NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .bold)]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+    }
+    
     func setupTableView() {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
