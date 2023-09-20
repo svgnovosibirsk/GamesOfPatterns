@@ -22,6 +22,9 @@ class MasterRouter {
         case PatternsNames.AbstractFactory.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(AbstractFactoryViewController(),
                                                                                sender: self)
+        case PatternsNames.Builder.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(BuilderViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()
