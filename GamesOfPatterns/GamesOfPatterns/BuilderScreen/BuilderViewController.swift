@@ -10,6 +10,7 @@ import UIKit
 final class BuilderViewController: UIViewController {
     let backgroundView = UIImageView(frame: .zero)
     let sideSwitch = UISwitch(frame: .zero)
+    let sideLabel = UILabel(frame: .zero)
     
     override func viewDidLoad() {
         title = "Builder"
@@ -21,6 +22,7 @@ final class BuilderViewController: UIViewController {
         setupBackgroundView()
         
         setupSideSwitch()
+        setupSideLabel()
     }
     
     // MARK: Background
@@ -78,4 +80,25 @@ final class BuilderViewController: UIViewController {
              print("UISwitch state is now Off")
          }
      }
+    
+    // MARK: Side Label
+    private func setupSideLabel() {
+        sideLabel.text = "Chose the side"
+        sideLabel.textAlignment = .center
+        sideLabel.textColor = .systemGray
+        sideLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        
+        setupSideLabelConstraints()
+    }
+    
+    private func setupSideLabelConstraints() {
+        sideLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(sideLabel)
+        
+        NSLayoutConstraint.activate([
+            sideLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
+            sideLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            sideLabel.bottomAnchor.constraint(equalTo: sideSwitch.topAnchor, constant: -20)
+        ])
+    }
 }
