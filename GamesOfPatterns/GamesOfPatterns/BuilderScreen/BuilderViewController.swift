@@ -9,8 +9,11 @@ import UIKit
 
 final class BuilderViewController: UIViewController {
     let backgroundView = UIImageView(frame: .zero)
+    let jediImageView = UIImageView(frame: .zero)
     let sideSwitch = UISwitch(frame: .zero)
     let sideLabel = UILabel(frame: .zero)
+    let ordenLabel = UILabel(frame: .zero)
+    let nameLabel = UILabel(frame: .zero)
     
     override func viewDidLoad() {
         title = "Builder"
@@ -20,6 +23,10 @@ final class BuilderViewController: UIViewController {
     
     private func setupScreen() {
         setupBackgroundView()
+    
+        setupOrdenLabel()
+        setupJediImageView()
+        setupNameLabel()
         
         setupSideSwitch()
         setupSideLabel()
@@ -99,6 +106,68 @@ final class BuilderViewController: UIViewController {
             sideLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
             sideLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
             sideLabel.bottomAnchor.constraint(equalTo: sideSwitch.topAnchor, constant: -20)
+        ])
+    }
+    
+    // MARK: Orden Label
+    private func setupOrdenLabel() {
+        ordenLabel.text = "Jedi"
+        ordenLabel.textAlignment = .center
+        ordenLabel.textColor = .systemGray
+        ordenLabel.font = UIFont.boldSystemFont(ofSize: 50.0)
+        
+        setupOrdenLabelConstraints()
+    }
+    
+    private func setupOrdenLabelConstraints() {
+        ordenLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(ordenLabel)
+        
+        NSLayoutConstraint.activate([
+            ordenLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
+            ordenLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            ordenLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20)
+        ])
+    }
+    
+    // MARK: Jadi Image View
+    private func setupJediImageView() {
+        jediImageView.image = ImagesProvider.swLogo
+        jediImageView.contentMode = .scaleAspectFill
+        jediImageView.layer.cornerRadius = (jediImageView.image?.size.height)! / 2
+        jediImageView.clipsToBounds = true
+        
+        setJediImageViewConstraints()
+    }
+    
+    private func setJediImageViewConstraints() {
+        jediImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(jediImageView)
+        
+        NSLayoutConstraint.activate([
+            jediImageView.topAnchor.constraint(equalTo: ordenLabel.bottomAnchor, constant: 10),
+            jediImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+    }
+    
+    // MARK: Name Label
+    private func setupNameLabel() {
+        nameLabel.text = "Skywalker"
+        nameLabel.textAlignment = .center
+        nameLabel.textColor = .systemGray
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 40.0)
+        
+        setupNameLabelConstraints()
+    }
+    
+    private func setupNameLabelConstraints() {
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(nameLabel)
+        
+        NSLayoutConstraint.activate([
+            nameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
+            nameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            nameLabel.bottomAnchor.constraint(equalTo: jediImageView.bottomAnchor, constant: 50)
         ])
     }
 }

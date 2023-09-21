@@ -16,6 +16,7 @@
 		7C439A812A7523840093CE64 /* GamesOfPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A802A7523840093CE64 /* GamesOfPatternsTests.swift */; };
 		7C439A8B2A7523840093CE64 /* GamesOfPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */; };
 		7C439A8D2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */; };
+		7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05212ABC2DD300CADB31 /* swLogo.png */; };
 		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
 		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
 		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
@@ -86,6 +87,7 @@
 		7C439A862A7523840093CE64 /* GamesOfPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamesOfPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITests.swift; sourceTree = "<group>"; };
 		7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C6A05212ABC2DD300CADB31 /* swLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swLogo.png; sourceTree = "<group>"; };
 		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
 		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
 		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		7C97FB062ABAB55000EADC3B /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
+				7C6A05212ABC2DD300CADB31 /* swLogo.png */,
 				7C97FB042ABAB54200EADC3B /* swBgBlack.png */,
 			);
 			path = StarWars;
@@ -539,6 +542,7 @@
 				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
 				7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */,
+				7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */,
 				7C97FAD92AB6C3AA00EADC3B /* TMNT.png in Resources */,
 				7C97FB052ABAB54200EADC3B /* swBgBlack.png in Resources */,
 				7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */,
