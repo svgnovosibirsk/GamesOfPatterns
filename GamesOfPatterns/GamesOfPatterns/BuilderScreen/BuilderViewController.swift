@@ -19,6 +19,8 @@ final class BuilderViewController: UIViewController {
         title = "Builder"
         
         setupScreen()
+        
+        animateJadiImageView()
     }
     
     private func setupScreen() {
@@ -134,9 +136,19 @@ final class BuilderViewController: UIViewController {
     private func setupJediImageView() {
         jediImageView.image = ImagesProvider.swLogo
         jediImageView.contentMode = .scaleAspectFill
-        jediImageView.layer.cornerRadius = (jediImageView.image?.size.height)! / 2
-        jediImageView.clipsToBounds = true
+        //jediImageView.layer.cornerRadius = (jediImageView.image?.size.height)! / 2
+        //jediImageView.clipsToBounds = true
         
+        
+        jediImageView.layer.shadowColor = UIColor.orange.cgColor
+        jediImageView.layer.shadowOpacity = 1
+        jediImageView.layer.shadowOffset = .zero
+        jediImageView.layer.shadowRadius = 20
+        
+        jediImageView.layer.shouldRasterize = true
+        jediImageView.layer.rasterizationScale = UIScreen.main.scale
+
+      
         setJediImageViewConstraints()
     }
     
@@ -148,6 +160,18 @@ final class BuilderViewController: UIViewController {
             jediImageView.topAnchor.constraint(equalTo: ordenLabel.bottomAnchor, constant: 10),
             jediImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+    }
+    
+    private func animateJadiImageView() {
+        UIView.animate(withDuration: 1, delay: 0.0, options: .curveLinear, animations: {
+            self.jediImageView.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+           }) { (_) in
+               UIView.animate(withDuration: 1, delay: 0.0, options: .curveLinear, animations: {
+                   self.jediImageView.transform = CGAffineTransform(scaleX: 1, y: 1)
+               }, completion: { [weak self] _ in
+                   self?.animateJadiImageView()
+               })
+           }
     }
     
     // MARK: Name Label
