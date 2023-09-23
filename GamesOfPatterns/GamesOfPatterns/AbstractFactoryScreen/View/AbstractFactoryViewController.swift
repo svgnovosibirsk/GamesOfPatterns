@@ -89,6 +89,8 @@ final class AbstractFactoryViewController: UIViewController {
         turtleImageView.layer.borderColor = UIColor.systemGreen.cgColor
         turtleImageView.layer.borderWidth = 15
         turtleImageView.contentMode = .scaleAspectFill
+        turtleImageView.layer.cornerRadius = (turtleImageView.image?.size.height)! / 2
+        turtleImageView.clipsToBounds = true
         
         setTurtleImageViewConstraints()
     }
