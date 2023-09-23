@@ -8,19 +8,23 @@
 import UIKit
 
 final class BuilderViewController: UIViewController {
-    let backgroundView = UIImageView(frame: .zero)
-    let jediImageView = UIImageView(frame: .zero)
+    var presenter: BuilderPresenter?
+    
+    var backgroundView = UIImageView(frame: .zero)
+    var jediImageView = UIImageView(frame: .zero)
+    var ordenLabel = UILabel(frame: .zero)
+    var nameLabel = UILabel(frame: .zero)
+    
     let sideSwitch = UISwitch(frame: .zero)
     let sideLabel = UILabel(frame: .zero)
-    let ordenLabel = UILabel(frame: .zero)
-    let nameLabel = UILabel(frame: .zero)
     
     override func viewDidLoad() {
         title = "Builder"
         
-        setupScreen()
+        presenter = BuilderPresenter(viewController: self)
         
-        animateJadiImageView()
+        setupScreen()
+        sideSwitch.isOn = true
     }
     
     private func setupScreen() {
@@ -84,9 +88,9 @@ final class BuilderViewController: UIViewController {
     @objc func switchStateDidChange(_ sender:UISwitch!)
      {
          if (sender.isOn == true) {
-             print("UISwitch state is now ON")
+             presenter?.setupJediStyle()
          } else {
-             print("UISwitch state is now Off")
+             presenter?.setupSithStyle()
          }
      }
     
@@ -148,6 +152,7 @@ final class BuilderViewController: UIViewController {
         jediImageView.layer.rasterizationScale = UIScreen.main.scale
         
         setJediImageViewConstraints()
+        animateJadiImageView()
     }
     
     private func setJediImageViewConstraints() {

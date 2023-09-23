@@ -57,7 +57,7 @@ final class SithBuilder: SWBuilderProtocol {
         sith.image = image
     }
     
-    func getJedi() -> Sith {
+    func getSith() -> Sith {
         return sith
     }
 }

@@ -82,4 +82,12 @@ class ImagesProvider {
     static var swSithPhotoPlaceholder: UIImage {
         return UIImage(named: "swSithPhotoPlaceholder")!
     }
+    
+    static var swAnakinImage: UIImage {
+        return UIImage(named: "swAnakinSkywalker")!
+    }
+    
+    static var swDarthVaderImage: UIImage {
+        return UIImage(named: "swDarthVader")!
+    }
 }
