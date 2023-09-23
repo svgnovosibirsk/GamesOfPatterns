@@ -25,6 +25,7 @@
 		7C6A05582ABEC6BB00CADB31 /* BuilderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05572ABEC6BB00CADB31 /* BuilderPresenter.swift */; };
 		7C6A055C2ABECDFB00CADB31 /* swAnakinSkywalker.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A055A2ABECDFA00CADB31 /* swAnakinSkywalker.png */; };
 		7C6A055D2ABECDFB00CADB31 /* swDarthVader.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A055B2ABECDFB00CADB31 /* swDarthVader.png */; };
+		7C6A055F2ABED72800CADB31 /* swBgWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A055E2ABED72800CADB31 /* swBgWhite.png */; };
 		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
 		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
 		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
@@ -104,6 +105,7 @@
 		7C6A05572ABEC6BB00CADB31 /* BuilderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPresenter.swift; sourceTree = "<group>"; };
 		7C6A055A2ABECDFA00CADB31 /* swAnakinSkywalker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swAnakinSkywalker.png; sourceTree = "<group>"; };
 		7C6A055B2ABECDFB00CADB31 /* swDarthVader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swDarthVader.png; sourceTree = "<group>"; };
+		7C6A055E2ABED72800CADB31 /* swBgWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swBgWhite.png; sourceTree = "<group>"; };
 		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
 		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
 		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 				7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */,
 				7C6A054E2ABEC26000CADB31 /* swSithPhotoPlaceholder.png */,
 				7C6A05212ABC2DD300CADB31 /* swLogo.png */,
+				7C6A055E2ABED72800CADB31 /* swBgWhite.png */,
 				7C97FB042ABAB54200EADC3B /* swBgBlack.png */,
 				7C6A055A2ABECDFA00CADB31 /* swAnakinSkywalker.png */,
 				7C6A055B2ABECDFB00CADB31 /* swDarthVader.png */,
@@ -597,6 +600,7 @@
 				7C97FAD92AB6C3AA00EADC3B /* TMNT.png in Resources */,
 				7C97FB052ABAB54200EADC3B /* swBgBlack.png in Resources */,
 				7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */,
+				7C6A055F2ABED72800CADB31 /* swBgWhite.png in Resources */,
 				7C6A055C2ABECDFB00CADB31 /* swAnakinSkywalker.png in Resources */,
 				7CCAA10A2A9B25C7006549D5 /* Raph.png in Resources */,
 				7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */,

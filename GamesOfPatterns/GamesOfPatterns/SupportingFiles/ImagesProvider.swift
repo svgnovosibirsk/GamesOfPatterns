@@ -71,6 +71,10 @@ class ImagesProvider {
         return UIImage(named: "swBgBlack")!
     }
     
+    static var swBackgroundWhite: UIImage {
+        return UIImage(named: "swBgWhite")!
+    }
+    
     static var swLogo: UIImage {
         return UIImage(named: "swLogo")!
     }

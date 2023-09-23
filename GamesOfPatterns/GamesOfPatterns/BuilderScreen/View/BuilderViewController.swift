@@ -117,7 +117,7 @@ final class BuilderViewController: UIViewController {
     
     // MARK: Orden Label
     private func setupOrdenLabel() {
-        ordenLabel.text = "Jedi"
+        ordenLabel.text = " "
         ordenLabel.textAlignment = .center
         ordenLabel.textColor = .systemGray
         ordenLabel.font = UIFont.boldSystemFont(ofSize: 50.0)
@@ -143,7 +143,7 @@ final class BuilderViewController: UIViewController {
         jediImageView.layer.cornerRadius = (jediImageView.image?.size.height)! / 2
         //jediImageView.clipsToBounds = true
         
-        jediImageView.layer.shadowColor = UIColor.systemRed.cgColor
+        jediImageView.layer.shadowColor = UIColor.systemYellow.cgColor
         jediImageView.layer.shadowOpacity = 1
         jediImageView.layer.shadowOffset = .zero
         jediImageView.layer.shadowRadius = 20
@@ -179,10 +179,14 @@ final class BuilderViewController: UIViewController {
     
     // MARK: Name Label
     private func setupNameLabel() {
-        nameLabel.text = "Skywalker"
+        nameLabel.text = " "
         nameLabel.textAlignment = .center
         nameLabel.textColor = .systemGray
         nameLabel.font = UIFont.boldSystemFont(ofSize: 40.0)
+        
+        nameLabel.numberOfLines = 1;
+        nameLabel.adjustsFontSizeToFitWidth = true
+        nameLabel.minimumScaleFactor = 0.5
         
         setupNameLabelConstraints()
     }
