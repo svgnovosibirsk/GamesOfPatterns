@@ -74,4 +74,12 @@ class ImagesProvider {
     static var swLogo: UIImage {
         return UIImage(named: "swLogo")!
     }
+    
+    static var swJediPhotoPlaceholder: UIImage {
+        return UIImage(named: "swJediPhotoPlaceholder")!
+    }
+    
+    static var swSithPhotoPlaceholder: UIImage {
+        return UIImage(named: "swSithPhotoPlaceholder")!
+    }
 }

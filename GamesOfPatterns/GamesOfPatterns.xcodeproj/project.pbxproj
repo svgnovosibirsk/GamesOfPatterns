@@ -17,6 +17,11 @@
 		7C439A8B2A7523840093CE64 /* GamesOfPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */; };
 		7C439A8D2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */; };
 		7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05212ABC2DD300CADB31 /* swLogo.png */; };
+		7C6A054C2ABEBF2B00CADB31 /* Jedi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */; };
+		7C6A054F2ABEC26000CADB31 /* swJediPhotoPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */; };
+		7C6A05502ABEC26000CADB31 /* swSithPhotoPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A054E2ABEC26000CADB31 /* swSithPhotoPlaceholder.png */; };
+		7C6A05522ABEC2BD00CADB31 /* Sith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05512ABEC2BD00CADB31 /* Sith.swift */; };
+		7C6A05552ABEC33700CADB31 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05542ABEC33700CADB31 /* Builder.swift */; };
 		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
 		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
 		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
@@ -88,6 +93,11 @@
 		7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITests.swift; sourceTree = "<group>"; };
 		7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7C6A05212ABC2DD300CADB31 /* swLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swLogo.png; sourceTree = "<group>"; };
+		7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jedi.swift; sourceTree = "<group>"; };
+		7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swJediPhotoPlaceholder.png; sourceTree = "<group>"; };
+		7C6A054E2ABEC26000CADB31 /* swSithPhotoPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swSithPhotoPlaceholder.png; sourceTree = "<group>"; };
+		7C6A05512ABEC2BD00CADB31 /* Sith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sith.swift; sourceTree = "<group>"; };
+		7C6A05542ABEC33700CADB31 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
 		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
 		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
@@ -232,6 +242,23 @@
 			path = GamesOfPatternsUITests;
 			sourceTree = "<group>";
 		};
+		7C6A05532ABEC2E800CADB31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */,
+				7C6A05512ABEC2BD00CADB31 /* Sith.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C6A05562ABEC62400CADB31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C97FB012ABAB06500EADC3B /* BuilderViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7C97FADB2AB6C72500EADC3B /* Logo */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,7 +316,9 @@
 		7C97FB032ABAB07F00EADC3B /* BuilderScreen */ = {
 			isa = PBXGroup;
 			children = (
-				7C97FB012ABAB06500EADC3B /* BuilderViewController.swift */,
+				7C6A05542ABEC33700CADB31 /* Builder.swift */,
+				7C6A05532ABEC2E800CADB31 /* Model */,
+				7C6A05562ABEC62400CADB31 /* View */,
 			);
 			path = BuilderScreen;
 			sourceTree = "<group>";
@@ -297,6 +326,8 @@
 		7C97FB062ABAB55000EADC3B /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
+				7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */,
+				7C6A054E2ABEC26000CADB31 /* swSithPhotoPlaceholder.png */,
 				7C6A05212ABC2DD300CADB31 /* swLogo.png */,
 				7C97FB042ABAB54200EADC3B /* swBgBlack.png */,
 			);
@@ -529,6 +560,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6A054F2ABEC26000CADB31 /* swJediPhotoPlaceholder.png in Resources */,
 				7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */,
 				7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */,
 				7C97FAE82AB6CA9600EADC3B /* sai.png in Resources */,
@@ -542,6 +574,7 @@
 				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
 				7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */,
+				7C6A05502ABEC26000CADB31 /* swSithPhotoPlaceholder.png in Resources */,
 				7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */,
 				7C97FAD92AB6C3AA00EADC3B /* TMNT.png in Resources */,
 				7C97FB052ABAB54200EADC3B /* swBgBlack.png in Resources */,
@@ -581,11 +614,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */,
+				7C6A054C2ABEBF2B00CADB31 /* Jedi.swift in Sources */,
 				7CCAA0D82A99DADD006549D5 /* TurtlesModel.swift in Sources */,
 				7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */,
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
+				7C6A05552ABEC33700CADB31 /* Builder.swift in Sources */,
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,
+				7C6A05522ABEC2BD00CADB31 /* Sith.swift in Sources */,
 				7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,
