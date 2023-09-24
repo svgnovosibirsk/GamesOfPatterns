@@ -24,7 +24,6 @@ final class BuilderViewController: UIViewController {
         presenter = BuilderPresenter(viewController: self)
         
         setupScreen()
-        sideSwitch.isOn = true
     }
     
     private func setupScreen() {
@@ -187,6 +186,10 @@ final class BuilderViewController: UIViewController {
         nameLabel.numberOfLines = 1;
         nameLabel.adjustsFontSizeToFitWidth = true
         nameLabel.minimumScaleFactor = 0.5
+        
+        nameLabel.isAccessibilityElement = true
+        nameLabel.accessibilityHint = "the name of the knight"
+        nameLabel.accessibilityValue = nameLabel.text
         
         setupNameLabelConstraints()
     }
