@@ -19,6 +19,8 @@ final class BuilderViewController: UIViewController {
     let sideLabel = UILabel(frame: .zero)
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         title = "Builder"
         
         presenter = BuilderPresenter(viewController: self)

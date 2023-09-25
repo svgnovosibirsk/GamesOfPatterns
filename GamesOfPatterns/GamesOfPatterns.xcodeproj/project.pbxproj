@@ -26,6 +26,13 @@
 		7C6A055C2ABECDFB00CADB31 /* swAnakinSkywalker.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A055A2ABECDFA00CADB31 /* swAnakinSkywalker.png */; };
 		7C6A055D2ABECDFB00CADB31 /* swDarthVader.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A055B2ABECDFB00CADB31 /* swDarthVader.png */; };
 		7C6A055F2ABED72800CADB31 /* swBgWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A055E2ABED72800CADB31 /* swBgWhite.png */; };
+		7C6A05872AC193B300CADB31 /* PrototypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05862AC193B300CADB31 /* PrototypeViewController.swift */; };
+		7C6A058F2AC1963000CADB31 /* mxSmith10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05892AC1962F00CADB31 /* mxSmith10.png */; };
+		7C6A05902AC1963000CADB31 /* mxSmith3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A058A2AC1962F00CADB31 /* mxSmith3.png */; };
+		7C6A05912AC1963000CADB31 /* mxSmith1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A058B2AC1962F00CADB31 /* mxSmith1.png */; };
+		7C6A05922AC1963000CADB31 /* mxSmith2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A058C2AC1963000CADB31 /* mxSmith2.png */; };
+		7C6A05932AC1963000CADB31 /* mxMatrixBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A058D2AC1963000CADB31 /* mxMatrixBg.png */; };
+		7C6A05942AC1963000CADB31 /* mxSmith5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A058E2AC1963000CADB31 /* mxSmith5.png */; };
 		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
 		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
 		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
@@ -106,6 +113,13 @@
 		7C6A055A2ABECDFA00CADB31 /* swAnakinSkywalker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swAnakinSkywalker.png; sourceTree = "<group>"; };
 		7C6A055B2ABECDFB00CADB31 /* swDarthVader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swDarthVader.png; sourceTree = "<group>"; };
 		7C6A055E2ABED72800CADB31 /* swBgWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swBgWhite.png; sourceTree = "<group>"; };
+		7C6A05862AC193B300CADB31 /* PrototypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeViewController.swift; sourceTree = "<group>"; };
+		7C6A05892AC1962F00CADB31 /* mxSmith10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxSmith10.png; sourceTree = "<group>"; };
+		7C6A058A2AC1962F00CADB31 /* mxSmith3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxSmith3.png; sourceTree = "<group>"; };
+		7C6A058B2AC1962F00CADB31 /* mxSmith1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxSmith1.png; sourceTree = "<group>"; };
+		7C6A058C2AC1963000CADB31 /* mxSmith2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxSmith2.png; sourceTree = "<group>"; };
+		7C6A058D2AC1963000CADB31 /* mxMatrixBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxMatrixBg.png; sourceTree = "<group>"; };
+		7C6A058E2AC1963000CADB31 /* mxSmith5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxSmith5.png; sourceTree = "<group>"; };
 		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
 		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
 		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
@@ -223,6 +237,7 @@
 				7CAD85182A7E5E3C00B43252 /* FactoryMethodScreen */,
 				7CAD85192A7E5E4B00B43252 /* AbstractFactoryScreen */,
 				7C97FB032ABAB07F00EADC3B /* BuilderScreen */,
+				7C6A05882AC193C500CADB31 /* Protorype */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -273,6 +288,27 @@
 				7C6A05572ABEC6BB00CADB31 /* BuilderPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7C6A05882AC193C500CADB31 /* Protorype */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A05862AC193B300CADB31 /* PrototypeViewController.swift */,
+			);
+			path = Protorype;
+			sourceTree = "<group>";
+		};
+		7C6A05952AC1965B00CADB31 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A058D2AC1963000CADB31 /* mxMatrixBg.png */,
+				7C6A058B2AC1962F00CADB31 /* mxSmith1.png */,
+				7C6A058C2AC1963000CADB31 /* mxSmith2.png */,
+				7C6A058A2AC1962F00CADB31 /* mxSmith3.png */,
+				7C6A058E2AC1963000CADB31 /* mxSmith5.png */,
+				7C6A05892AC1962F00CADB31 /* mxSmith10.png */,
+			);
+			path = Matrix;
 			sourceTree = "<group>";
 		};
 		7C97FADB2AB6C72500EADC3B /* Logo */ = {
@@ -471,6 +507,7 @@
 			children = (
 				7CCAA0D62A99CFA9006549D5 /* Turtles */,
 				7C97FB062ABAB55000EADC3B /* StarWars */,
+				7C6A05952AC1965B00CADB31 /* Matrix */,
 				7CCCE3AD2A90923200B3229F /* MortalKombat */,
 			);
 			path = Images;
@@ -594,6 +631,7 @@
 				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
 				7C6A055D2ABECDFB00CADB31 /* swDarthVader.png in Resources */,
+				7C6A05902AC1963000CADB31 /* mxSmith3.png in Resources */,
 				7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */,
 				7C6A05502ABEC26000CADB31 /* swSithPhotoPlaceholder.png in Resources */,
 				7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */,
@@ -608,7 +646,12 @@
 				7C439A712A7523820093CE64 /* Main.storyboard in Resources */,
 				7C97FAE72AB6CA9600EADC3B /* bo.png in Resources */,
 				7CCAA10F2A9B27AF006549D5 /* TurtlesLogo.png in Resources */,
+				7C6A058F2AC1963000CADB31 /* mxSmith10.png in Resources */,
+				7C6A05932AC1963000CADB31 /* mxMatrixBg.png in Resources */,
 				7CCAA10D2A9B25C7006549D5 /* Leo.png in Resources */,
+				7C6A05942AC1963000CADB31 /* mxSmith5.png in Resources */,
+				7C6A05922AC1963000CADB31 /* mxSmith2.png in Resources */,
+				7C6A05912AC1963000CADB31 /* mxSmith1.png in Resources */,
 				7C97FAE52AB6CA9600EADC3B /* katana.png in Resources */,
 				7CCAA10C2A9B25C7006549D5 /* Mike.png in Resources */,
 				7C97FAE42AB6CA9600EADC3B /* weapons.png in Resources */,
@@ -641,6 +684,7 @@
 				7CCAA0D82A99DADD006549D5 /* TurtlesModel.swift in Sources */,
 				7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */,
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
+				7C6A05872AC193B300CADB31 /* PrototypeViewController.swift in Sources */,
 				7C6A05552ABEC33700CADB31 /* Builder.swift in Sources */,
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,

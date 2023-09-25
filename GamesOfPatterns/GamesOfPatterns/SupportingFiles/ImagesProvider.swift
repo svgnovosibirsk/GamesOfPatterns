@@ -8,7 +8,7 @@
 import UIKit
 
 class ImagesProvider {
-    // Mortal Kombat
+    // MARK: - Mortal Kombat
     static var mkLogo: UIImage {
         return UIImage(named: "mkLogo")!
     }
@@ -21,7 +21,7 @@ class ImagesProvider {
         return UIImage(named: "mkSubzero")!
     }
     
-    // TNMT
+    // MARK: - TNMT
     static var tmntLeonardo: UIImage {
         return UIImage(named: "Leo2")!
     }
@@ -66,7 +66,7 @@ class ImagesProvider {
         return UIImage(named: "nunchaku")!
     }
     
-    //Star Wars
+    // MARK: - Star Wars
     static var swBackgroundBlack: UIImage {
         return UIImage(named: "swBgBlack")!
     }
@@ -93,5 +93,30 @@ class ImagesProvider {
     
     static var swDarthVaderImage: UIImage {
         return UIImage(named: "swDarthVader")!
+    }
+    
+    // MARK: - Matrix
+    static var mxBackground: UIImage {
+        return UIImage(named: "mxMatrixBg")!
+    }
+    
+    static var mxSmith1: UIImage {
+        return UIImage(named: "mxSmith1")!
+    }
+    
+    static var mxSmith2: UIImage {
+        return UIImage(named: "mxSmith2")!
+    }
+    
+    static var mxSmith3: UIImage {
+        return UIImage(named: "mxSmith3")!
+    }
+    
+    static var mxSmith5: UIImage {
+        return UIImage(named: "mxSmith5")!
+    }
+    
+    static var mxSmith10: UIImage {
+        return UIImage(named: "mxSmith10")!
     }
 }
