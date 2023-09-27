@@ -33,6 +33,8 @@
 		7C6A05922AC1963000CADB31 /* mxSmith2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A058C2AC1963000CADB31 /* mxSmith2.png */; };
 		7C6A05932AC1963000CADB31 /* mxMatrixBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A058D2AC1963000CADB31 /* mxMatrixBg.png */; };
 		7C6A05942AC1963000CADB31 /* mxSmith5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A058E2AC1963000CADB31 /* mxSmith5.png */; };
+		7C6A05972AC3EFE100CADB31 /* ProtorypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05962AC3EFE100CADB31 /* ProtorypeViewModel.swift */; };
+		7C6A05992AC3F08700CADB31 /* SmithModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05982AC3F08700CADB31 /* SmithModel.swift */; };
 		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
 		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
 		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
@@ -120,6 +122,8 @@
 		7C6A058C2AC1963000CADB31 /* mxSmith2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxSmith2.png; sourceTree = "<group>"; };
 		7C6A058D2AC1963000CADB31 /* mxMatrixBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxMatrixBg.png; sourceTree = "<group>"; };
 		7C6A058E2AC1963000CADB31 /* mxSmith5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxSmith5.png; sourceTree = "<group>"; };
+		7C6A05962AC3EFE100CADB31 /* ProtorypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtorypeViewModel.swift; sourceTree = "<group>"; };
+		7C6A05982AC3F08700CADB31 /* SmithModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmithModel.swift; sourceTree = "<group>"; };
 		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
 		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
 		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
@@ -293,7 +297,9 @@
 		7C6A05882AC193C500CADB31 /* Protorype */ = {
 			isa = PBXGroup;
 			children = (
-				7C6A05862AC193B300CADB31 /* PrototypeViewController.swift */,
+				7C6A059C2AC4326900CADB31 /* Model */,
+				7C6A059A2AC4324E00CADB31 /* View */,
+				7C6A059B2AC4325F00CADB31 /* ViewModel */,
 			);
 			path = Protorype;
 			sourceTree = "<group>";
@@ -309,6 +315,30 @@
 				7C6A05892AC1962F00CADB31 /* mxSmith10.png */,
 			);
 			path = Matrix;
+			sourceTree = "<group>";
+		};
+		7C6A059A2AC4324E00CADB31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A05862AC193B300CADB31 /* PrototypeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C6A059B2AC4325F00CADB31 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A05962AC3EFE100CADB31 /* ProtorypeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7C6A059C2AC4326900CADB31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A05982AC3F08700CADB31 /* SmithModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7C97FADB2AB6C72500EADC3B /* Logo */ = {
@@ -688,8 +718,10 @@
 				7C6A05552ABEC33700CADB31 /* Builder.swift in Sources */,
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,
+				7C6A05992AC3F08700CADB31 /* SmithModel.swift in Sources */,
 				7C6A05582ABEC6BB00CADB31 /* BuilderPresenter.swift in Sources */,
 				7C6A05522ABEC2BD00CADB31 /* Sith.swift in Sources */,
+				7C6A05972AC3EFE100CADB31 /* ProtorypeViewModel.swift in Sources */,
 				7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,

@@ -17,11 +17,13 @@ final class PrototypeViewController: UIViewController {
     let cloneButton = UIButton(frame: .zero)
     let spacerView = UILabel(frame: .zero)
     
+    var viewModel: ProtorypeViewModel? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = PatternsNames.Prototype.rawValue
-        
+        viewModel = ProtorypeViewModel(viewController: self)
         setupScreen()
     }
     
@@ -110,7 +112,12 @@ final class PrototypeViewController: UIViewController {
         cloneButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30.0)
         cloneButton.backgroundColor = UIColor(white: 0, alpha: 0.5)
         cloneButton.layer.cornerRadius = 10
+        cloneButton.addTarget(self, action: #selector(cloneButtonPressed), for: .touchUpInside)
         stackView.addArrangedSubview(cloneButton)
+    }
+    
+    @objc private func cloneButtonPressed(_ sender: UIButton) {
+        viewModel?.cloneButtonPressed()
     }
     
     // MARK: Spacer View
