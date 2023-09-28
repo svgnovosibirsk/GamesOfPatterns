@@ -10,6 +10,8 @@ import UIKit
 final class SingletonViewController: UIViewController {
     
     let backgroundView = UIImageView(frame: .zero)
+    let stackView = UIStackView(frame: .zero)
+    let textView = UITextView(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ final class SingletonViewController: UIViewController {
     
     private func setupScreen() {
         setupBackgroundView()
+        setupStackView()
     }
     
     // MARK: Background
@@ -40,6 +43,29 @@ final class SingletonViewController: UIViewController {
             backgroundView.topAnchor.constraint(equalTo: view.topAnchor),
             backgroundView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             backgroundView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+    }
+    
+    // MARK: Stackview
+    private func setupStackView() {
+        //stackView.backgroundColor = .white
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        stackView.distribution = .equalSpacing
+        stackView.spacing = 20
+        
+        setupStackViewConstraints()
+    }
+    
+    private func setupStackViewConstraints() {
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stackView)
+        
+        NSLayoutConstraint.activate([
+            stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
 }
