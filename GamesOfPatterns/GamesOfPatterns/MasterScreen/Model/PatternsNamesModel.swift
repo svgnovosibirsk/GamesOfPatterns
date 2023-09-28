@@ -19,7 +19,7 @@ enum PatternsNames: String {
     case AbstractFactory = "Abstract factory"
     case Builder = "Builder"
     case Prototype = "Prototype"
-    case Syngleton = "Syngleton"
+    case Singleton = "Singleton"
     
     // Structural
     case Adapter = "Adapter"
@@ -48,7 +48,7 @@ class PatternsNamesModel {
                      PatternsNames.AbstractFactory.rawValue,
                      PatternsNames.Builder.rawValue,
                      PatternsNames.Prototype.rawValue,
-                     PatternsNames.Syngleton.rawValue],
+                     PatternsNames.Singleton.rawValue],
                     
                     [PatternsNames.Adapter.rawValue,
                      PatternsNames.Bridge.rawValue,

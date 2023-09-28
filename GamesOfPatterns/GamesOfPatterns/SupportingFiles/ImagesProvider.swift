@@ -119,4 +119,9 @@ class ImagesProvider {
     static var mxSmith10: UIImage {
         return UIImage(named: "mxSmith10")!
     }
+    
+    // MARK: - James Bond
+    static var jbBackground: UIImage {
+        return UIImage(named: "jb007")!
+    }
 }

@@ -35,6 +35,8 @@
 		7C6A05942AC1963000CADB31 /* mxSmith5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A058E2AC1963000CADB31 /* mxSmith5.png */; };
 		7C6A05972AC3EFE100CADB31 /* ProtorypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05962AC3EFE100CADB31 /* ProtorypeViewModel.swift */; };
 		7C6A05992AC3F08700CADB31 /* SmithModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05982AC3F08700CADB31 /* SmithModel.swift */; };
+		7C6A059E2AC548BD00CADB31 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A059D2AC548BD00CADB31 /* SingletonViewController.swift */; };
+		7C6A05A12AC550F900CADB31 /* jb007.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05A02AC550F900CADB31 /* jb007.png */; };
 		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
 		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
 		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
@@ -124,6 +126,8 @@
 		7C6A058E2AC1963000CADB31 /* mxSmith5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mxSmith5.png; sourceTree = "<group>"; };
 		7C6A05962AC3EFE100CADB31 /* ProtorypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtorypeViewModel.swift; sourceTree = "<group>"; };
 		7C6A05982AC3F08700CADB31 /* SmithModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmithModel.swift; sourceTree = "<group>"; };
+		7C6A059D2AC548BD00CADB31 /* SingletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
+		7C6A05A02AC550F900CADB31 /* jb007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jb007.png; sourceTree = "<group>"; };
 		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
 		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
 		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 				7CAD85192A7E5E4B00B43252 /* AbstractFactoryScreen */,
 				7C97FB032ABAB07F00EADC3B /* BuilderScreen */,
 				7C6A05882AC193C500CADB31 /* Protorype */,
+				7C6A059F2AC54A7100CADB31 /* Singleton */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -339,6 +344,22 @@
 				7C6A05982AC3F08700CADB31 /* SmithModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7C6A059F2AC54A7100CADB31 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A059D2AC548BD00CADB31 /* SingletonViewController.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		7C6A05A22AC5510700CADB31 /* JamesBond */ = {
+			isa = PBXGroup;
+			children = (
+				7C6A05A02AC550F900CADB31 /* jb007.png */,
+			);
+			path = JamesBond;
 			sourceTree = "<group>";
 		};
 		7C97FADB2AB6C72500EADC3B /* Logo */ = {
@@ -535,6 +556,7 @@
 		7CCCE3AE2A90924600B3229F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7C6A05A22AC5510700CADB31 /* JamesBond */,
 				7CCAA0D62A99CFA9006549D5 /* Turtles */,
 				7C97FB062ABAB55000EADC3B /* StarWars */,
 				7C6A05952AC1965B00CADB31 /* Matrix */,
@@ -674,6 +696,7 @@
 				7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */,
 				7C439A732A7523840093CE64 /* Assets.xcassets in Resources */,
 				7C439A712A7523820093CE64 /* Main.storyboard in Resources */,
+				7C6A05A12AC550F900CADB31 /* jb007.png in Resources */,
 				7C97FAE72AB6CA9600EADC3B /* bo.png in Resources */,
 				7CCAA10F2A9B27AF006549D5 /* TurtlesLogo.png in Resources */,
 				7C6A058F2AC1963000CADB31 /* mxSmith10.png in Resources */,
@@ -711,6 +734,7 @@
 			files = (
 				7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */,
 				7C6A054C2ABEBF2B00CADB31 /* Jedi.swift in Sources */,
+				7C6A059E2AC548BD00CADB31 /* SingletonViewController.swift in Sources */,
 				7CCAA0D82A99DADD006549D5 /* TurtlesModel.swift in Sources */,
 				7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */,
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
