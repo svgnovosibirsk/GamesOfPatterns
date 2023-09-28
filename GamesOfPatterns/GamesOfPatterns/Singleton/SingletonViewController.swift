@@ -12,9 +12,10 @@ final class SingletonViewController: UIViewController {
     let backgroundView = UIImageView(frame: .zero)
     let stackView = UIStackView(frame: .zero)
     let textView = UITextView(frame: .zero)
-    // TODO: password text field
+    let passwordTextField = UITextField(frame: .zero)
     let saveButton = UIButton(frame: .zero)
     let readButton = UIButton(frame: .zero)
+    let spacerView = UILabel(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,8 @@ final class SingletonViewController: UIViewController {
         setupBackgroundView()
         setupStackView()
         setupTextView()
-        // TODO: password text field
+        setupPasswordTextField()
+        setupSpacerView()
         setupSaveButton()
         setupReadButton()
     }
@@ -81,6 +83,7 @@ final class SingletonViewController: UIViewController {
         textView.layer.cornerRadius = 10
         textView.textColor = .white
         textView.font = UIFont.systemFont(ofSize: 20)
+        textView.textContainerInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         
         setupTextViewConstraints()
     }
@@ -97,7 +100,34 @@ final class SingletonViewController: UIViewController {
         ])
     }
     
-    // TODO: password text field
+    // MARK: Password Text Field
+    private func setupPasswordTextField() {
+        passwordTextField.backgroundColor = UIColor(white: 1, alpha: 0.2)
+        passwordTextField.layer.cornerRadius = 10
+        passwordTextField.textColor = .white
+        passwordTextField.font = UIFont.systemFont(ofSize: 20)
+        passwordTextField.isSecureTextEntry = true
+        addPasswordTextFieldPadding()
+        
+        setupPasswordTextFieldConstraints()
+    }
+    
+    private func setupPasswordTextFieldConstraints() {
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        stackView.addArrangedSubview(passwordTextField)
+        
+        NSLayoutConstraint.activate([
+            passwordTextField.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 30),
+            passwordTextField.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant:  -30),
+            passwordTextField.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    private func addPasswordTextFieldPadding() {
+       let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
+        passwordTextField.leftView = paddingView
+        passwordTextField.leftViewMode = .always
+    }
     
     // MARK: Save Button
     private func setupSaveButton() {
@@ -133,5 +163,22 @@ final class SingletonViewController: UIViewController {
     @objc private func readButtonPressed(_ sender: UIButton) {
         //viewModel?.cloneButtonPressed()
         print(#function)
+    }
+    
+    // MARK: Spacer View
+    private func setupSpacerView() {
+        spacerView.numberOfLines = 0
+        spacerView.text = """
+        
+        
+        
+        
+        
+        
+        
+        """
+        spacerView.textColor = .white
+        spacerView.backgroundColor = UIColor(white: 1, alpha: 0.5)
+        stackView.addArrangedSubview(spacerView)
     }
 }
