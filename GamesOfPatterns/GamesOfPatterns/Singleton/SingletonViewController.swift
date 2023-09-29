@@ -16,6 +16,8 @@ final class SingletonViewController: UIViewController {
     let saveButton = UIButton(frame: .zero)
     let readButton = UIButton(frame: .zero)
     let spacerView = UILabel(frame: .zero)
+    let messageLabel = UILabel(frame: .zero)
+    let passwordLabel = UILabel(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +25,20 @@ final class SingletonViewController: UIViewController {
         title = PatternsNames.Singleton.rawValue
         
         setupScreen()
-        setupDismissKeyboardGestureRecognizer()
+        //setupDismissKeyboardGestureRecognizer()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textView.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
     }
     
     private func setupScreen() {
         setupBackgroundView()
         setupStackView()
+        setupMessageLabel()
         setupTextView()
+        setupPasswordLabel()
         setupPasswordTextField()
         setupSpacerView()
         setupSaveButton()
@@ -76,6 +85,22 @@ final class SingletonViewController: UIViewController {
             stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
+    }
+    
+    // MARK: Massage Label
+    private func setupMessageLabel() {
+        messageLabel.text = "Message"
+        messageLabel.textColor = .systemGray6
+        messageLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
+        stackView.addArrangedSubview(messageLabel)
+    }
+    
+    // MARK: Password Label
+    private func setupPasswordLabel() {
+        passwordLabel.text = "Password"
+        passwordLabel.textColor = .systemGray6
+        passwordLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
+        stackView.addArrangedSubview(passwordLabel)
     }
     
     // MARK: Text View
