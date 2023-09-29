@@ -9,6 +9,8 @@ import UIKit
 
 final class SingletonViewController: UIViewController {
     
+    var presenter: SingletonPresenter?
+    
     let backgroundView = UIImageView(frame: .zero)
     let stackView = UIStackView(frame: .zero)
     let textView = UITextView(frame: .zero)
@@ -23,6 +25,8 @@ final class SingletonViewController: UIViewController {
         super.viewDidLoad()
         
         title = PatternsNames.Singleton.rawValue
+        
+        presenter = SingletonPresenter(viewController: self)
         
         setupScreen()
         //setupDismissKeyboardGestureRecognizer()
@@ -177,8 +181,7 @@ final class SingletonViewController: UIViewController {
     }
     
     @objc private func saveButtonPressed(_ sender: UIButton) {
-        //viewModel?.cloneButtonPressed()
-        print(#function)
+        presenter?.saveButtonPressed()
     }
     
     // MARK: Read Button
@@ -195,8 +198,7 @@ final class SingletonViewController: UIViewController {
     }
     
     @objc private func readButtonPressed(_ sender: UIButton) {
-        //viewModel?.cloneButtonPressed()
-        print(#function)
+        presenter?.readButtonPressed()
     }
     
     // MARK: Spacer View
@@ -227,7 +229,6 @@ final class SingletonViewController: UIViewController {
     }
     
     // MARK: Keyboard notifications
-    
     private func registerForKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillShown(_:)),
                                                name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -242,6 +243,5 @@ final class SingletonViewController: UIViewController {
     
     @objc func keyboardWillBeHidden(_ notification: NSNotification) {
         stackView.distribution = .equalSpacing
-
     }
 }
