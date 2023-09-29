@@ -26,6 +26,7 @@ final class SingletonViewController: UIViewController {
         
         setupScreen()
         //setupDismissKeyboardGestureRecognizer()
+        registerForKeyboardNotifications()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -140,6 +141,7 @@ final class SingletonViewController: UIViewController {
         passwordTextField.isSecureTextEntry = true
         addPasswordTextFieldPadding()
         passwordTextField.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
+        passwordTextField.clearButtonMode = .whileEditing
         
         setupPasswordTextFieldConstraints()
     }
@@ -222,5 +224,24 @@ final class SingletonViewController: UIViewController {
     
     @objc func dismissKeyboard(_ recognizer: UITapGestureRecognizer) {
         view.endEditing(true)
+    }
+    
+    // MARK: Keyboard notifications
+    
+    private func registerForKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillShown(_:)),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillBeHidden(_:)),
+                                               name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShown(_ notificiation: NSNotification) {
+        stackView.distribution = .fillProportionally
+    }
+    
+    @objc func keyboardWillBeHidden(_ notification: NSNotification) {
+        stackView.distribution = .equalSpacing
+
     }
 }
