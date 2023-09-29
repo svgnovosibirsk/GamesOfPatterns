@@ -37,6 +37,7 @@
 		7C6A05992AC3F08700CADB31 /* SmithModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05982AC3F08700CADB31 /* SmithModel.swift */; };
 		7C6A059E2AC548BD00CADB31 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A059D2AC548BD00CADB31 /* SingletonViewController.swift */; };
 		7C6A05A12AC550F900CADB31 /* jb007.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05A02AC550F900CADB31 /* jb007.png */; };
+		7C6A05A42AC6A9C300CADB31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05A32AC6A9C300CADB31 /* Extensions.swift */; };
 		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
 		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
 		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
@@ -128,6 +129,7 @@
 		7C6A05982AC3F08700CADB31 /* SmithModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmithModel.swift; sourceTree = "<group>"; };
 		7C6A059D2AC548BD00CADB31 /* SingletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
 		7C6A05A02AC550F900CADB31 /* jb007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jb007.png; sourceTree = "<group>"; };
+		7C6A05A32AC6A9C300CADB31 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
 		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
 		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				7C6A059D2AC548BD00CADB31 /* SingletonViewController.swift */,
+				7C6A05A32AC6A9C300CADB31 /* Extensions.swift */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,
 				7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */,
 				7C97FB022ABAB06500EADC3B /* BuilderViewController.swift in Sources */,
+				7C6A05A42AC6A9C300CADB31 /* Extensions.swift in Sources */,
 				7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */,
 				7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */,
 				7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */,

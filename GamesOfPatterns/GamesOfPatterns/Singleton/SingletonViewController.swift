@@ -23,6 +23,7 @@ final class SingletonViewController: UIViewController {
         title = PatternsNames.Singleton.rawValue
         
         setupScreen()
+        setupDismissKeyboardGestureRecognizer()
     }
     
     private func setupScreen() {
@@ -84,7 +85,8 @@ final class SingletonViewController: UIViewController {
         textView.textColor = .white
         textView.font = UIFont.systemFont(ofSize: 20)
         textView.textContainerInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        
+        textView.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
+
         setupTextViewConstraints()
     }
     
@@ -100,6 +102,10 @@ final class SingletonViewController: UIViewController {
         ])
     }
     
+    @objc func tapDone(sender: Any) {
+           self.view.endEditing(true)
+       }
+    
     // MARK: Password Text Field
     private func setupPasswordTextField() {
         passwordTextField.backgroundColor = UIColor(white: 1, alpha: 0.2)
@@ -108,6 +114,7 @@ final class SingletonViewController: UIViewController {
         passwordTextField.font = UIFont.systemFont(ofSize: 20)
         passwordTextField.isSecureTextEntry = true
         addPasswordTextFieldPadding()
+        passwordTextField.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
         
         setupPasswordTextFieldConstraints()
     }
@@ -180,5 +187,15 @@ final class SingletonViewController: UIViewController {
         spacerView.textColor = .white
         spacerView.backgroundColor = UIColor(white: 1, alpha: 0.5)
         stackView.addArrangedSubview(spacerView)
+    }
+    
+    // MARK: TapGesture Recognizer to dismiss keyboard
+    private func setupDismissKeyboardGestureRecognizer() {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard(_:)))
+        view.addGestureRecognizer(tapRecognizer)
+    }
+    
+    @objc func dismissKeyboard(_ recognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 }
