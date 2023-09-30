@@ -9,6 +9,14 @@ import UIKit
 
 final class SingletonViewController: UIViewController {
     
+    // MARK: - Constants
+    private enum Constants {
+        static let labelFontSize = 25.0
+        static let textFontSize = 20.0
+        static let buttonFontSize = 30.0
+        static let cornerRadiusSize = 10.0
+    }
+    
     var presenter: SingletonPresenter?
     
     let backgroundView = UIImageView(frame: .zero)
@@ -96,7 +104,7 @@ final class SingletonViewController: UIViewController {
     private func setupMessageLabel() {
         messageLabel.text = "Message"
         messageLabel.textColor = .systemGray6
-        messageLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
+        messageLabel.font = UIFont.boldSystemFont(ofSize: Constants.labelFontSize)
         stackView.addArrangedSubview(messageLabel)
     }
     
@@ -104,18 +112,19 @@ final class SingletonViewController: UIViewController {
     private func setupPasswordLabel() {
         passwordLabel.text = "Password"
         passwordLabel.textColor = .systemGray6
-        passwordLabel.font = UIFont.boldSystemFont(ofSize: 25.0)
+        passwordLabel.font = UIFont.boldSystemFont(ofSize: Constants.labelFontSize)
         stackView.addArrangedSubview(passwordLabel)
     }
     
     // MARK: Text View
     private func setupTextView() {
         textView.backgroundColor = UIColor(white: 1, alpha: 0.2)
-        textView.layer.cornerRadius = 10
+        textView.layer.cornerRadius = Constants.cornerRadiusSize
         textView.textColor = .white
-        textView.font = UIFont.systemFont(ofSize: 20)
+        textView.font = UIFont.systemFont(ofSize: Constants.textFontSize)
         textView.textContainerInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         textView.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
+        textView.autocorrectionType = .no
 
         setupTextViewConstraints()
     }
@@ -139,9 +148,9 @@ final class SingletonViewController: UIViewController {
     // MARK: Password Text Field
     private func setupPasswordTextField() {
         passwordTextField.backgroundColor = UIColor(white: 1, alpha: 0.2)
-        passwordTextField.layer.cornerRadius = 10
+        passwordTextField.layer.cornerRadius = Constants.cornerRadiusSize
         passwordTextField.textColor = .white
-        passwordTextField.font = UIFont.systemFont(ofSize: 20)
+        passwordTextField.font = UIFont.systemFont(ofSize: Constants.textFontSize)
         passwordTextField.isSecureTextEntry = true
         addPasswordTextFieldPadding()
         passwordTextField.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
@@ -171,10 +180,10 @@ final class SingletonViewController: UIViewController {
     private func setupSaveButton() {
         saveButton.setTitle("     Save     ", for: .normal)
         saveButton.backgroundColor = UIColor(white: 1, alpha: 0.2)
-        saveButton.layer.cornerRadius = 10
+        saveButton.layer.cornerRadius = Constants.cornerRadiusSize
         saveButton.setTitleColor(.systemGray6, for: .normal)
         saveButton.setTitleColor(.systemGray4, for: .highlighted)
-        saveButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30.0)
+        saveButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: Constants.buttonFontSize)
         saveButton.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
         
         stackView.addArrangedSubview(saveButton)
@@ -188,10 +197,10 @@ final class SingletonViewController: UIViewController {
     private func setupReadButton() {
         readButton.setTitle("     Read     ", for: .normal)
         readButton.backgroundColor = UIColor(white: 1, alpha: 0.2)
-        readButton.layer.cornerRadius = 10
+        readButton.layer.cornerRadius = Constants.cornerRadiusSize
         readButton.setTitleColor(.systemGray6, for: .normal)
         readButton.setTitleColor(.systemGray4, for: .highlighted)
-        readButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30.0)
+        readButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: Constants.buttonFontSize)
         readButton.addTarget(self, action: #selector(readButtonPressed), for: .touchUpInside)
         
         stackView.addArrangedSubview(readButton)
@@ -243,5 +252,10 @@ final class SingletonViewController: UIViewController {
     
     @objc func keyboardWillBeHidden(_ notification: NSNotification) {
         stackView.distribution = .equalSpacing
+    }
+    
+    // MARK: Deinit
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }

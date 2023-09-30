@@ -15,6 +15,11 @@ struct Message {
 final class MessageModel {
     private var messages: [String: Message] = [:]
     
+    // MARK: - Singleton
+    static let shared = MessageModel()
+    
+    private init() {}
+    
     func saveMessage(_ message: Message) {
         messages[message.password] = message
     }

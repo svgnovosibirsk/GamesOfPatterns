@@ -5,23 +5,32 @@
 //  Created by Sergey on 29.09.2023.
 //
 
-import Foundation
+import UIKit
 
 final class SingletonPresenter {
+    
+    // MARK: - Constants
+    private enum AlertMessages {
+        static let typeMessage = "Type a message"
+        static let typePassword = "Type a password"
+        static let messageSaved = "Message is saved"
+        static let okButton = "OK"
+    }
+    
+    let emptyString = ""
+    
     weak var viewController: SingletonViewController?
-    let messageModel = MessageModel()
     
     init(viewController: SingletonViewController? = nil) {
         self.viewController = viewController
     }
     
     func saveButtonPressed() {
-        print(#function) // test
         
-        if viewController?.textView.text == "" {
-            print("Type message") // TODO: Alert
-        } else if viewController?.passwordTextField.text == "" {
-            print("Type password") // TODO: Alert
+        if viewController?.textView.text == emptyString {
+            showAlert(message: AlertMessages.typeMessage)
+        } else if viewController?.passwordTextField.text == emptyString {
+            showAlert(message: AlertMessages.typePassword)
         } else {
             guard let text = viewController?.textView.text,
             let password =  viewController?.passwordTextField.text
@@ -29,28 +38,38 @@ final class SingletonPresenter {
             
             let message = Message(text: text, password: password)
             
-            messageModel.saveMessage(message)
+            // MARK: - Singleton
+            MessageModel.shared.saveMessage(message)
             
-            viewController?.textView.text = ""
-            viewController?.passwordTextField.text = ""
+            viewController?.textView.text = emptyString
+            viewController?.passwordTextField.text = emptyString
             
-            print("Message is saved") // TODO: Alert
+            showAlert(message: AlertMessages.messageSaved)
         }
-        
     }
     
     func readButtonPressed() {
-        print(#function) // test
         
-        if viewController?.passwordTextField.text == "" {
-           print("Type password") // TODO: Alert
+        if viewController?.passwordTextField.text == emptyString {
+            showAlert(message: AlertMessages.typePassword)
         } else {
-            viewController?.textView.text = ""
+            viewController?.textView.text = emptyString
             
             guard let password =  viewController?.passwordTextField.text else { return }
-            let message = messageModel.readMessage(password: password)
+            
+            // MARK: - Singleton
+            let message = MessageModel.shared.readMessage(password: password)
             
             viewController?.textView.text = message?.text
         }
+    }
+    
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: message, message: emptyString, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: AlertMessages.okButton, style: .default)
+        
+        alert.addAction(okAction)
+        
+        viewController?.present(alert, animated: true)
     }
 }
