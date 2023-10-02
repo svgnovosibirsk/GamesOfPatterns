@@ -124,4 +124,9 @@ class ImagesProvider {
     static var jbBackground: UIImage {
         return UIImage(named: "jb007")!
     }
+    
+    // MARK: - Batman
+    static var btmBackground: UIImage {
+        return UIImage(named: "btmQuestionMarkBg")!
+    }
 }
