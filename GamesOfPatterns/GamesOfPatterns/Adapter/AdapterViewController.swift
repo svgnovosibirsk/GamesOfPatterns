@@ -9,12 +9,26 @@ import UIKit
 
 final class AdapterViewController: UIViewController {
     
+    // MARK: - Constants
+    private enum Constants {
+        static let stackBackgroundColor = UIColor(white: 0, alpha: 0.6)
+        static let labelBackgroundColor = UIColor(white: 0, alpha: 0.8)
+        static let cornerRadius: CGFloat = 10
+        static let stackOuterSpacing: CGFloat = 50
+        static let labelInsets: CGFloat = 50
+        static let buttonFont: CGFloat = 30
+        static let labelFont: CGFloat = 40
+        static let questionFont: CGFloat = 30
+    }
+    
     let backgroundView = UIImageView(frame: .zero)
     let labelsStack = UIStackView(frame: .zero)
     let buttonsStack = UIStackView(frame: .zero)
     let scoreLabel = UILabel(frame: .zero)
     let numberLabel = UILabel(frame: .zero)
     let questionLabel = UILabel(frame: .zero)
+    let yesButton = UIButton(frame: .zero)
+    let noButton = UIButton(frame: .zero)
     
     override func viewDidLoad() {
         title = PatternsNames.Adapter.rawValue
@@ -29,6 +43,8 @@ final class AdapterViewController: UIViewController {
         setupNumberLabel()
         setupQuestionLabel()
         setupButtonsStack()
+        setupYesButton()
+        setupNoButton()
     }
     
     // MARK: Background
@@ -57,10 +73,13 @@ final class AdapterViewController: UIViewController {
         labelsStack.alignment = .center
         labelsStack.distribution = .fillProportionally//.equalSpacing
         labelsStack.spacing = 20
-        labelsStack.backgroundColor = UIColor(white: 0, alpha: 0.8)
-        labelsStack.layer.cornerRadius = 10
+        labelsStack.backgroundColor = Constants.stackBackgroundColor
+        labelsStack.layer.cornerRadius = Constants.cornerRadius
         
-        labelsStack.layoutMargins = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 50)
+        labelsStack.layoutMargins = UIEdgeInsets(top: 0,
+                                                 left: Constants.labelInsets,
+                                                 bottom: 0,
+                                                 right: Constants.labelInsets)
         labelsStack.isLayoutMarginsRelativeArrangement = true
         
         setupLabelStackConstraints()
@@ -71,9 +90,12 @@ final class AdapterViewController: UIViewController {
         view.addSubview(labelsStack)
         
         NSLayoutConstraint.activate([
-            labelsStack.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
-            labelsStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
-            labelsStack.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            labelsStack.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+                                                 constant: Constants.stackOuterSpacing),
+            labelsStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
+                                             constant: Constants.stackOuterSpacing),
+            labelsStack.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+                                                  constant: -Constants.stackOuterSpacing),
             labelsStack.heightAnchor.constraint(equalToConstant: 100)
         ])
     }
@@ -82,7 +104,7 @@ final class AdapterViewController: UIViewController {
     private func setupMessageLabel() {
         scoreLabel.text = "Score: "
         scoreLabel.textColor = .green
-        scoreLabel.font = UIFont.boldSystemFont(ofSize: 40)
+        scoreLabel.font = UIFont.boldSystemFont(ofSize: Constants.labelFont)
         labelsStack.addArrangedSubview(scoreLabel)
     }
     
@@ -90,17 +112,20 @@ final class AdapterViewController: UIViewController {
     private func setupNumberLabel() {
         numberLabel.text = "0"
         numberLabel.textColor = .green
-        numberLabel.font = UIFont.boldSystemFont(ofSize: 40)
+        numberLabel.font = UIFont.boldSystemFont(ofSize: Constants.labelFont)
         labelsStack.addArrangedSubview(numberLabel)
     }
     
     // MARK: Question Label
     private func setupQuestionLabel() {
-        questionLabel.text = "Question"
+        questionLabel.text = " Question "
         questionLabel.textColor = .green
-        questionLabel.backgroundColor = UIColor(white: 0, alpha: 0.8)
-        questionLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        questionLabel.textAlignment = .center
+        questionLabel.backgroundColor = Constants.labelBackgroundColor
+        questionLabel.font = UIFont.boldSystemFont(ofSize: Constants.questionFont)
         questionLabel.numberOfLines = 0
+        questionLabel.layer.cornerRadius = Constants.cornerRadius
+        questionLabel.clipsToBounds = true
         
         setupQuestionLabelConstraints()
     }
@@ -110,8 +135,12 @@ final class AdapterViewController: UIViewController {
         view.addSubview(questionLabel)
         
         NSLayoutConstraint.activate([
-            questionLabel.topAnchor.constraint(equalTo: labelsStack.bottomAnchor, constant: 50),
-            questionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            questionLabel.topAnchor.constraint(equalTo: labelsStack.bottomAnchor,
+                                               constant: Constants.stackOuterSpacing),
+            questionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+                                                   constant: Constants.stackOuterSpacing),
+            questionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+                                                    constant: -Constants.stackOuterSpacing),
         ])
     }
     
@@ -121,10 +150,13 @@ final class AdapterViewController: UIViewController {
         buttonsStack.alignment = .center
         buttonsStack.distribution = .fillProportionally//.equalSpacing
         buttonsStack.spacing = 20
-        buttonsStack.backgroundColor = UIColor(white: 0, alpha: 0.8)
-        buttonsStack.layer.cornerRadius = 10
+        buttonsStack.backgroundColor = Constants.stackBackgroundColor
+        buttonsStack.layer.cornerRadius = Constants.cornerRadius
         
-        buttonsStack.layoutMargins = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 50)
+        buttonsStack.layoutMargins = UIEdgeInsets(top: 0,
+                                                  left: Constants.labelInsets,
+                                                  bottom: 0,
+                                                  right: Constants.labelInsets)
         buttonsStack.isLayoutMarginsRelativeArrangement = true
         
         setupButtonsStackConstraints()
@@ -135,10 +167,45 @@ final class AdapterViewController: UIViewController {
         view.addSubview(buttonsStack)
         
         NSLayoutConstraint.activate([
-            buttonsStack.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
-            buttonsStack.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 50),
-            buttonsStack.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            buttonsStack.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+                                                  constant: Constants.stackOuterSpacing),
+            buttonsStack.topAnchor.constraint(equalTo: questionLabel.bottomAnchor,
+                                              constant: Constants.stackOuterSpacing),
+            buttonsStack.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+                                                   constant: -Constants.stackOuterSpacing),
             buttonsStack.heightAnchor.constraint(equalToConstant: 100)
         ])
+    }
+    
+    // MARK: YES Button
+    private func setupYesButton() {
+        yesButton.setTitle(" YES ", for: .normal)
+        yesButton.setTitleColor(.green, for: .normal)
+        yesButton.setTitleColor(.systemGreen, for: .highlighted)
+        yesButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: Constants.buttonFont)
+        yesButton.addTarget(self, action: #selector(yesButtonPressed), for: .touchUpInside)
+        
+        buttonsStack.addArrangedSubview(yesButton)
+    }
+    
+    @objc private func yesButtonPressed(_ sender: UIButton) {
+        //presenter?.yesButtonPressed()
+        print(#function)
+    }
+    
+    // MARK: NO Button
+    private func setupNoButton() {
+        noButton.setTitle(" NO ", for: .normal)
+        noButton.setTitleColor(.green, for: .normal)
+        noButton.setTitleColor(.systemGreen, for: .highlighted)
+        noButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: Constants.buttonFont)
+        noButton.addTarget(self, action: #selector(noButtonPressed), for: .touchUpInside)
+        
+        buttonsStack.addArrangedSubview(noButton)
+    }
+    
+    @objc private func noButtonPressed(_ sender: UIButton) {
+        //presenter?.noButtonPressed()
+        print(#function)
     }
 }
