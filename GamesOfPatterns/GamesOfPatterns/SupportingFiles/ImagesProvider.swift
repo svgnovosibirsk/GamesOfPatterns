@@ -129,4 +129,8 @@ class ImagesProvider {
     static var btmBackground: UIImage {
         return UIImage(named: "btmQuestionMarkBg")!
     }
+    
+    static var btmIPADBackground: UIImage {
+        return UIImage(named: "btmIPadBg")!
+    }
 }

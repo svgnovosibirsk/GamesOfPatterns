@@ -63,6 +63,7 @@
 		7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */; };
 		7CC6CFD22ACE7F2C0030B396 /* QuestionsPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6CFD12ACE7F2C0030B396 /* QuestionsPlist.plist */; };
 		7CC6CFD42ACE84E00030B396 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6CFD32ACE84E00030B396 /* QuestionsModel.swift */; };
+		7CC6CFD62ACEC5670030B396 /* btmIPadBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6CFD52ACEC5670030B396 /* btmIPadBg.png */; };
 		7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don_50.png */; };
 		7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */; };
 		7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo_50.png */; };
@@ -161,6 +162,7 @@
 		7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRouter.swift; sourceTree = "<group>"; };
 		7CC6CFD12ACE7F2C0030B396 /* QuestionsPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = QuestionsPlist.plist; sourceTree = "<group>"; };
 		7CC6CFD32ACE84E00030B396 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
+		7CC6CFD52ACEC5670030B396 /* btmIPadBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btmIPadBg.png; sourceTree = "<group>"; };
 		7CCAA0CE2A99CF9D006549D5 /* Don_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don_50.png; sourceTree = "<group>"; };
 		7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike_50.png; sourceTree = "<group>"; };
 		7CCAA0D02A99CF9D006549D5 /* Leo_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo_50.png; sourceTree = "<group>"; };
@@ -417,6 +419,7 @@
 		7C89CCEA2ACAD7DF00C644CC /* Batman */ = {
 			isa = PBXGroup;
 			children = (
+				7CC6CFD52ACEC5670030B396 /* btmIPadBg.png */,
 				7C89CCE82ACAD7D800C644CC /* btmQuestionMarkBg.png */,
 			);
 			path = Batman;
@@ -746,6 +749,7 @@
 				7C6A055D2ABECDFB00CADB31 /* swDarthVader.png in Resources */,
 				7C6A05902AC1963000CADB31 /* mxSmith3.png in Resources */,
 				7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */,
+				7CC6CFD62ACEC5670030B396 /* btmIPadBg.png in Resources */,
 				7C6A05502ABEC26000CADB31 /* swSithPhotoPlaceholder.png in Resources */,
 				7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */,
 				7C97FAD92AB6C3AA00EADC3B /* TMNT.png in Resources */,

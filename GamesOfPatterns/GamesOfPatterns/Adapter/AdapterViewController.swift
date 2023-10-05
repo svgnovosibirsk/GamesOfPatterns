@@ -16,6 +16,7 @@ final class AdapterViewController: UIViewController {
         static let cornerRadius: CGFloat = 10
         static let stackOuterSpacing: CGFloat = 50
         static let labelInsets: CGFloat = 50
+        static let regularLabelInsets: CGFloat = 200
         static let buttonFont: CGFloat = 30
         static let labelFont: CGFloat = 40
         static let questionFont: CGFloat = 30
@@ -40,6 +41,23 @@ final class AdapterViewController: UIViewController {
 //        let questions = model.getQuestions()
 //        print("-------")
 //        print(questions)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if traitCollection.userInterfaceIdiom == .phone {
+            backgroundView.image = ImagesProvider.btmBackground
+        } else {
+            backgroundView.image = ImagesProvider.btmIPADBackground
+        }
+        
+        if traitCollection.verticalSizeClass == .regular {
+            setupLabelsAndButtonsForSizeClass(insetsSize: Constants.labelInsets, color: .green)
+        } else {
+            setupLabelsAndButtonsForSizeClass(insetsSize: Constants.regularLabelInsets, color: .yellow)
+        }
+        
     }
     
     private func setupScreen() {
@@ -195,6 +213,7 @@ final class AdapterViewController: UIViewController {
     }
     
     @objc private func yesButtonPressed(_ sender: UIButton) {
+        //TODO: implement
         //presenter?.yesButtonPressed()
         print(#function)
     }
@@ -211,7 +230,22 @@ final class AdapterViewController: UIViewController {
     }
     
     @objc private func noButtonPressed(_ sender: UIButton) {
+        //TODO: implement
         //presenter?.noButtonPressed()
         print(#function)
+    }
+    
+    // MARK: - Handle Size Clases
+    private func setupLabelsAndButtonsForSizeClass(insetsSize: CGFloat, color: UIColor) {
+        labelsStack.layoutMargins = UIEdgeInsets(top: 0,
+                                                 left: insetsSize,
+                                                 bottom: 0,
+                                                 right: insetsSize)
+        
+        scoreLabel.textColor = color
+        numberLabel.textColor = color
+        questionLabel.textColor = color
+        yesButton.setTitleColor(color, for: .normal)
+        noButton.setTitleColor(color, for: .normal)
     }
 }
