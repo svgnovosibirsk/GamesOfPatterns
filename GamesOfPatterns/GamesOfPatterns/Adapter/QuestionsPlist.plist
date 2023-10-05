@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Questions</key>
+	<array>
+		<dict>
+			<key>question</key>
+			<string>Tea contains more caffeine than coffee and soda.</string>
+			<key>answer</key>
+			<string>NO</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>A male canary tends to have a better singing voice than a female canary.</string>
+			<key>answer</key>
+			<string>YES</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>The first country in the world to use postcards was the United States of America.</string>
+			<key>answer</key>
+			<string>NO</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>The first song ever sung in the space was “Happy Birthday.”</string>
+			<key>answer</key>
+			<string>YES</string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>In school, Albert Einstein failed most of the subjects, except for physics and math.</string>
+			<key>answer</key>
+			<string>YES</string>
+		</dict>
+	</array>
+</dict>
+</plist>

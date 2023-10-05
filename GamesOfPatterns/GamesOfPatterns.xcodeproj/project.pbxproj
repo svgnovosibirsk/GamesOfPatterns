@@ -61,6 +61,8 @@
 		7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */; };
 		7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */; };
 		7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */; };
+		7CC6CFD22ACE7F2C0030B396 /* QuestionsPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6CFD12ACE7F2C0030B396 /* QuestionsPlist.plist */; };
+		7CC6CFD42ACE84E00030B396 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6CFD32ACE84E00030B396 /* QuestionsModel.swift */; };
 		7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don_50.png */; };
 		7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */; };
 		7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo_50.png */; };
@@ -157,6 +159,8 @@
 		7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
 		7CAD85162A7E5C7F00B43252 /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		7CAD851A2A7E5EA100B43252 /* MasterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterRouter.swift; sourceTree = "<group>"; };
+		7CC6CFD12ACE7F2C0030B396 /* QuestionsPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = QuestionsPlist.plist; sourceTree = "<group>"; };
+		7CC6CFD32ACE84E00030B396 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
 		7CCAA0CE2A99CF9D006549D5 /* Don_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don_50.png; sourceTree = "<group>"; };
 		7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike_50.png; sourceTree = "<group>"; };
 		7CCAA0D02A99CF9D006549D5 /* Leo_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo_50.png; sourceTree = "<group>"; };
@@ -404,6 +408,8 @@
 			isa = PBXGroup;
 			children = (
 				7C89CCE52ACAD5C300C644CC /* AdapterViewController.swift */,
+				7CC6CFD32ACE84E00030B396 /* QuestionsModel.swift */,
+				7CC6CFD12ACE7F2C0030B396 /* QuestionsPlist.plist */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -756,6 +762,7 @@
 				7C97FAE72AB6CA9600EADC3B /* bo.png in Resources */,
 				7CCAA10F2A9B27AF006549D5 /* TurtlesLogo.png in Resources */,
 				7C6A058F2AC1963000CADB31 /* mxSmith10.png in Resources */,
+				7CC6CFD22ACE7F2C0030B396 /* QuestionsPlist.plist in Resources */,
 				7C6A05932AC1963000CADB31 /* mxMatrixBg.png in Resources */,
 				7CCAA10D2A9B25C7006549D5 /* Leo.png in Resources */,
 				7C6A05942AC1963000CADB31 /* mxSmith5.png in Resources */,
@@ -803,6 +810,7 @@
 				7C89CCE62ACAD5C300C644CC /* AdapterViewController.swift in Sources */,
 				7C6A05522ABEC2BD00CADB31 /* Sith.swift in Sources */,
 				7C6A05972AC3EFE100CADB31 /* ProtorypeViewModel.swift in Sources */,
+				7CC6CFD42ACE84E00030B396 /* QuestionsModel.swift in Sources */,
 				7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,

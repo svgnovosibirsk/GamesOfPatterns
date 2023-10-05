@@ -34,6 +34,12 @@ final class AdapterViewController: UIViewController {
         title = PatternsNames.Adapter.rawValue
         
         setupScreen()
+        
+        // TEST
+//        let model = QuestionsModel()
+//        let questions = model.getQuestions()
+//        print("-------")
+//        print(questions)
     }
     
     private func setupScreen() {
