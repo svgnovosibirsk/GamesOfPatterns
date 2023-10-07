@@ -22,6 +22,8 @@ final class AdapterViewController: UIViewController {
         static let questionFont: CGFloat = 30
     }
     
+    var presenter: AdapterPresenter?
+    
     let backgroundView = UIImageView(frame: .zero)
     let labelsStack = UIStackView(frame: .zero)
     let buttonsStack = UIStackView(frame: .zero)
@@ -34,13 +36,10 @@ final class AdapterViewController: UIViewController {
     override func viewDidLoad() {
         title = PatternsNames.Adapter.rawValue
         
-        setupScreen()
+        presenter = AdapterPresenter(viewController: self)
         
-        // TEST
-//        let model = QuestionsModel()
-//        let questions = model.getQuestions()
-//        print("-------")
-//        print(questions)
+        setupScreen()
+        setQuestion()
     }
     
     override func viewDidLayoutSubviews() {
@@ -208,14 +207,13 @@ final class AdapterViewController: UIViewController {
         yesButton.setTitleColor(.systemGreen, for: .highlighted)
         yesButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: Constants.buttonFont)
         yesButton.addTarget(self, action: #selector(yesButtonPressed), for: .touchUpInside)
+        yesButton.tag = 1
         
         buttonsStack.addArrangedSubview(yesButton)
     }
     
     @objc private func yesButtonPressed(_ sender: UIButton) {
-        //TODO: implement
-        //presenter?.yesButtonPressed()
-        print(#function)
+        presenter?.handleAnswer(sender)
     }
     
     // MARK: NO Button
@@ -225,14 +223,13 @@ final class AdapterViewController: UIViewController {
         noButton.setTitleColor(.systemGreen, for: .highlighted)
         noButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: Constants.buttonFont)
         noButton.addTarget(self, action: #selector(noButtonPressed), for: .touchUpInside)
+        noButton.tag = 0
         
         buttonsStack.addArrangedSubview(noButton)
     }
     
     @objc private func noButtonPressed(_ sender: UIButton) {
-        //TODO: implement
-        //presenter?.noButtonPressed()
-        print(#function)
+        presenter?.handleAnswer(sender)
     }
     
     // MARK: - Handle Size Clases
@@ -247,5 +244,14 @@ final class AdapterViewController: UIViewController {
         questionLabel.textColor = color
         yesButton.setTitleColor(color, for: .normal)
         noButton.setTitleColor(color, for: .normal)
+    }
+    
+    // MARK: - Presenter methods call
+    private func setQuestion() {
+        presenter?.setQuestion()
+    }
+    
+    func setQuestionLabelText(_ text: String) {
+        questionLabel.text = text
     }
 }

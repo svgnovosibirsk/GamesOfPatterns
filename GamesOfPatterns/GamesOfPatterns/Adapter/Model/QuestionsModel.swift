@@ -23,6 +23,10 @@ final class QuestionsModel {
         return questions
     }
     
+    func getQuestion(index: Int) -> Question {
+        return questions[index]
+    }
+    
     private func setupQuestions() {
         let path = Bundle.main.path(forResource: "QuestionsPlist", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
@@ -32,11 +36,5 @@ final class QuestionsModel {
             let question = Question(text: dict["question"]!, answer: dict["answer"]!)
             questions.append(question)
         }
-        
-        // TEST
-//        print(questionsArr)
-//        print("-----------")
-//        print(questions)
     }
-    
 }

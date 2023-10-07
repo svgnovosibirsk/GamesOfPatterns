@@ -64,6 +64,8 @@
 		7CC6CFD22ACE7F2C0030B396 /* QuestionsPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6CFD12ACE7F2C0030B396 /* QuestionsPlist.plist */; };
 		7CC6CFD42ACE84E00030B396 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6CFD32ACE84E00030B396 /* QuestionsModel.swift */; };
 		7CC6CFD62ACEC5670030B396 /* btmIPadBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6CFD52ACEC5670030B396 /* btmIPadBg.png */; };
+		7CC6CFFE2AD12AAA0030B396 /* AdapterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6CFFD2AD12AAA0030B396 /* AdapterPresenter.swift */; };
+		7CC6D0032AD12B240030B396 /* QuestionModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6D0022AD12B240030B396 /* QuestionModelAdapter.swift */; };
 		7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don_50.png */; };
 		7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */; };
 		7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo_50.png */; };
@@ -163,6 +165,8 @@
 		7CC6CFD12ACE7F2C0030B396 /* QuestionsPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = QuestionsPlist.plist; sourceTree = "<group>"; };
 		7CC6CFD32ACE84E00030B396 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
 		7CC6CFD52ACEC5670030B396 /* btmIPadBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btmIPadBg.png; sourceTree = "<group>"; };
+		7CC6CFFD2AD12AAA0030B396 /* AdapterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterPresenter.swift; sourceTree = "<group>"; };
+		7CC6D0022AD12B240030B396 /* QuestionModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModelAdapter.swift; sourceTree = "<group>"; };
 		7CCAA0CE2A99CF9D006549D5 /* Don_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don_50.png; sourceTree = "<group>"; };
 		7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike_50.png; sourceTree = "<group>"; };
 		7CCAA0D02A99CF9D006549D5 /* Leo_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo_50.png; sourceTree = "<group>"; };
@@ -409,9 +413,10 @@
 		7C89CCE72ACAD5CA00C644CC /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
-				7C89CCE52ACAD5C300C644CC /* AdapterViewController.swift */,
-				7CC6CFD32ACE84E00030B396 /* QuestionsModel.swift */,
-				7CC6CFD12ACE7F2C0030B396 /* QuestionsPlist.plist */,
+				7CC6D0022AD12B240030B396 /* QuestionModelAdapter.swift */,
+				7CC6CFFF2AD12AB80030B396 /* Model */,
+				7CC6D0002AD12AC30030B396 /* View */,
+				7CC6D0012AD12ACC0030B396 /* Presenter */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -533,6 +538,31 @@
 				7CCAA0DD2A99DCB8006549D5 /* Presenter */,
 			);
 			path = AbstractFactoryScreen;
+			sourceTree = "<group>";
+		};
+		7CC6CFFF2AD12AB80030B396 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CC6CFD32ACE84E00030B396 /* QuestionsModel.swift */,
+				7CC6CFD12ACE7F2C0030B396 /* QuestionsPlist.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CC6D0002AD12AC30030B396 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C89CCE52ACAD5C300C644CC /* AdapterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CC6D0012AD12ACC0030B396 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7CC6CFFD2AD12AAA0030B396 /* AdapterPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		7CCAA0CD2A99C0D1006549D5 /* SupportingFiles */ = {
@@ -815,6 +845,7 @@
 				7C6A05522ABEC2BD00CADB31 /* Sith.swift in Sources */,
 				7C6A05972AC3EFE100CADB31 /* ProtorypeViewModel.swift in Sources */,
 				7CC6CFD42ACE84E00030B396 /* QuestionsModel.swift in Sources */,
+				7CC6CFFE2AD12AAA0030B396 /* AdapterPresenter.swift in Sources */,
 				7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,
@@ -823,6 +854,7 @@
 				7C6A05AA2AC6D37700CADB31 /* MessageModel.swift in Sources */,
 				7C6A05A42AC6A9C300CADB31 /* Extensions.swift in Sources */,
 				7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */,
+				7CC6D0032AD12B240030B396 /* QuestionModelAdapter.swift in Sources */,
 				7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */,
 				7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
