@@ -11,14 +11,16 @@ final class AdapterPresenter {
     
     weak var viewController: AdapterViewController?
     
-    var model = QuestionsModel() // TODO: replace by adapter
+    // MARK: - Adapter
+    var modelAdapter = QuestionModelAdapter()
     
     var question: Question!
     var score = 0
     
     private var questionNumber = 0 {
         didSet {
-            if questionNumber == model.getQuestions().count { // TODO: replace by adapter
+            // MARK: - Adapter
+            if questionNumber == modelAdapter.getQuestions().count {
                 questionNumber = 0
             }
         }
@@ -26,11 +28,13 @@ final class AdapterPresenter {
     
     init(viewController: AdapterViewController? = nil) {
         self.viewController = viewController
-        question = model.getQuestion(index: 0) // TODO: replace by adapter
+        // MARK: - Adapter
+        question = modelAdapter.getQuestion(index: 0)
     }
     
     func setQuestion() {
-        question = model.getQuestion(index: questionNumber) // TODO: replace by adapter
+        // MARK: - Adapter
+        question = modelAdapter.getQuestion(index: questionNumber)
         viewController?.setQuestionLabelText(question.text)
         questionNumber += 1
     }

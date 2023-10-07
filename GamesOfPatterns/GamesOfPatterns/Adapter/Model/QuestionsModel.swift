@@ -19,11 +19,11 @@ final class QuestionsModel {
         setupQuestions()
     }
     
-    func getQuestions() -> [Question] {
+    func reciveQuestions() -> [Question] {
         return questions
     }
     
-    func getQuestion(index: Int) -> Question {
+    func recieveQuestion(index: Int) -> Question {
         return questions[index]
     }
     
