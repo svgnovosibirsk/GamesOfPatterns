@@ -34,6 +34,9 @@ class MasterRouter {
         case PatternsNames.Adapter.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(AdapterViewController(),
                                                                                sender: self)
+        case PatternsNames.Bridge.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(BridgeViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()

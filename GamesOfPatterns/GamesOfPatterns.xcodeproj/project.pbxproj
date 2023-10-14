@@ -66,6 +66,7 @@
 		7CC6CFD62ACEC5670030B396 /* btmIPadBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6CFD52ACEC5670030B396 /* btmIPadBg.png */; };
 		7CC6CFFE2AD12AAA0030B396 /* AdapterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6CFFD2AD12AAA0030B396 /* AdapterPresenter.swift */; };
 		7CC6D0032AD12B240030B396 /* QuestionModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6D0022AD12B240030B396 /* QuestionModelAdapter.swift */; };
+		7CC6D0842ADA62320030B396 /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6D0832ADA62320030B396 /* BridgeViewController.swift */; };
 		7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don_50.png */; };
 		7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */; };
 		7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo_50.png */; };
@@ -167,6 +168,7 @@
 		7CC6CFD52ACEC5670030B396 /* btmIPadBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btmIPadBg.png; sourceTree = "<group>"; };
 		7CC6CFFD2AD12AAA0030B396 /* AdapterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterPresenter.swift; sourceTree = "<group>"; };
 		7CC6D0022AD12B240030B396 /* QuestionModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModelAdapter.swift; sourceTree = "<group>"; };
+		7CC6D0832ADA62320030B396 /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
 		7CCAA0CE2A99CF9D006549D5 /* Don_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don_50.png; sourceTree = "<group>"; };
 		7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike_50.png; sourceTree = "<group>"; };
 		7CCAA0D02A99CF9D006549D5 /* Leo_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo_50.png; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				7C6A05882AC193C500CADB31 /* Protorype */,
 				7C6A059F2AC54A7100CADB31 /* Singleton */,
 				7C89CCE72ACAD5CA00C644CC /* Adapter */,
+				7CC6D0852ADA623E0030B396 /* Bridge */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -565,6 +568,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		7CC6D0852ADA623E0030B396 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				7CC6D0832ADA62320030B396 /* BridgeViewController.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
 		7CCAA0CD2A99C0D1006549D5 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -856,6 +867,7 @@
 				7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */,
 				7CC6D0032AD12B240030B396 /* QuestionModelAdapter.swift in Sources */,
 				7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */,
+				7CC6D0842ADA62320030B396 /* BridgeViewController.swift in Sources */,
 				7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
 				7C6A05A62AC6D17300CADB31 /* SingletonPresenter.swift in Sources */,
