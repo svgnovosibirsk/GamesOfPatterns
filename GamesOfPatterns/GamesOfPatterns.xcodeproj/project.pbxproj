@@ -67,6 +67,8 @@
 		7CC6CFFE2AD12AAA0030B396 /* AdapterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6CFFD2AD12AAA0030B396 /* AdapterPresenter.swift */; };
 		7CC6D0032AD12B240030B396 /* QuestionModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6D0022AD12B240030B396 /* QuestionModelAdapter.swift */; };
 		7CC6D0842ADA62320030B396 /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6D0832ADA62320030B396 /* BridgeViewController.swift */; };
+		7CC6D0882ADA69440030B396 /* airplane1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6D0862ADA69440030B396 /* airplane1.png */; };
+		7CC6D0892ADA69440030B396 /* airplane2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6D0872ADA69440030B396 /* airplane2.png */; };
 		7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don_50.png */; };
 		7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */; };
 		7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo_50.png */; };
@@ -169,6 +171,8 @@
 		7CC6CFFD2AD12AAA0030B396 /* AdapterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterPresenter.swift; sourceTree = "<group>"; };
 		7CC6D0022AD12B240030B396 /* QuestionModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModelAdapter.swift; sourceTree = "<group>"; };
 		7CC6D0832ADA62320030B396 /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
+		7CC6D0862ADA69440030B396 /* airplane1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane1.png; sourceTree = "<group>"; };
+		7CC6D0872ADA69440030B396 /* airplane2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane2.png; sourceTree = "<group>"; };
 		7CCAA0CE2A99CF9D006549D5 /* Don_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don_50.png; sourceTree = "<group>"; };
 		7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike_50.png; sourceTree = "<group>"; };
 		7CCAA0D02A99CF9D006549D5 /* Leo_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo_50.png; sourceTree = "<group>"; };
@@ -576,6 +580,15 @@
 			path = Bridge;
 			sourceTree = "<group>";
 		};
+		7CC6D08A2ADA695A0030B396 /* Airplane */ = {
+			isa = PBXGroup;
+			children = (
+				7CC6D0862ADA69440030B396 /* airplane1.png */,
+				7CC6D0872ADA69440030B396 /* airplane2.png */,
+			);
+			path = Airplane;
+			sourceTree = "<group>";
+		};
 		7CCAA0CD2A99C0D1006549D5 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,6 +673,7 @@
 		7CCCE3AE2A90924600B3229F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7CC6D08A2ADA695A0030B396 /* Airplane */,
 				7C89CCEA2ACAD7DF00C644CC /* Batman */,
 				7C6A05A22AC5510700CADB31 /* JamesBond */,
 				7CCAA0D62A99CFA9006549D5 /* Turtles */,
@@ -785,6 +799,7 @@
 				7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */,
 				7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */,
 				7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */,
+				7CC6D0882ADA69440030B396 /* airplane1.png in Resources */,
 				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
 				7C6A055D2ABECDFB00CADB31 /* swDarthVader.png in Resources */,
@@ -799,6 +814,7 @@
 				7C6A055F2ABED72800CADB31 /* swBgWhite.png in Resources */,
 				7C6A055C2ABECDFB00CADB31 /* swAnakinSkywalker.png in Resources */,
 				7C89CCE92ACAD7D800C644CC /* btmQuestionMarkBg.png in Resources */,
+				7CC6D0892ADA69440030B396 /* airplane2.png in Resources */,
 				7CCAA10A2A9B25C7006549D5 /* Raph.png in Resources */,
 				7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */,
 				7C439A732A7523840093CE64 /* Assets.xcassets in Resources */,

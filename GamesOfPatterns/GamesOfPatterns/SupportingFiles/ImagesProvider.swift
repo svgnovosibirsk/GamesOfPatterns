@@ -133,4 +133,13 @@ class ImagesProvider {
     static var btmIPADBackground: UIImage {
         return UIImage(named: "btmIPadBg")!
     }
+    
+    // MARK: - Airplane
+    static var airBackground1: UIImage {
+        return UIImage(named: "airplane1")!
+    }
+    
+    static var airBackground2: UIImage {
+        return UIImage(named: "airplane2")!
+    }
 }
