@@ -94,7 +94,7 @@ final class AdapterViewController: UIViewController {
     private func setupLabelsStack() {
         labelsStack.axis = .horizontal
         labelsStack.alignment = .center
-        labelsStack.distribution = .fillProportionally//.equalSpacing
+        labelsStack.distribution = .fillProportionally
         labelsStack.spacing = 20
         labelsStack.backgroundColor = Constants.stackBackgroundColor
         labelsStack.layer.cornerRadius = Constants.cornerRadius
