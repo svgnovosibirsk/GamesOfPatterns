@@ -11,20 +11,29 @@ final class BridgeViewController: UIViewController {
     
     let backgroundView = UIImageView(frame: .zero)
     let stackView = UIStackView(frame: .zero)
-    
-    var random = 0
-    
-    override func viewWillAppear(_ animated: Bool) {
-        let image = random.isMultiple(of: 2) ? ImagesProvider.airBackground2 : ImagesProvider.airBackground1
-        setupBackgroundView(image: image)
-        
-        setupStackView()
-    }
+    let temperatureLabel = UILabel(frame: .zero)
+    let getTemperatureButton = AutoPaddingButtton(frame: .zero)
     
     override func viewDidLoad() {
         title = PatternsNames.Bridge.rawValue
         
-        random = Int.random(in: 1...100)
+        let randomNumber = Int.random(in: 1...100)
+        setupRendomScreen(random: randomNumber)
+    }
+    
+    // MARK: Setup Screen
+    private func setupRendomScreen(random: Int) {
+        if random.isMultiple(of: 2) {
+            setupBackgroundView(image: ImagesProvider.airBackground2)
+            setupStackView()
+            setupTemperatureLabel()
+            setupGetTemperarureButton()
+        } else {
+            setupBackgroundView(image: ImagesProvider.airBackground1)
+            setupStackView()
+            setupGetTemperarureButton()
+            setupTemperatureLabel()
+        }
     }
     
     // MARK: Background
@@ -50,13 +59,13 @@ final class BridgeViewController: UIViewController {
     // MARK: Stack View
     private func setupStackView() {
         stackView.axis = .vertical
-        //stackView.alignment = .center
-        stackView.distribution = .fillProportionally//.equalSpacing
+        stackView.alignment = .center
+        stackView.distribution = .equalSpacing
         stackView.spacing = 20
         stackView.backgroundColor = UIColor(white: 0, alpha: 0.2)
         stackView.layer.cornerRadius = 10
         
-        stackView.layoutMargins = UIEdgeInsets(top: 100,
+        stackView.layoutMargins = UIEdgeInsets(top: 10,
                                                  left: 10,
                                                  bottom: 10,
                                                  right: 10)
@@ -72,12 +81,43 @@ final class BridgeViewController: UIViewController {
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
                                                  constant: 20),
-//            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-//                                             constant: 100),
             stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
                                                   constant: -20),
-            stackView.heightAnchor.constraint(equalToConstant: 100), // TEST
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+    }
+    
+    // MARK: Temperature Label
+    private func setupTemperatureLabel() {
+        temperatureLabel.text = "0 C"
+        temperatureLabel.textColor = .white
+        temperatureLabel.font = UIFont.boldSystemFont(ofSize: 40)
+        stackView.addArrangedSubview(temperatureLabel)
+    }
+    
+    // MARK: Get temperature Button
+    private func setupGetTemperarureButton() {
+        getTemperatureButton.setTitle("GET TEMPERATURE", for: .normal)
+        getTemperatureButton.setTitleColor(.white, for: .normal)
+        getTemperatureButton.setTitleColor(.gray, for: .highlighted)
+        getTemperatureButton.backgroundColor = UIColor(white: 0, alpha: 0.3)
+        getTemperatureButton.layer.cornerRadius = 10
+        getTemperatureButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        getTemperatureButton.addTarget(self, action: #selector(getTemperarureButtonPressed), for: .touchUpInside)
+        stackView.addArrangedSubview(getTemperatureButton)
+    }
+    
+    @objc func getTemperarureButtonPressed() {
+        print(#function)
+    }
+}
+
+// MARK: Custom Button
+class AutoPaddingButtton: UIButton {
+    override var intrinsicContentSize: CGSize {
+        get {
+            let baseSize = super.intrinsicContentSize
+            return CGSize(width: baseSize.width + 40, height: baseSize.height)
+        }
     }
 }
