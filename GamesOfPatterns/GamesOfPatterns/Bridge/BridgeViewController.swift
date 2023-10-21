@@ -9,6 +9,8 @@ import UIKit
 
 final class BridgeViewController: UIViewController {
     
+    var presenter: BridgePresenter?
+    
     let backgroundView = UIImageView(frame: .zero)
     let stackView = UIStackView(frame: .zero)
     let temperatureLabel = UILabel(frame: .zero)
@@ -19,6 +21,8 @@ final class BridgeViewController: UIViewController {
         
         let randomNumber = Int.random(in: 1...100)
         setupRendomScreen(random: randomNumber)
+        
+        presenter = BridgePresenter(viewController: self)
     }
     
     // MARK: Setup Screen
@@ -108,7 +112,7 @@ final class BridgeViewController: UIViewController {
     }
     
     @objc func getTemperarureButtonPressed() {
-        print(#function)
+        presenter?.getTemperarureButtonPressed()
     }
 }
 

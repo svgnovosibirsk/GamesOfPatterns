@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C3E7A482AE3B58F0054CF1F /* BridgePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E7A472AE3B58F0054CF1F /* BridgePresenter.swift */; };
+		7C3E7A4A2AE3B9200054CF1F /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E7A492AE3B9200054CF1F /* WeatherModel.swift */; };
 		7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A692A7523820093CE64 /* AppDelegate.swift */; };
 		7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A6B2A7523820093CE64 /* SceneDelegate.swift */; };
 		7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A6D2A7523820093CE64 /* MasterViewController.swift */; };
@@ -107,6 +109,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C3E7A472AE3B58F0054CF1F /* BridgePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePresenter.swift; sourceTree = "<group>"; };
+		7C3E7A492AE3B9200054CF1F /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		7C439A662A7523820093CE64 /* GamesOfPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamesOfPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C439A692A7523820093CE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C439A6B2A7523820093CE64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -576,6 +580,8 @@
 			isa = PBXGroup;
 			children = (
 				7CC6D0832ADA62320030B396 /* BridgeViewController.swift */,
+				7C3E7A472AE3B58F0054CF1F /* BridgePresenter.swift */,
+				7C3E7A492AE3B9200054CF1F /* WeatherModel.swift */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -866,6 +872,7 @@
 				7C6A05552ABEC33700CADB31 /* Builder.swift in Sources */,
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,
+				7C3E7A4A2AE3B9200054CF1F /* WeatherModel.swift in Sources */,
 				7C6A05992AC3F08700CADB31 /* SmithModel.swift in Sources */,
 				7C6A05582ABEC6BB00CADB31 /* BuilderPresenter.swift in Sources */,
 				7C89CCE62ACAD5C300C644CC /* AdapterViewController.swift in Sources */,
@@ -877,6 +884,7 @@
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,
 				7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */,
+				7C3E7A482AE3B58F0054CF1F /* BridgePresenter.swift in Sources */,
 				7C97FB022ABAB06500EADC3B /* BuilderViewController.swift in Sources */,
 				7C6A05AA2AC6D37700CADB31 /* MessageModel.swift in Sources */,
 				7C6A05A42AC6A9C300CADB31 /* Extensions.swift in Sources */,
