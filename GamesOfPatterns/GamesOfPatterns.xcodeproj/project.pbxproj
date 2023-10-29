@@ -44,6 +44,7 @@
 		7C6A05AA2AC6D37700CADB31 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A05A92AC6D37700CADB31 /* MessageModel.swift */; };
 		7C89CCE62ACAD5C300C644CC /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C89CCE52ACAD5C300C644CC /* AdapterViewController.swift */; };
 		7C89CCE92ACAD7D800C644CC /* btmQuestionMarkBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C89CCE82ACAD7D800C644CC /* btmQuestionMarkBg.png */; };
+		7C8E47572AE4E84F00281EC7 /* OpenMeteoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E47562AE4E84F00281EC7 /* OpenMeteoResponse.swift */; };
 		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
 		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
 		7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD32AB6C3AA00EADC3B /* Leo2.png */; };
@@ -150,6 +151,7 @@
 		7C6A05A92AC6D37700CADB31 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		7C89CCE52ACAD5C300C644CC /* AdapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
 		7C89CCE82ACAD7D800C644CC /* btmQuestionMarkBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btmQuestionMarkBg.png; sourceTree = "<group>"; };
+		7C8E47562AE4E84F00281EC7 /* OpenMeteoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMeteoResponse.swift; sourceTree = "<group>"; };
 		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
 		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
 		7C97FAD32AB6C3AA00EADC3B /* Leo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo2.png; sourceTree = "<group>"; };
@@ -441,6 +443,31 @@
 			path = Batman;
 			sourceTree = "<group>";
 		};
+		7C8E47532AE4E67E00281EC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CC6D0832ADA62320030B396 /* BridgeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C8E47542AE4E69000281EC7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7C3E7A472AE3B58F0054CF1F /* BridgePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7C8E47552AE4E69E00281EC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C3E7A492AE3B9200054CF1F /* WeatherModel.swift */,
+				7C8E47562AE4E84F00281EC7 /* OpenMeteoResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7C97FADB2AB6C72500EADC3B /* Logo */ = {
 			isa = PBXGroup;
 			children = (
@@ -579,9 +606,9 @@
 		7CC6D0852ADA623E0030B396 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				7CC6D0832ADA62320030B396 /* BridgeViewController.swift */,
-				7C3E7A472AE3B58F0054CF1F /* BridgePresenter.swift */,
-				7C3E7A492AE3B9200054CF1F /* WeatherModel.swift */,
+				7C8E47552AE4E69E00281EC7 /* Model */,
+				7C8E47532AE4E67E00281EC7 /* View */,
+				7C8E47542AE4E69000281EC7 /* Presenter */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -881,6 +908,7 @@
 				7CC6CFD42ACE84E00030B396 /* QuestionsModel.swift in Sources */,
 				7CC6CFFE2AD12AAA0030B396 /* AdapterPresenter.swift in Sources */,
 				7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */,
+				7C8E47572AE4E84F00281EC7 /* OpenMeteoResponse.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,
 				7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */,

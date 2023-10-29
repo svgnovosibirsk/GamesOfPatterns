@@ -19,36 +19,19 @@ final class BridgeViewController: UIViewController {
     override func viewDidLoad() {
         title = PatternsNames.Bridge.rawValue
         
-        let randomNumber = Int.random(in: 1...100)
-        setupRendomScreen(random: randomNumber)
-        
         presenter = BridgePresenter(viewController: self)
-    }
-    
-    // MARK: Setup Screen
-    private func setupRendomScreen(random: Int) {
-        if random.isMultiple(of: 2) {
-            setupBackgroundView(image: ImagesProvider.airBackground2)
-            setupStackView()
-            setupTemperatureLabel()
-            setupGetTemperarureButton()
-        } else {
-            setupBackgroundView(image: ImagesProvider.airBackground1)
-            setupStackView()
-            setupGetTemperarureButton()
-            setupTemperatureLabel()
-        }
+        presenter?.setupRendomScreen()
     }
     
     // MARK: Background
-    private func setupBackgroundView(image: UIImage) {
+    func setupBackgroundView(image: UIImage) {
         backgroundView.image = image
         backgroundView.contentMode = .scaleAspectFill
         
         setupBackgroundViewConstraints()
     }
     
-    private func setupBackgroundViewConstraints() {
+    func setupBackgroundViewConstraints() {
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(backgroundView)
         
@@ -61,7 +44,7 @@ final class BridgeViewController: UIViewController {
     }
     
     // MARK: Stack View
-    private func setupStackView() {
+    func setupStackView() {
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.distribution = .equalSpacing
@@ -78,7 +61,7 @@ final class BridgeViewController: UIViewController {
         setupStackViewConstraints()
     }
     
-    private func setupStackViewConstraints() {
+    func setupStackViewConstraints() {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stackView)
         
@@ -92,7 +75,7 @@ final class BridgeViewController: UIViewController {
     }
     
     // MARK: Temperature Label
-    private func setupTemperatureLabel() {
+    func setupTemperatureLabel() {
         temperatureLabel.text = "0 C"
         temperatureLabel.textColor = .white
         temperatureLabel.font = UIFont.boldSystemFont(ofSize: 40)
@@ -100,7 +83,7 @@ final class BridgeViewController: UIViewController {
     }
     
     // MARK: Get temperature Button
-    private func setupGetTemperarureButton() {
+    func setupGetTemperarureButton() {
         getTemperatureButton.setTitle("GET TEMPERATURE", for: .normal)
         getTemperatureButton.setTitleColor(.white, for: .normal)
         getTemperatureButton.setTitleColor(.gray, for: .highlighted)
@@ -112,7 +95,7 @@ final class BridgeViewController: UIViewController {
     }
     
     @objc func getTemperarureButtonPressed() {
-        presenter?.getTemperarureButtonPressed()
+        presenter?.getTemperatureButtonPressed()
     }
 }
 
