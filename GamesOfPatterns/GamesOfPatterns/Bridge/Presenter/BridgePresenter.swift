@@ -40,9 +40,13 @@ final class BridgePresenter {
     private func setupWeatherService() {
         let randomNumber = Int.random(in: 1...100)
         if randomNumber.isMultiple(of: 2) {
-            weatherService = WeatherServiceFirst()
-        } else {
             weatherService = WeatherServiceSecond()
+        } else if randomNumber.isMultiple(of: 3) {
+            weatherService = WeatherServiceThird()
+        } else if randomNumber.isMultiple(of: 5) {
+            weatherService = WeatherServiceFourth()
+        } else {
+            weatherService = WeatherServiceFirst()
         }
     }
     

@@ -6,13 +6,13 @@
 //
 
 import UIKit
+import Combine
 
 protocol WeatherServiceProtocol {
     func getWeather() -> Double
     func getTemperature(completion: @escaping (Double) -> ())
 }
 
-// TODO: Implement real weather API
 final class WeatherServiceFirst: WeatherServiceProtocol {
     // MARK: Mocking realization
     func getWeather() -> Double {
@@ -41,14 +41,13 @@ final class WeatherServiceFirst: WeatherServiceProtocol {
     }
 }
 
-// TODO: Implement real weather API
 final class WeatherServiceSecond: WeatherServiceProtocol {
     // MARK: Mocking realization
     func getWeather() -> Double {
         return -10.2
     }
     
-    // MARK: Real service realization
+    // MARK: decode OpenMeteoResponse realization
     func getTemperature(completion: @escaping (Double) -> ()) {
         let urlString = "https://api.open-meteo.com/v1/forecast?latitude=38.48&longitude=28.94&current=temperature_2m,windspeed_10m&hourly=temperature_2m,relativehumidity_2m,windspeed_10m"
         
@@ -67,5 +66,67 @@ final class WeatherServiceSecond: WeatherServiceProtocol {
             }
         }
         task.resume()
+    }
+}
+
+final class WeatherServiceThird: WeatherServiceProtocol {
+    // MARK: Mocking realization
+    func getWeather() -> Double {
+        return 34.7
+    }
+    
+    // MARK: async/await realization
+    func getTemperature(completion: @escaping (Double) -> ()) {
+        let urlString = "https://api.open-meteo.com/v1/forecast?latitude=18.18&longitude=48.44&current=temperature_2m,windspeed_10m&hourly=temperature_2m,relativehumidity_2m,windspeed_10m"
+        
+        guard let url = URL(string: urlString) else { return }
+        let request = URLRequest(url: url)
+        
+        Task {
+            do {
+                let (data, _) = try await URLSession.shared.data(for: request)
+
+                if let meteoResponse = try? JSONDecoder().decode(OpenMeteoResponse.self, from: data) {
+                    completion(meteoResponse.current.temperature2M)
+                } else {
+                    print("Invalid Response")
+                }
+            } catch {
+                print("Failed to Send POST Request \(error)")
+            }
+        }
+    }
+}
+
+final class WeatherServiceFourth: WeatherServiceProtocol {
+    var cancellables = Set<AnyCancellable>()
+    
+    // MARK: Mocking realization
+    func getWeather() -> Double {
+        return -1.3
+    }
+    
+    // MARK: combine realization
+    func getTemperature(completion: @escaping (Double) -> ()) {
+        let urlString = "https://api.open-meteo.com/v1/forecast?latitude=88.18&longitude=78.44&current=temperature_2m,windspeed_10m&hourly=temperature_2m,relativehumidity_2m,windspeed_10m"
+        
+        guard let url = URL(string: urlString) else { return }
+        let request = URLRequest(url: url)
+        
+        let _ = URLSession.shared.dataTaskPublisher(for: request)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    ()
+                case .failure(let error):
+                    print("Failed to Send GET Request \(error)")
+                }
+            }, receiveValue: { data, _ in
+                if let meteoResponse = try? JSONDecoder().decode(OpenMeteoResponse.self, from: data) {
+                    completion(meteoResponse.current.temperature2M)
+                } else {
+                    print("Invalid Response")
+                }
+            }).store(in: &cancellables)
     }
 }
