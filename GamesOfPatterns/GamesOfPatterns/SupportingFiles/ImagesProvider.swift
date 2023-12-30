@@ -142,4 +142,13 @@ class ImagesProvider {
     static var airBackground2: UIImage {
         return UIImage(named: "airplane2")!
     }
+    
+    // MARK: - War Craft
+    static var wcLogo: UIImage {
+        return UIImage(named: "WCLogo")!
+    }
+    
+    static var wcBackground: UIImage {
+        return UIImage(named: "WCBackground.jpg")!
+    }
 }

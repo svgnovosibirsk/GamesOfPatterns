@@ -18,6 +18,10 @@
 		7C439A812A7523840093CE64 /* GamesOfPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A802A7523840093CE64 /* GamesOfPatternsTests.swift */; };
 		7C439A8B2A7523840093CE64 /* GamesOfPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */; };
 		7C439A8D2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */; };
+		7C4A4C6C2B400645008ECD0E /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C6B2B400645008ECD0E /* CompositeViewController.swift */; };
+		7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C6D2B400680008ECD0E /* CompositePresenter.swift */; };
+		7C4A4C712B4007D2008ECD0E /* WCLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4A4C702B4007D2008ECD0E /* WCLogo.png */; };
+		7C4A4C772B400AE0008ECD0E /* WCBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C4A4C762B400AE0008ECD0E /* WCBackground.jpg */; };
 		7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05212ABC2DD300CADB31 /* swLogo.png */; };
 		7C6A054C2ABEBF2B00CADB31 /* Jedi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */; };
 		7C6A054F2ABEC26000CADB31 /* swJediPhotoPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */; };
@@ -125,6 +129,10 @@
 		7C439A862A7523840093CE64 /* GamesOfPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamesOfPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITests.swift; sourceTree = "<group>"; };
 		7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C4A4C6B2B400645008ECD0E /* CompositeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
+		7C4A4C6D2B400680008ECD0E /* CompositePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositePresenter.swift; sourceTree = "<group>"; };
+		7C4A4C702B4007D2008ECD0E /* WCLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WCLogo.png; sourceTree = "<group>"; };
+		7C4A4C762B400AE0008ECD0E /* WCBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WCBackground.jpg; sourceTree = "<group>"; };
 		7C6A05212ABC2DD300CADB31 /* swLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swLogo.png; sourceTree = "<group>"; };
 		7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jedi.swift; sourceTree = "<group>"; };
 		7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swJediPhotoPlaceholder.png; sourceTree = "<group>"; };
@@ -281,6 +289,7 @@
 				7C6A059F2AC54A7100CADB31 /* Singleton */,
 				7C89CCE72ACAD5CA00C644CC /* Adapter */,
 				7CC6D0852ADA623E0030B396 /* Bridge */,
+				7C4A4C672B4005AE008ECD0E /* Composite */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -306,6 +315,48 @@
 				7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */,
 			);
 			path = GamesOfPatternsUITests;
+			sourceTree = "<group>";
+		};
+		7C4A4C672B4005AE008ECD0E /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				7C4A4C682B4005D7008ECD0E /* Model */,
+				7C4A4C692B4005E1008ECD0E /* View */,
+				7C4A4C6A2B4005E8008ECD0E /* Presenter */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
+		7C4A4C682B4005D7008ECD0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C4A4C692B4005E1008ECD0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C4A4C6B2B400645008ECD0E /* CompositeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C4A4C6A2B4005E8008ECD0E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7C4A4C6D2B400680008ECD0E /* CompositePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7C4A4C6F2B4007B6008ECD0E /* WarCraft */ = {
+			isa = PBXGroup;
+			children = (
+				7C4A4C702B4007D2008ECD0E /* WCLogo.png */,
+				7C4A4C762B400AE0008ECD0E /* WCBackground.jpg */,
+			);
+			path = WarCraft;
 			sourceTree = "<group>";
 		};
 		7C6A05532ABEC2E800CADB31 /* Model */ = {
@@ -706,6 +757,7 @@
 		7CCCE3AE2A90924600B3229F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7C4A4C6F2B4007B6008ECD0E /* WarCraft */,
 				7CC6D08A2ADA695A0030B396 /* Airplane */,
 				7C89CCEA2ACAD7DF00C644CC /* Batman */,
 				7C6A05A22AC5510700CADB31 /* JamesBond */,
@@ -831,10 +883,12 @@
 				7CCAA10B2A9B25C7006549D5 /* Don.png in Resources */,
 				7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */,
 				7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */,
+				7C4A4C712B4007D2008ECD0E /* WCLogo.png in Resources */,
 				7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */,
 				7CC6D0882ADA69440030B396 /* airplane1.png in Resources */,
 				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
+				7C4A4C772B400AE0008ECD0E /* WCBackground.jpg in Resources */,
 				7C6A055D2ABECDFB00CADB31 /* swDarthVader.png in Resources */,
 				7C6A05902AC1963000CADB31 /* mxSmith3.png in Resources */,
 				7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */,
@@ -911,6 +965,7 @@
 				7C8E47572AE4E84F00281EC7 /* OpenMeteoResponse.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C439A6A2A7523820093CE64 /* AppDelegate.swift in Sources */,
+				7C4A4C6C2B400645008ECD0E /* CompositeViewController.swift in Sources */,
 				7CCCE3A12A90797000B3229F /* FactoryMethodVCPresenter.swift in Sources */,
 				7C3E7A482AE3B58F0054CF1F /* BridgePresenter.swift in Sources */,
 				7C97FB022ABAB06500EADC3B /* BuilderViewController.swift in Sources */,
@@ -922,6 +977,7 @@
 				7CC6D0842ADA62320030B396 /* BridgeViewController.swift in Sources */,
 				7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
+				7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */,
 				7C6A05A62AC6D17300CADB31 /* SingletonPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
