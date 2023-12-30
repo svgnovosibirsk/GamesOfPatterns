@@ -52,21 +52,26 @@ class CompositeViewController: UIViewController {
         label.textColor = .systemBlue
         return label
     }()
+    
+    var presenter = CompositePresenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
-
+        
+        presenter.delegate = self
+        
         setupUI()
     }
     
     @objc func orcButtonPressed() {
-        print(#function)
+        numberLabel.textColor = .systemGreen
+        presenter.orcButtonPressed()
     }
     
     @objc func humanButtonPressed() {
-        print(#function)
+        numberLabel.textColor = .systemBlue
+        presenter.humanButtonPressed()
     }
 
 }
@@ -123,5 +128,11 @@ private extension CompositeViewController {
             numberLabel.topAnchor.constraint(equalTo: orcButton.bottomAnchor, constant: 10),
             numberLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+    }
+}
+
+extension CompositeViewController: CompositePresenterDelegate {
+    func updateNumberLabel(with number: String) {
+        numberLabel.text = number
     }
 }
