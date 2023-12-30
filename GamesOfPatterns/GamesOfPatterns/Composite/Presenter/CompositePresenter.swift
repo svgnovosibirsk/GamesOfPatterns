@@ -12,14 +12,17 @@ protocol CompositePresenterDelegate {
 
 final class CompositePresenter {
     
+    let model = WarCraftModel()
     var delegate: CompositePresenterDelegate?
     
     func orcButtonPressed() {
-        print(#function)
+        let armyCount = model.getOrcsArmyCount()
+        delegate?.updateNumberLabel(with: "\(armyCount)")
     }
     
     func humanButtonPressed() {
-        print(#function)
+        let armyCount = model.getHumansArmyCount()
+        delegate?.updateNumberLabel(with: "\(armyCount)")
     }
     
 }
