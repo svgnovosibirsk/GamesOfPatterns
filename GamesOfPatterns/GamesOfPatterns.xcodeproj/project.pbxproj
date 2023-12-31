@@ -98,6 +98,11 @@
 		7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A82A90921C00B3229F /* mkSubzero.png */; };
 		7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCCE3A92A90921C00B3229F /* mkLogo.png */; };
 		7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCE3AF2A9092FC00B3229F /* ImagesProvider.swift */; };
+		7CE8FE742B416C680027EB21 /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8FE732B416C680027EB21 /* DecoratorViewController.swift */; };
+		7CE8FE772B416FAC0027EB21 /* nfsBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8FE762B416FAC0027EB21 /* nfsBG.jpg */; };
+		7CE8FE7B2B41735E0027EB21 /* nfsGas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8FE782B41735D0027EB21 /* nfsGas.jpeg */; };
+		7CE8FE7C2B41735E0027EB21 /* nfsNitro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8FE792B41735E0027EB21 /* nfsNitro.jpg */; };
+		7CE8FE7D2B41735E0027EB21 /* nfsEngine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8FE7A2B41735E0027EB21 /* nfsEngine.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,6 +218,11 @@
 		7CCCE3A82A90921C00B3229F /* mkSubzero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mkSubzero.png; sourceTree = "<group>"; };
 		7CCCE3A92A90921C00B3229F /* mkLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mkLogo.png; sourceTree = "<group>"; };
 		7CCCE3AF2A9092FC00B3229F /* ImagesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesProvider.swift; sourceTree = "<group>"; };
+		7CE8FE732B416C680027EB21 /* DecoratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
+		7CE8FE762B416FAC0027EB21 /* nfsBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nfsBG.jpg; sourceTree = "<group>"; };
+		7CE8FE782B41735D0027EB21 /* nfsGas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nfsGas.jpeg; sourceTree = "<group>"; };
+		7CE8FE792B41735E0027EB21 /* nfsNitro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nfsNitro.jpg; sourceTree = "<group>"; };
+		7CE8FE7A2B41735E0027EB21 /* nfsEngine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nfsEngine.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +308,7 @@
 				7C89CCE72ACAD5CA00C644CC /* Adapter */,
 				7CC6D0852ADA623E0030B396 /* Bridge */,
 				7C4A4C672B4005AE008ECD0E /* Composite */,
+				7CE8FE722B416C4C0027EB21 /* Decorator */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -769,6 +780,7 @@
 		7CCCE3AE2A90924600B3229F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7CE8FE752B416FA00027EB21 /* NFS */,
 				7C4A4C6F2B4007B6008ECD0E /* WarCraft */,
 				7CC6D08A2ADA695A0030B396 /* Airplane */,
 				7C89CCEA2ACAD7DF00C644CC /* Batman */,
@@ -779,6 +791,25 @@
 				7CCCE3AD2A90923200B3229F /* MortalKombat */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		7CE8FE722B416C4C0027EB21 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				7CE8FE732B416C680027EB21 /* DecoratorViewController.swift */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		7CE8FE752B416FA00027EB21 /* NFS */ = {
+			isa = PBXGroup;
+			children = (
+				7CE8FE762B416FAC0027EB21 /* nfsBG.jpg */,
+				7CE8FE7A2B41735E0027EB21 /* nfsEngine.jpg */,
+				7CE8FE782B41735D0027EB21 /* nfsGas.jpeg */,
+				7CE8FE792B41735E0027EB21 /* nfsNitro.jpg */,
+			);
+			path = NFS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -889,6 +920,7 @@
 				7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */,
 				7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */,
 				7C97FAE82AB6CA9600EADC3B /* sai.png in Resources */,
+				7CE8FE772B416FAC0027EB21 /* nfsBG.jpg in Resources */,
 				7C97FADA2AB6C3AA00EADC3B /* Don2.png in Resources */,
 				7C439A762A7523840093CE64 /* LaunchScreen.storyboard in Resources */,
 				7C97FAE62AB6CA9600EADC3B /* nunchaku.png in Resources */,
@@ -896,11 +928,14 @@
 				7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */,
 				7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */,
 				7C4A4C712B4007D2008ECD0E /* WCLogo.png in Resources */,
+				7CE8FE7C2B41735E0027EB21 /* nfsNitro.jpg in Resources */,
 				7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */,
 				7CC6D0882ADA69440030B396 /* airplane1.png in Resources */,
 				7CCCE3AC2A90921C00B3229F /* mkLogo.png in Resources */,
 				7CCCE3AB2A90921C00B3229F /* mkSubzero.png in Resources */,
 				7C4A4C772B400AE0008ECD0E /* WCBackground.jpg in Resources */,
+				7CE8FE7B2B41735E0027EB21 /* nfsGas.jpeg in Resources */,
+				7CE8FE7D2B41735E0027EB21 /* nfsEngine.jpg in Resources */,
 				7C6A055D2ABECDFB00CADB31 /* swDarthVader.png in Resources */,
 				7C6A05902AC1963000CADB31 /* mxSmith3.png in Resources */,
 				7C97FAD82AB6C3AA00EADC3B /* Leo2.png in Resources */,
@@ -992,6 +1027,7 @@
 				7CC6D0842ADA62320030B396 /* BridgeViewController.swift in Sources */,
 				7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */,
 				7C4A4C792B4041FA008ECD0E /* WarCraftModel.swift in Sources */,
+				7CE8FE742B416C680027EB21 /* DecoratorViewController.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
 				7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */,
 				7C6A05A62AC6D17300CADB31 /* SingletonPresenter.swift in Sources */,

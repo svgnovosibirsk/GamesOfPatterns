@@ -151,4 +151,21 @@ class ImagesProvider {
     static var wcBackground: UIImage {
         return UIImage(named: "WCBackground.jpg")!
     }
+    
+    // MARK: - Need for Speed
+    static var nfsBackground: UIImage {
+        return UIImage(named: "nfsBG.jpg")!
+    }
+    
+    static var nfsNitro: UIImage {
+        return UIImage(named: "nfsNitro.jpg")!
+    }
+    
+    static var nfsGas: UIImage {
+        return UIImage(named: "nfsGas.jpeg")!
+    }
+    
+    static var nfsEngine: UIImage {
+        return UIImage(named: "nfsEngine.jpg")!
+    }
 }
