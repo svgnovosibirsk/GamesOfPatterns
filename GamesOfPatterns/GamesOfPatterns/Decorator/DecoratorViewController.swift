@@ -44,7 +44,27 @@ class DecoratorViewController: UIViewController {
         button.layer.masksToBounds = true
         return button
     }()
-
+    
+    let speedButton: UIButton = {
+        let button = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 50, height: 200)))
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("MAX SPEED", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        button.setTitleColor(.systemGray, for: .highlighted)
+        button.addTarget(self, action: #selector(speedButtonDidPress), for: .touchUpInside)
+        button.layer.masksToBounds = true
+        return button
+    }()
+    
+    let speedLabel: UILabel = {
+        let label = UILabel(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 100)))
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "220"
+        label.font = UIFont.boldSystemFont(ofSize: 60)
+        label.textColor = .white
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,6 +83,10 @@ class DecoratorViewController: UIViewController {
         print(#function)
     }
     
+    @objc func speedButtonDidPress() {
+        print(#function)
+    }
+    
 }
 
 private extension DecoratorViewController {
@@ -71,6 +95,8 @@ private extension DecoratorViewController {
         setupGasButton()
         setupEngineButton()
         setupNitroButton()
+        setupSpeedButton()
+        setupSpeedLabel()
     }
     
     func setupBackgroundView() {
@@ -108,6 +134,24 @@ private extension DecoratorViewController {
         NSLayoutConstraint.activate([
             nitroButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
             nitroButton.leftAnchor.constraint(equalTo: gasButton.rightAnchor, constant: 20)
+        ])
+    }
+    
+    func setupSpeedButton() {
+        view.addSubview(speedButton)
+        
+        NSLayoutConstraint.activate([
+            speedButton.topAnchor.constraint(equalTo: gasButton.bottomAnchor, constant: 20),
+            speedButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+    }
+    
+    func setupSpeedLabel() {
+        view.addSubview(speedLabel)
+        
+        NSLayoutConstraint.activate([
+            speedLabel.topAnchor.constraint(equalTo: speedButton.bottomAnchor, constant: 20),
+            speedLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
 }
