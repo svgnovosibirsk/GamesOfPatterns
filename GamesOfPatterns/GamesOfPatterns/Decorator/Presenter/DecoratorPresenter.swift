@@ -20,22 +20,18 @@ final class DecoratorPresenter {
     }
     
     func gasButtonDidPress() {
-        print(#function)
         model?.addRacingGas()
     }
     
     func engineButtonDidPress() {
-        print(#function)
         model?.addRacingEngine()
     }
     
     func nitroButtonDidPress() {
-        print(#function)
         model?.addRacingNitro()
     }
     
     func speedButtonDidPress() {
-        print(#function)
         let speed = model?.getMaxSpeed()
         delegate?.updateSpeedLabel(with: "\(speed ?? 0)")
     }
