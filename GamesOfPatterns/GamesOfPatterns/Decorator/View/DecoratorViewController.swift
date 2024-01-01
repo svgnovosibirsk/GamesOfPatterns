@@ -65,26 +65,31 @@ class DecoratorViewController: UIViewController {
         return label
     }()
     
+    let presenter = DecoratorPresenter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
+        presenter.delegate = self
     }
     
     @objc func gasButtonDidPress() {
-        print(#function)
+        presenter.gasButtonDidPress()
+        nitroButton.isEnabled = true
     }
     
     @objc func engineButtonDidPress() {
-        print(#function)
+        presenter.engineButtonDidPress()
+        gasButton.isEnabled = true
     }
     
     @objc func nitroButtonDidPress() {
-        print(#function)
+        presenter.nitroButtonDidPress()
     }
     
     @objc func speedButtonDidPress() {
-        print(#function)
+        presenter.speedButtonDidPress()
     }
     
 }
@@ -113,6 +118,8 @@ private extension DecoratorViewController {
     func setupGasButton() {
         view.addSubview(gasButton)
         
+        gasButton.isEnabled = false
+        
         NSLayoutConstraint.activate([
             gasButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
             gasButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
@@ -130,6 +137,8 @@ private extension DecoratorViewController {
     
     func setupNitroButton() {
         view.addSubview(nitroButton)
+        
+        nitroButton.isEnabled = false
         
         NSLayoutConstraint.activate([
             nitroButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
@@ -153,5 +162,11 @@ private extension DecoratorViewController {
             speedLabel.topAnchor.constraint(equalTo: speedButton.bottomAnchor, constant: 20),
             speedLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+    }
+}
+
+extension DecoratorViewController: DecoratorPresenterDelegate {
+    func updateSpeedLabel(with speed: String) {
+        speedLabel.text = speed
     }
 }

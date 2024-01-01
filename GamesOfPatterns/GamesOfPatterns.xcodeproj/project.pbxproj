@@ -18,6 +18,8 @@
 		7C439A812A7523840093CE64 /* GamesOfPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A802A7523840093CE64 /* GamesOfPatternsTests.swift */; };
 		7C439A8B2A7523840093CE64 /* GamesOfPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */; };
 		7C439A8D2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */; };
+		7C4454722B427C4100ED9A6F /* DecoratorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4454712B427C4100ED9A6F /* DecoratorPresenter.swift */; };
+		7C4454742B427D8300ED9A6F /* RacingCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4454732B427D8300ED9A6F /* RacingCarModel.swift */; };
 		7C4A4C6C2B400645008ECD0E /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C6B2B400645008ECD0E /* CompositeViewController.swift */; };
 		7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C6D2B400680008ECD0E /* CompositePresenter.swift */; };
 		7C4A4C712B4007D2008ECD0E /* WCLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4A4C702B4007D2008ECD0E /* WCLogo.png */; };
@@ -138,6 +140,8 @@
 		7C439A862A7523840093CE64 /* GamesOfPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamesOfPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C439A8A2A7523840093CE64 /* GamesOfPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITests.swift; sourceTree = "<group>"; };
 		7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesOfPatternsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C4454712B427C4100ED9A6F /* DecoratorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPresenter.swift; sourceTree = "<group>"; };
+		7C4454732B427D8300ED9A6F /* RacingCarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingCarModel.swift; sourceTree = "<group>"; };
 		7C4A4C6B2B400645008ECD0E /* CompositeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
 		7C4A4C6D2B400680008ECD0E /* CompositePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositePresenter.swift; sourceTree = "<group>"; };
 		7C4A4C702B4007D2008ECD0E /* WCLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WCLogo.png; sourceTree = "<group>"; };
@@ -334,6 +338,30 @@
 				7C439A8C2A7523840093CE64 /* GamesOfPatternsUITestsLaunchTests.swift */,
 			);
 			path = GamesOfPatternsUITests;
+			sourceTree = "<group>";
+		};
+		7C4454752B427D8E00ED9A6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C4454732B427D8300ED9A6F /* RacingCarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C4454762B427D9600ED9A6F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7C4454712B427C4100ED9A6F /* DecoratorPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7C4454772B427DA000ED9A6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CE8FE732B416C680027EB21 /* DecoratorViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7C4A4C672B4005AE008ECD0E /* Composite */ = {
@@ -796,7 +824,9 @@
 		7CE8FE722B416C4C0027EB21 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
-				7CE8FE732B416C680027EB21 /* DecoratorViewController.swift */,
+				7C4454752B427D8E00ED9A6F /* Model */,
+				7C4454772B427DA000ED9A6F /* View */,
+				7C4454762B427D9600ED9A6F /* Presenter */,
 			);
 			path = Decorator;
 			sourceTree = "<group>";
@@ -998,6 +1028,7 @@
 				7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */,
 				7C4A4C7D2B4042F2008ECD0E /* HumansModel.swift in Sources */,
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
+				7C4454722B427C4100ED9A6F /* DecoratorPresenter.swift in Sources */,
 				7C6A05872AC193B300CADB31 /* PrototypeViewController.swift in Sources */,
 				7C6A05552ABEC33700CADB31 /* Builder.swift in Sources */,
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
@@ -1030,6 +1061,7 @@
 				7CE8FE742B416C680027EB21 /* DecoratorViewController.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
 				7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */,
+				7C4454742B427D8300ED9A6F /* RacingCarModel.swift in Sources */,
 				7C6A05A62AC6D17300CADB31 /* SingletonPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
