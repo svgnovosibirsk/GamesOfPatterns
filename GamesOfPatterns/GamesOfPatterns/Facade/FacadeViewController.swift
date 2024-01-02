@@ -34,17 +34,20 @@ class FacadeViewController: UIViewController {
         label.textColor = .systemRed
         return label
     }()
+    
+    let presenter = FacadePresenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .black
-
+        
         setupUI()
+        presenter.delegate = self
     }
     
     @objc func startButtonDidPress() {
-        print(#function)
+        presenter.startButtonDidPress()
     }
 
 }
@@ -83,5 +86,11 @@ private extension FacadeViewController {
             readyLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             readyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+    }
+}
+
+extension  FacadeViewController: FacadePresenterDelegate {
+    func updateReadyLabel() {
+        self.readyLabel.text = "READY"
     }
 }
