@@ -14,6 +14,26 @@ class FacadeViewController: UIViewController {
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
+    
+    let startButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("START STAR OF DEATH", for: .normal)
+        button.setTitleColor(.systemRed, for: .normal)
+        button.setTitleColor(.systemGray, for: .highlighted)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.addTarget(self, action: #selector(startButtonDidPress), for: .touchUpInside)
+        return button
+    }()
+    
+    let readyLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = " "
+        label.font = UIFont.boldSystemFont(ofSize: 60)
+        label.textColor = .systemRed
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +42,18 @@ class FacadeViewController: UIViewController {
 
         setupUI()
     }
+    
+    @objc func startButtonDidPress() {
+        print(#function)
+    }
 
 }
 
 private extension FacadeViewController {
     func setupUI() {
         setupBackgroundView()
+        setupStartButton()
+        setupReadyLabel()
     }
     
     func setupBackgroundView() {
@@ -38,6 +64,24 @@ private extension FacadeViewController {
             backgoundImageView.topAnchor.constraint(equalTo: view.topAnchor),
             backgoundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             backgoundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+    }
+    
+    func setupStartButton() {
+        view.addSubview(startButton)
+        
+        NSLayoutConstraint.activate([
+            startButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100),
+            startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+    }
+    
+    func setupReadyLabel() {
+        view.addSubview(readyLabel)
+        
+        NSLayoutConstraint.activate([
+            readyLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+            readyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
 }
