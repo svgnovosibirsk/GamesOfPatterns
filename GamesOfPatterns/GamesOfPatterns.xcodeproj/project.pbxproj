@@ -55,6 +55,7 @@
 		7C78B1542B43E229005CEC4D /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78B1532B43E229005CEC4D /* FacadeViewController.swift */; };
 		7C78B1562B43E6F7005CEC4D /* swDeathStar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C78B1552B43E6F7005CEC4D /* swDeathStar.jpg */; };
 		7C78B1582B43EF41005CEC4D /* FacadePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78B1572B43EF41005CEC4D /* FacadePresenter.swift */; };
+		7C78B15A2B43F20A005CEC4D /* FacadeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78B1592B43F20A005CEC4D /* FacadeModel.swift */; };
 		7C89CCE62ACAD5C300C644CC /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C89CCE52ACAD5C300C644CC /* AdapterViewController.swift */; };
 		7C89CCE92ACAD7D800C644CC /* btmQuestionMarkBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C89CCE82ACAD7D800C644CC /* btmQuestionMarkBg.png */; };
 		7C8E47572AE4E84F00281EC7 /* OpenMeteoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E47562AE4E84F00281EC7 /* OpenMeteoResponse.swift */; };
@@ -180,6 +181,7 @@
 		7C78B1532B43E229005CEC4D /* FacadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
 		7C78B1552B43E6F7005CEC4D /* swDeathStar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swDeathStar.jpg; sourceTree = "<group>"; };
 		7C78B1572B43EF41005CEC4D /* FacadePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadePresenter.swift; sourceTree = "<group>"; };
+		7C78B1592B43F20A005CEC4D /* FacadeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeModel.swift; sourceTree = "<group>"; };
 		7C89CCE52ACAD5C300C644CC /* AdapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
 		7C89CCE82ACAD7D800C644CC /* btmQuestionMarkBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btmQuestionMarkBg.png; sourceTree = "<group>"; };
 		7C8E47562AE4E84F00281EC7 /* OpenMeteoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMeteoResponse.swift; sourceTree = "<group>"; };
@@ -535,6 +537,7 @@
 		7C78B1522B43E213005CEC4D /* Facade */ = {
 			isa = PBXGroup;
 			children = (
+				7C78B1592B43F20A005CEC4D /* FacadeModel.swift */,
 				7C78B1532B43E229005CEC4D /* FacadeViewController.swift */,
 				7C78B1572B43EF41005CEC4D /* FacadePresenter.swift */,
 			);
@@ -1081,6 +1084,7 @@
 				7CE8FE742B416C680027EB21 /* DecoratorViewController.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
 				7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */,
+				7C78B15A2B43F20A005CEC4D /* FacadeModel.swift in Sources */,
 				7C4454742B427D8300ED9A6F /* RacingCarModel.swift in Sources */,
 				7C6A05A62AC6D17300CADB31 /* SingletonPresenter.swift in Sources */,
 			);

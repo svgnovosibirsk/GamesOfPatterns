@@ -90,7 +90,7 @@ private extension FacadeViewController {
 }
 
 extension  FacadeViewController: FacadePresenterDelegate {
-    func updateReadyLabel() {
-        self.readyLabel.text = "READY"
+    func updateReadyLabel(with message: String) {
+        self.readyLabel.text = message
     }
 }

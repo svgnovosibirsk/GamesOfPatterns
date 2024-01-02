@@ -7,14 +7,16 @@
 
 import Foundation
 protocol FacadePresenterDelegate {
-    func updateReadyLabel()
+    func updateReadyLabel(with message: String)
 }
 
 final class FacadePresenter {
     var delegate: FacadePresenterDelegate?
+    let model = FacadeModel()
     
     func startButtonDidPress() {
         print(#function)
-        //delegate?.updateReadyLabel()
+        let message = model.startStarOfDeath()
+        delegate?.updateReadyLabel(with: message)
     }
 }
