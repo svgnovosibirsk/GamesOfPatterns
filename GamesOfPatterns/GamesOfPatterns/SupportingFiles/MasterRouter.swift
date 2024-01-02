@@ -43,6 +43,9 @@ class MasterRouter {
         case PatternsNames.Decorator.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(DecoratorViewController(),
                                                                                sender: self)
+        case PatternsNames.Facade.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(FacadeViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()
