@@ -8,6 +8,7 @@
 import Foundation
 protocol FacadePresenterDelegate {
     func updateReadyLabel(with message: String)
+    func enableWaitingMode()
 }
 
 final class FacadePresenter {
@@ -16,7 +17,13 @@ final class FacadePresenter {
     
     func startButtonDidPress() {
         print(#function)
-        let message = model.startStarOfDeath()
-        delegate?.updateReadyLabel(with: message)
+//        let message = model.startStarOfDeath()
+//        delegate?.updateReadyLabel(with: message)
+        
+        delegate?.enableWaitingMode()
+        model.startStarOfDeath { message in
+            self.delegate?.updateReadyLabel(with: message)
+        }
+        
     }
 }

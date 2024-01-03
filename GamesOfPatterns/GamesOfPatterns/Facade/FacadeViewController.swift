@@ -35,6 +35,14 @@ class FacadeViewController: UIViewController {
         return label
     }()
     
+    let spinner: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView(style: .large)
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        spinner.hidesWhenStopped = true
+        spinner.color = .white
+        return spinner
+    }()
+    
     let presenter = FacadePresenter()
 
     override func viewDidLoad() {
@@ -49,6 +57,23 @@ class FacadeViewController: UIViewController {
     @objc func startButtonDidPress() {
         presenter.startButtonDidPress()
     }
+    
+    func enableWaitingMode() {
+        readyLabel.text = ". . ."
+        startButton.isEnabled = false
+        spinner.startAnimating()
+        UIView.animate(withDuration: 0.3) {
+            self.startButton.alpha = 0.5
+        }
+    }
+    
+    private func disableWaitingMode() {
+        spinner.stopAnimating()
+        startButton.isEnabled = true
+        UIView.animate(withDuration: 0.3) {
+            self.startButton.alpha = 1
+        }
+    }
 
 }
 
@@ -57,6 +82,7 @@ private extension FacadeViewController {
         setupBackgroundView()
         setupStartButton()
         setupReadyLabel()
+        setupSpinner()
     }
     
     func setupBackgroundView() {
@@ -87,10 +113,22 @@ private extension FacadeViewController {
             readyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
+    
+    func setupSpinner() {
+        view.addSubview(spinner)
+        
+        NSLayoutConstraint.activate([
+            spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+    }
 }
 
 extension  FacadeViewController: FacadePresenterDelegate {
     func updateReadyLabel(with message: String) {
-        self.readyLabel.text = message
+        DispatchQueue.main.async { [weak self] in
+            self?.disableWaitingMode()
+            self?.readyLabel.text = message
+        }
     }
 }
