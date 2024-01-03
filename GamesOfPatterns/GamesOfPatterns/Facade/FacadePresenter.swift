@@ -21,9 +21,10 @@ final class FacadePresenter {
 //        delegate?.updateReadyLabel(with: message)
         
         delegate?.enableWaitingMode()
-        model.startStarOfDeath { message in
-            self.delegate?.updateReadyLabel(with: message)
+        DispatchQueue.global().async { [weak self] in
+            self?.model.startStarOfDeath { message in
+                self?.delegate?.updateReadyLabel(with: message)
+            }
         }
-        
     }
 }
