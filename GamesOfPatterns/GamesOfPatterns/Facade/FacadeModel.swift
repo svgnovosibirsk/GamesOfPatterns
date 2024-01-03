@@ -49,14 +49,57 @@ extension FacadeModel {
         let starOxigenSystem = StarOxigenSystem()
         let starElectricSystem = StarElectricSystem()
         
-        let fuel = starNuclearFuelSystem.getNuclearFuel()
-        starEngine.startEngine(with: fuel)
-        starElectricSystem.startElectricSystem(with: fuel)
-        starOxigenSystem.checkOxigenSystem()
-        starOxigenSystem.startOxigenSystem()
-        starWeapons.prepareWeapon()
-        starNavigation.calculateTransition()
+        var fuel = NuclearFuel(energy: 0)
         
+        let taskGetNuclearFuel = BlockOperation {
+            fuel = starNuclearFuelSystem.getNuclearFuel()
+        }
+        
+        let taskStartEngine = BlockOperation {
+            starEngine.startEngine(with: fuel)
+        }
+        
+        taskStartEngine.addDependency(taskGetNuclearFuel)
+        
+        let taskStartElectricSystem = BlockOperation {
+            starElectricSystem.startElectricSystem(with: fuel)
+        }
+        
+        taskStartElectricSystem.addDependency(taskGetNuclearFuel)
+        
+        let taskCheckOxigenSystem = BlockOperation {
+            starOxigenSystem.checkOxigenSystem()
+        }
+        
+        let taskStartOxigenSystem = BlockOperation {
+            starOxigenSystem.startOxigenSystem()
+        }
+        
+        taskStartOxigenSystem.addDependency(taskCheckOxigenSystem)
+        
+        let taskPrepareWeapon = BlockOperation {
+            starWeapons.prepareWeapon()
+        }
+        
+        let taskCalculateTransition = BlockOperation {
+            starNavigation.calculateTransition()
+        }
+        
+        let taskNotify = BlockOperation {
+            print("Star of Death is Ready")
+            readySign = "READY"
+            completion(readySign)
+        }
+        
+        
+        let startQueue = OperationQueue()
+        startQueue.maxConcurrentOperationCount = 5
+        
+        let tasks = [taskGetNuclearFuel, taskStartEngine, taskStartElectricSystem,
+                     taskCheckOxigenSystem, taskStartOxigenSystem, taskPrepareWeapon,
+                     taskCalculateTransition]
+        
+        startQueue.addOperations(tasks, waitUntilFinished: true)
         
         print("Star of Death is Ready")
         readySign = "READY"
