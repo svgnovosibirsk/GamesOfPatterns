@@ -37,6 +37,15 @@ class MasterRouter {
         case PatternsNames.Bridge.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(BridgeViewController(),
                                                                                sender: self)
+        case PatternsNames.Composite.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(CompositeViewController(),
+                                                                               sender: self)
+        case PatternsNames.Decorator.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(DecoratorViewController(),
+                                                                               sender: self)
+        case PatternsNames.Facade.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(FacadeViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()

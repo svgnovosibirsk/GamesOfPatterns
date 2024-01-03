@@ -95,6 +95,10 @@ class ImagesProvider {
         return UIImage(named: "swDarthVader")!
     }
     
+    static var swStarOfDeath: UIImage {
+        return UIImage(named: "swDeathStar.jpg")!
+    }
+    
     // MARK: - Matrix
     static var mxBackground: UIImage {
         return UIImage(named: "mxMatrixBg")!
@@ -141,5 +145,31 @@ class ImagesProvider {
     
     static var airBackground2: UIImage {
         return UIImage(named: "airplane2")!
+    }
+    
+    // MARK: - War Craft
+    static var wcLogo: UIImage {
+        return UIImage(named: "WCLogo")!
+    }
+    
+    static var wcBackground: UIImage {
+        return UIImage(named: "WCBackground.jpg")!
+    }
+    
+    // MARK: - Need for Speed
+    static var nfsBackground: UIImage {
+        return UIImage(named: "nfsBG.jpg")!
+    }
+    
+    static var nfsNitro: UIImage {
+        return UIImage(named: "nfsNitro.jpg")!
+    }
+    
+    static var nfsGas: UIImage {
+        return UIImage(named: "nfsGas.jpeg")!
+    }
+    
+    static var nfsEngine: UIImage {
+        return UIImage(named: "nfsEngine.jpg")!
     }
 }
