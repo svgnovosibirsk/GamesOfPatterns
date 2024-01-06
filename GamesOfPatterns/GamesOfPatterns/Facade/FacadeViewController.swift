@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FacadeViewController: UIViewController {
+final class FacadeViewController: UIViewController {
     let backgoundImageView: UIImageView = {
         let imageView = UIImageView(image: ImagesProvider.swStarOfDeath)
         imageView.translatesAutoresizingMaskIntoConstraints = false

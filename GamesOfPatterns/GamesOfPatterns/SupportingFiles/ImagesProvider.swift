@@ -99,6 +99,14 @@ class ImagesProvider {
         return UIImage(named: "swDeathStar.jpg")!
     }
     
+    static var swBackgroundShip: UIImage {
+        return UIImage(named: "swBgShip.jpg")!
+    }
+    
+    static var swEmpireShip: UIImage {
+        return UIImage(named: "swShip")!
+    }
+    
     // MARK: - Matrix
     static var mxBackground: UIImage {
         return UIImage(named: "mxMatrixBg")!

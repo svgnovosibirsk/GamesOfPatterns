@@ -29,6 +29,8 @@
 		7C4A4C7D2B4042F2008ECD0E /* HumansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C7C2B4042F2008ECD0E /* HumansModel.swift */; };
 		7C4A4C7F2B404332008ECD0E /* CompositeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C7E2B404332008ECD0E /* CompositeProtocol.swift */; };
 		7C54371F2B4924C7004DA1B8 /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C54371E2B4924C7004DA1B8 /* FlyweightViewController.swift */; };
+		7C5437212B492B74004DA1B8 /* swBgShip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C5437202B492B74004DA1B8 /* swBgShip.jpg */; };
+		7C5437232B492B8A004DA1B8 /* swShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5437222B492B8A004DA1B8 /* swShip.png */; };
 		7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05212ABC2DD300CADB31 /* swLogo.png */; };
 		7C6A054C2ABEBF2B00CADB31 /* Jedi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */; };
 		7C6A054F2ABEC26000CADB31 /* swJediPhotoPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */; };
@@ -156,6 +158,8 @@
 		7C4A4C7C2B4042F2008ECD0E /* HumansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumansModel.swift; sourceTree = "<group>"; };
 		7C4A4C7E2B404332008ECD0E /* CompositeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeProtocol.swift; sourceTree = "<group>"; };
 		7C54371E2B4924C7004DA1B8 /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
+		7C5437202B492B74004DA1B8 /* swBgShip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swBgShip.jpg; sourceTree = "<group>"; };
+		7C5437222B492B8A004DA1B8 /* swShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swShip.png; sourceTree = "<group>"; };
 		7C6A05212ABC2DD300CADB31 /* swLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swLogo.png; sourceTree = "<group>"; };
 		7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jedi.swift; sourceTree = "<group>"; };
 		7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swJediPhotoPlaceholder.png; sourceTree = "<group>"; };
@@ -668,6 +672,8 @@
 		7C97FB062ABAB55000EADC3B /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
+				7C5437222B492B8A004DA1B8 /* swShip.png */,
+				7C5437202B492B74004DA1B8 /* swBgShip.jpg */,
 				7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */,
 				7C6A054E2ABEC26000CADB31 /* swSithPhotoPlaceholder.png */,
 				7C6A05212ABC2DD300CADB31 /* swLogo.png */,
@@ -983,6 +989,7 @@
 				7C97FAE82AB6CA9600EADC3B /* sai.png in Resources */,
 				7CE8FE772B416FAC0027EB21 /* nfsBG.jpg in Resources */,
 				7C97FADA2AB6C3AA00EADC3B /* Don2.png in Resources */,
+				7C5437232B492B8A004DA1B8 /* swShip.png in Resources */,
 				7C439A762A7523840093CE64 /* LaunchScreen.storyboard in Resources */,
 				7C97FAE62AB6CA9600EADC3B /* nunchaku.png in Resources */,
 				7CCAA10B2A9B25C7006549D5 /* Don.png in Resources */,
@@ -1011,6 +1018,7 @@
 				7C6A055C2ABECDFB00CADB31 /* swAnakinSkywalker.png in Resources */,
 				7C89CCE92ACAD7D800C644CC /* btmQuestionMarkBg.png in Resources */,
 				7CC6D0892ADA69440030B396 /* airplane2.png in Resources */,
+				7C5437212B492B74004DA1B8 /* swBgShip.jpg in Resources */,
 				7CCAA10A2A9B25C7006549D5 /* Raph.png in Resources */,
 				7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */,
 				7C439A732A7523840093CE64 /* Assets.xcassets in Resources */,
