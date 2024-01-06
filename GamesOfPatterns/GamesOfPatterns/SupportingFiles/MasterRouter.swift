@@ -46,6 +46,9 @@ class MasterRouter {
         case PatternsNames.Facade.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(FacadeViewController(),
                                                                                sender: self)
+        case PatternsNames.Flyweight.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(FlyweightViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()
