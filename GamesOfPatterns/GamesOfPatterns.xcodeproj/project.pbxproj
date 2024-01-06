@@ -31,6 +31,7 @@
 		7C54371F2B4924C7004DA1B8 /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C54371E2B4924C7004DA1B8 /* FlyweightViewController.swift */; };
 		7C5437212B492B74004DA1B8 /* swBgShip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C5437202B492B74004DA1B8 /* swBgShip.jpg */; };
 		7C5437232B492B8A004DA1B8 /* swShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5437222B492B8A004DA1B8 /* swShip.png */; };
+		7C5437252B492FBC004DA1B8 /* FlyweightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5437242B492FBC004DA1B8 /* FlyweightPresenter.swift */; };
 		7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05212ABC2DD300CADB31 /* swLogo.png */; };
 		7C6A054C2ABEBF2B00CADB31 /* Jedi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */; };
 		7C6A054F2ABEC26000CADB31 /* swJediPhotoPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */; };
@@ -160,6 +161,7 @@
 		7C54371E2B4924C7004DA1B8 /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		7C5437202B492B74004DA1B8 /* swBgShip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swBgShip.jpg; sourceTree = "<group>"; };
 		7C5437222B492B8A004DA1B8 /* swShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swShip.png; sourceTree = "<group>"; };
+		7C5437242B492FBC004DA1B8 /* FlyweightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightPresenter.swift; sourceTree = "<group>"; };
 		7C6A05212ABC2DD300CADB31 /* swLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swLogo.png; sourceTree = "<group>"; };
 		7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jedi.swift; sourceTree = "<group>"; };
 		7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swJediPhotoPlaceholder.png; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				7C54371E2B4924C7004DA1B8 /* FlyweightViewController.swift */,
+				7C5437242B492FBC004DA1B8 /* FlyweightPresenter.swift */,
 			);
 			path = Flyweight;
 			sourceTree = "<group>";
@@ -1106,6 +1109,7 @@
 				7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */,
 				7C78B15A2B43F20A005CEC4D /* FacadeModel.swift in Sources */,
 				7C4454742B427D8300ED9A6F /* RacingCarModel.swift in Sources */,
+				7C5437252B492FBC004DA1B8 /* FlyweightPresenter.swift in Sources */,
 				7C6A05A62AC6D17300CADB31 /* SingletonPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

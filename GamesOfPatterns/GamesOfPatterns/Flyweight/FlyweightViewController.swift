@@ -32,15 +32,18 @@ final class FlyweightViewController: UIViewController {
 //        imageView.contentMode = .scaleAspectFill
 //        return imageView
 //    }()
+    
+    var presenter = FlyweightPresenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
+        presenter.delegate = self
     }
     
     @objc func launchButtonDidPress() {
-        print(#function)
+        presenter.launchButtonDidPress()
     }
 
 }
@@ -80,4 +83,10 @@ private extension FlyweightViewController {
 //            shipImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
 //        ])
 //    }
+}
+
+extension FlyweightViewController: FlyweightPresenterDelegate {
+    func launchShips() {
+        print(#function)
+    }
 }
