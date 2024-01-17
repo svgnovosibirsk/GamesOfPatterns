@@ -29,6 +29,18 @@ class ProxyViewController: UIViewController {
         button.layer.cornerRadius = 20
         return button
     }()
+    
+    let holidayLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "❄️❄️❄️ New Year ❄️❄️❄️"
+        label.textColor = .systemRed
+        label.font = UIFont.boldSystemFont(ofSize: 40)
+        label.textAlignment = .center
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +59,7 @@ private extension ProxyViewController {
     func setupUI() {
         setupGrinchImageView()
         setupChooseButton()
+        setupHolidayLabel()
     }
     
     func setupGrinchImageView() {
@@ -66,6 +79,16 @@ private extension ProxyViewController {
             chooseButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
             chooseButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             chooseButton.heightAnchor.constraint(equalToConstant: 100)
+        ])
+    }
+    
+    func setupHolidayLabel() {
+        view.addSubview(holidayLabel)
+        
+        NSLayoutConstraint.activate([
+            holidayLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            holidayLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            holidayLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100)
         ])
     }
 }
