@@ -180,4 +180,9 @@ class ImagesProvider {
     static var nfsEngine: UIImage {
         return UIImage(named: "nfsEngine.jpg")!
     }
+    
+    // MARK: - Grinch
+    static var grinch: UIImage {
+        return UIImage(named: "grinch")!
+    }
 }
