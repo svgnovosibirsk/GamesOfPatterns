@@ -114,6 +114,7 @@
 		7CE8FE7B2B41735E0027EB21 /* nfsGas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8FE782B41735D0027EB21 /* nfsGas.jpeg */; };
 		7CE8FE7C2B41735E0027EB21 /* nfsNitro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8FE792B41735E0027EB21 /* nfsNitro.jpg */; };
 		7CE8FE7D2B41735E0027EB21 /* nfsEngine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8FE7A2B41735E0027EB21 /* nfsEngine.jpg */; };
+		7CF246992B57A664001DFD39 /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF246982B57A663001DFD39 /* ProxyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +246,7 @@
 		7CE8FE782B41735D0027EB21 /* nfsGas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nfsGas.jpeg; sourceTree = "<group>"; };
 		7CE8FE792B41735E0027EB21 /* nfsNitro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nfsNitro.jpg; sourceTree = "<group>"; };
 		7CE8FE7A2B41735E0027EB21 /* nfsEngine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nfsEngine.jpg; sourceTree = "<group>"; };
+		7CF246982B57A663001DFD39 /* ProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +335,7 @@
 				7CE8FE722B416C4C0027EB21 /* Decorator */,
 				7C78B1522B43E213005CEC4D /* Facade */,
 				7C54371D2B4924A7004DA1B8 /* Flyweight */,
+				7CF2469A2B57A66F001DFD39 /* Proxy */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -885,6 +888,14 @@
 			path = NFS;
 			sourceTree = "<group>";
 		};
+		7CF2469A2B57A66F001DFD39 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				7CF246982B57A663001DFD39 /* ProxyViewController.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1107,6 +1118,7 @@
 				7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */,
 				7CC6D0842ADA62320030B396 /* BridgeViewController.swift in Sources */,
 				7CCAA0DA2A99DB39006549D5 /* AbstractFactoryPresenter.swift in Sources */,
+				7CF246992B57A664001DFD39 /* ProxyViewController.swift in Sources */,
 				7C4A4C792B4041FA008ECD0E /* WarCraftModel.swift in Sources */,
 				7CE8FE742B416C680027EB21 /* DecoratorViewController.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,

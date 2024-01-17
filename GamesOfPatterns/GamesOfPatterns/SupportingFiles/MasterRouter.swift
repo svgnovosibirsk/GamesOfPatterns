@@ -49,6 +49,9 @@ class MasterRouter {
         case PatternsNames.Flyweight.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(FlyweightViewController(),
                                                                                sender: self)
+        case PatternsNames.Proxy.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(ProxyViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()
