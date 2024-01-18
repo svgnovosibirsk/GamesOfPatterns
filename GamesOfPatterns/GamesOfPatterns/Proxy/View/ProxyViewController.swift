@@ -33,7 +33,7 @@ class ProxyViewController: UIViewController {
     let holidayLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "❄️❄️❄️ New Year ❄️❄️❄️"
+        label.text = "❄️❄️❄️ New Year ❄️❄️❄️" // "❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️"
         label.textColor = .systemRed
         label.font = UIFont.boldSystemFont(ofSize: 40)
         label.textAlignment = .center

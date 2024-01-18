@@ -91,6 +91,7 @@
 		7CC6D0842ADA62320030B396 /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC6D0832ADA62320030B396 /* BridgeViewController.swift */; };
 		7CC6D0882ADA69440030B396 /* airplane1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6D0862ADA69440030B396 /* airplane1.png */; };
 		7CC6D0892ADA69440030B396 /* airplane2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6D0872ADA69440030B396 /* airplane2.png */; };
+		7CC84EC82B58D93D0046C28D /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC84EC72B58D93D0046C28D /* Bindable.swift */; };
 		7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don_50.png */; };
 		7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */; };
 		7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo_50.png */; };
@@ -224,6 +225,7 @@
 		7CC6D0832ADA62320030B396 /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
 		7CC6D0862ADA69440030B396 /* airplane1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane1.png; sourceTree = "<group>"; };
 		7CC6D0872ADA69440030B396 /* airplane2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane2.png; sourceTree = "<group>"; };
+		7CC84EC72B58D93D0046C28D /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		7CCAA0CE2A99CF9D006549D5 /* Don_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don_50.png; sourceTree = "<group>"; };
 		7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike_50.png; sourceTree = "<group>"; };
 		7CCAA0D02A99CF9D006549D5 /* Leo_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo_50.png; sourceTree = "<group>"; };
@@ -772,6 +774,14 @@
 			path = Airplane;
 			sourceTree = "<group>";
 		};
+		7CC84EC62B58D9280046C28D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CF246982B57A663001DFD39 /* ProxyViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7CCAA0CD2A99C0D1006549D5 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -894,7 +904,8 @@
 		7CF2469A2B57A66F001DFD39 /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
-				7CF246982B57A663001DFD39 /* ProxyViewController.swift */,
+				7CC84EC62B58D9280046C28D /* View */,
+				7CC84EC72B58D93D0046C28D /* Bindable.swift */,
 			);
 			path = Proxy;
 			sourceTree = "<group>";
@@ -1112,6 +1123,7 @@
 				7CC6CFD42ACE84E00030B396 /* QuestionsModel.swift in Sources */,
 				7CC6CFFE2AD12AAA0030B396 /* AdapterPresenter.swift in Sources */,
 				7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */,
+				7CC84EC82B58D93D0046C28D /* Bindable.swift in Sources */,
 				7C8E47572AE4E84F00281EC7 /* OpenMeteoResponse.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C78B1582B43EF41005CEC4D /* FacadePresenter.swift in Sources */,
