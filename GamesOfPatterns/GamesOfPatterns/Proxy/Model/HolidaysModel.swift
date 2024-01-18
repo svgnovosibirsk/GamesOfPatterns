@@ -19,14 +19,16 @@ final class HolidaysModel: IHolidaysModel {
     }
 }
 
+// MARK: - Proxy
 final class ProxyHolidaysModel: IHolidaysModel {
-    private let holidaysModel: IHolidaysModel
-    
-    init(holidaysModel: IHolidaysModel) {
-        self.holidaysModel = holidaysModel
-    }
+    private let holidaysModel = HolidaysModel()
     
     func getHoliday() -> String {
-        holidaysModel.getHoliday()
+        decorate(text: holidaysModel.getHoliday())
+    }
+    
+    private func decorate(text: String) -> String {
+        
+        return text
     }
 }

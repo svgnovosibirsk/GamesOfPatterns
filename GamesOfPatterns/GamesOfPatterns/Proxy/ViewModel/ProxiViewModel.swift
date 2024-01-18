@@ -13,9 +13,14 @@ protocol IProxiViewModel {
 }
 
 final class ProxiViewModel: IProxiViewModel {
+    
+    private let holidaysModel = ProxyHolidaysModel()
+    
     var labelText = Bindable("❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️")
     
     func chooseButtonDidPress() {
-        labelText.value = "🎄" // TEST NewYear, Christmas, Easter, Helloween, Thanksgivenday, Laborday
+        labelText.value = holidaysModel.getHoliday()
     }
+    
+    
 }

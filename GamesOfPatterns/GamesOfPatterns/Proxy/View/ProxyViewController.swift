@@ -42,21 +42,7 @@ class ProxyViewController: UIViewController {
         return label
     }()
     
-    private let viewModel: IProxiViewModel
-    
-    init() {
-        viewModel = ProxiViewModel()
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    init(viewModel: IProxiViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    private let viewModel = ProxiViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +59,6 @@ class ProxyViewController: UIViewController {
         print(#function)
         viewModel.chooseButtonDidPress()
     }
-    
 }
 
 private extension ProxyViewController {
