@@ -28,7 +28,30 @@ final class ProxyHolidaysModel: IHolidaysModel {
     }
     
     private func decorate(text: String) -> String {
-        
-        return text
+        var decorator = getDecorator(for: text)
+        let decorOperation = DecorationOperation()
+        decorOperation.inputStr = text
+        decorOperation.decorator = decorator
+        decorOperation.start()
+        return decorOperation.outputStr
+    }
+    
+    private func getDecorator(for text: String) -> String {
+        switch text {
+        case "Christmass": return "🎄"
+        case "Easter": return "🥚"
+        case "Helloween": return "🎃"
+        default: return "❄️"
+        }
+    }
+}
+
+class DecorationOperation: Operation {
+    var inputStr: String?
+    var outputStr = ""
+    var decorator = ""
+    
+    override func main() {
+        outputStr = "\(decorator) \(inputStr!) \(decorator)"
     }
 }
