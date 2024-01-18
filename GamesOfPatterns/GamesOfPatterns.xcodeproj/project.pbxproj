@@ -92,6 +92,8 @@
 		7CC6D0882ADA69440030B396 /* airplane1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6D0862ADA69440030B396 /* airplane1.png */; };
 		7CC6D0892ADA69440030B396 /* airplane2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC6D0872ADA69440030B396 /* airplane2.png */; };
 		7CC84EC82B58D93D0046C28D /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC84EC72B58D93D0046C28D /* Bindable.swift */; };
+		7CC84ECB2B58DBE20046C28D /* ProxiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC84ECA2B58DBE20046C28D /* ProxiViewModel.swift */; };
+		7CC84ECE2B58E0260046C28D /* HolidaysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC84ECD2B58E0260046C28D /* HolidaysModel.swift */; };
 		7CCAA0D22A99CF9E006549D5 /* Don_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CE2A99CF9D006549D5 /* Don_50.png */; };
 		7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */; };
 		7CCAA0D42A99CF9E006549D5 /* Leo_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCAA0D02A99CF9D006549D5 /* Leo_50.png */; };
@@ -226,6 +228,8 @@
 		7CC6D0862ADA69440030B396 /* airplane1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane1.png; sourceTree = "<group>"; };
 		7CC6D0872ADA69440030B396 /* airplane2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane2.png; sourceTree = "<group>"; };
 		7CC84EC72B58D93D0046C28D /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		7CC84ECA2B58DBE20046C28D /* ProxiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxiViewModel.swift; sourceTree = "<group>"; };
+		7CC84ECD2B58E0260046C28D /* HolidaysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysModel.swift; sourceTree = "<group>"; };
 		7CCAA0CE2A99CF9D006549D5 /* Don_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Don_50.png; sourceTree = "<group>"; };
 		7CCAA0CF2A99CF9D006549D5 /* Mike_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike_50.png; sourceTree = "<group>"; };
 		7CCAA0D02A99CF9D006549D5 /* Leo_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leo_50.png; sourceTree = "<group>"; };
@@ -782,6 +786,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7CC84EC92B58DBC90046C28D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7CC84ECA2B58DBE20046C28D /* ProxiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CC84ECC2B58E0020046C28D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CC84ECD2B58E0260046C28D /* HolidaysModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7CCAA0CD2A99C0D1006549D5 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -904,7 +924,9 @@
 		7CF2469A2B57A66F001DFD39 /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
+				7CC84ECC2B58E0020046C28D /* Model */,
 				7CC84EC62B58D9280046C28D /* View */,
+				7CC84EC92B58DBC90046C28D /* ViewModel */,
 				7CC84EC72B58D93D0046C28D /* Bindable.swift */,
 			);
 			path = Proxy;
@@ -1109,6 +1131,7 @@
 				7C4A4C7D2B4042F2008ECD0E /* HumansModel.swift in Sources */,
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
 				7C4454722B427C4100ED9A6F /* DecoratorPresenter.swift in Sources */,
+				7CC84ECB2B58DBE20046C28D /* ProxiViewModel.swift in Sources */,
 				7C6A05872AC193B300CADB31 /* PrototypeViewController.swift in Sources */,
 				7C6A05552ABEC33700CADB31 /* Builder.swift in Sources */,
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
@@ -1148,6 +1171,7 @@
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
 				7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */,
 				7C78B15A2B43F20A005CEC4D /* FacadeModel.swift in Sources */,
+				7CC84ECE2B58E0260046C28D /* HolidaysModel.swift in Sources */,
 				7C4454742B427D8300ED9A6F /* RacingCarModel.swift in Sources */,
 				7C5437252B492FBC004DA1B8 /* FlyweightPresenter.swift in Sources */,
 				7C6A05A62AC6D17300CADB31 /* SingletonPresenter.swift in Sources */,

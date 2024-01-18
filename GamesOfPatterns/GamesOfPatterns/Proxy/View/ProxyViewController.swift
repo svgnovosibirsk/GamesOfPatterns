@@ -41,16 +41,37 @@ class ProxyViewController: UIViewController {
         label.minimumScaleFactor = 0.5
         return label
     }()
-
+    
+    private let viewModel: IProxiViewModel
+    
+    init() {
+        viewModel = ProxiViewModel()
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    init(viewModel: IProxiViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .systemGray6
         setupUI()
+        
+        viewModel.labelText.bind { [weak self] str in
+            self?.holidayLabel.text = str
+        }
     }
     
     @objc func chooseButtonDidPress() {
         print(#function)
+        viewModel.chooseButtonDidPress()
     }
     
 }
