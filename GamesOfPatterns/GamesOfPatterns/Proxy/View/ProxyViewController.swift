@@ -56,7 +56,6 @@ class ProxyViewController: UIViewController {
     }
     
     @objc func chooseButtonDidPress() {
-        print(#function)
         viewModel.chooseButtonDidPress()
     }
 }

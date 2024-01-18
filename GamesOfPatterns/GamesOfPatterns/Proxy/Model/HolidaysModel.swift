@@ -28,7 +28,7 @@ final class ProxyHolidaysModel: IHolidaysModel {
     }
     
     private func decorate(text: String) -> String {
-        var decorator = getDecorator(for: text)
+        let decorator = getDecorator(for: text)
         let decorOperation = DecorationOperation()
         decorOperation.inputStr = text
         decorOperation.decorator = decorator
