@@ -33,6 +33,8 @@
 		7C5437232B492B8A004DA1B8 /* swShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5437222B492B8A004DA1B8 /* swShip.png */; };
 		7C5437252B492FBC004DA1B8 /* FlyweightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5437242B492FBC004DA1B8 /* FlyweightPresenter.swift */; };
 		7C5437272B496E78004DA1B8 /* ShipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5437262B496E78004DA1B8 /* ShipModel.swift */; };
+		7C58ED042C4627BA004CD811 /* ChainOfResponsibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58ED032C4627BA004CD811 /* ChainOfResponsibilityViewController.swift */; };
+		7C58ED082C462B4F004CD811 /* spacemap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C58ED072C462B4F004CD811 /* spacemap.jpg */; };
 		7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05212ABC2DD300CADB31 /* swLogo.png */; };
 		7C6A054C2ABEBF2B00CADB31 /* Jedi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */; };
 		7C6A054F2ABEC26000CADB31 /* swJediPhotoPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */; };
@@ -169,6 +171,8 @@
 		7C5437222B492B8A004DA1B8 /* swShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swShip.png; sourceTree = "<group>"; };
 		7C5437242B492FBC004DA1B8 /* FlyweightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightPresenter.swift; sourceTree = "<group>"; };
 		7C5437262B496E78004DA1B8 /* ShipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipModel.swift; sourceTree = "<group>"; };
+		7C58ED032C4627BA004CD811 /* ChainOfResponsibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibilityViewController.swift; sourceTree = "<group>"; };
+		7C58ED072C462B4F004CD811 /* spacemap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spacemap.jpg; sourceTree = "<group>"; };
 		7C6A05212ABC2DD300CADB31 /* swLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swLogo.png; sourceTree = "<group>"; };
 		7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jedi.swift; sourceTree = "<group>"; };
 		7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swJediPhotoPlaceholder.png; sourceTree = "<group>"; };
@@ -344,6 +348,7 @@
 				7C78B1522B43E213005CEC4D /* Facade */,
 				7C54371D2B4924A7004DA1B8 /* Flyweight */,
 				7CF2469A2B57A66F001DFD39 /* Proxy */,
+				7C58ED052C4627CA004CD811 /* ChainOfResponsibility */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -449,6 +454,22 @@
 				7C5437262B496E78004DA1B8 /* ShipModel.swift */,
 			);
 			path = Flyweight;
+			sourceTree = "<group>";
+		};
+		7C58ED052C4627CA004CD811 /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+				7C58ED032C4627BA004CD811 /* ChainOfResponsibilityViewController.swift */,
+			);
+			path = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
+		7C58ED062C462B27004CD811 /* SpaceMap */ = {
+			isa = PBXGroup;
+			children = (
+				7C58ED072C462B4F004CD811 /* spacemap.jpg */,
+			);
+			path = SpaceMap;
 			sourceTree = "<group>";
 		};
 		7C6A05532ABEC2E800CADB31 /* Model */ = {
@@ -894,6 +915,7 @@
 				7CCCE3AD2A90923200B3229F /* MortalKombat */,
 				7CE8FE752B416FA00027EB21 /* NFS */,
 				7C97FB062ABAB55000EADC3B /* StarWars */,
+				7C58ED062C462B27004CD811 /* SpaceMap */,
 				7CCAA0D62A99CFA9006549D5 /* Turtles */,
 				7C4A4C6F2B4007B6008ECD0E /* WarCraft */,
 			);
@@ -1080,6 +1102,7 @@
 				7C6A055C2ABECDFB00CADB31 /* swAnakinSkywalker.png in Resources */,
 				7C89CCE92ACAD7D800C644CC /* btmQuestionMarkBg.png in Resources */,
 				7CC6D0892ADA69440030B396 /* airplane2.png in Resources */,
+				7C58ED082C462B4F004CD811 /* spacemap.jpg in Resources */,
 				7C5437212B492B74004DA1B8 /* swBgShip.jpg in Resources */,
 				7CCAA10A2A9B25C7006549D5 /* Raph.png in Resources */,
 				7CCAA0D52A99CF9E006549D5 /* Raph_50.png in Resources */,
@@ -1169,6 +1192,7 @@
 				7C4A4C792B4041FA008ECD0E /* WarCraftModel.swift in Sources */,
 				7CE8FE742B416C680027EB21 /* DecoratorViewController.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
+				7C58ED042C4627BA004CD811 /* ChainOfResponsibilityViewController.swift in Sources */,
 				7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */,
 				7C78B15A2B43F20A005CEC4D /* FacadeModel.swift in Sources */,
 				7CC84ECE2B58E0260046C28D /* HolidaysModel.swift in Sources */,

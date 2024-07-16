@@ -185,4 +185,9 @@ class ImagesProvider {
     static var grinch: UIImage {
         return UIImage(named: "grinch")!
     }
+    
+    // MARK: - Spacemap
+    static var spacemap: UIImage {
+        return UIImage(named: "spacemap.jpg")!
+    }
 }

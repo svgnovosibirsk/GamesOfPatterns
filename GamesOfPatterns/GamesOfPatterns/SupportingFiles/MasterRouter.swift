@@ -52,6 +52,9 @@ class MasterRouter {
         case PatternsNames.Proxy.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(ProxyViewController(),
                                                                                sender: self)
+        case PatternsNames.ChainOfResponsibility.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(ChainOfResponsibilityViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()
