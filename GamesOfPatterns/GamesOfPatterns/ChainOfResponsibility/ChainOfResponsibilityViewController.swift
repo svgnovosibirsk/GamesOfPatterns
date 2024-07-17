@@ -39,12 +39,16 @@ final class ChainOfResponsibilityViewController: UIViewController {
         return label
     }()
     
+    let navigator = SpaceNavigator()
+    let dataBase = SpaceDataBase()
+    let r2d2 = R2D2()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
+        setupNavigation()
     }
-    
 }
 
 private extension ChainOfResponsibilityViewController {
@@ -86,5 +90,15 @@ private extension ChainOfResponsibilityViewController {
     
     @objc func coordsButtonDidPress() {
         print(#function)
+        r2d2.handleCoordinatesRequest { coords in
+            self.coordsLabel.text = coords
+        }
+    }
+    
+    func setupNavigation() {
+        r2d2.setNext(handler: navigator)
+        //r2d2.coordinates = "R2D2:    X:09938775 Y:75686893 Z:10948765"
+        navigator.setNext(handler: dataBase)
+        dataBase.coordinates = "DataBase: X:09938775 Y:75686893 Z:10948765"
     }
 }
