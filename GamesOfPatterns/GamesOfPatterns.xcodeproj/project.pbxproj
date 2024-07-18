@@ -36,6 +36,8 @@
 		7C5437272B496E78004DA1B8 /* ShipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5437262B496E78004DA1B8 /* ShipModel.swift */; };
 		7C58ED042C4627BA004CD811 /* ChainOfResponsibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58ED032C4627BA004CD811 /* ChainOfResponsibilityViewController.swift */; };
 		7C58ED082C462B4F004CD811 /* spacemap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C58ED072C462B4F004CD811 /* spacemap.jpg */; };
+		7C5D4B302C48E3D900F121C9 /* ComandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D4B2F2C48E3D900F121C9 /* ComandViewController.swift */; };
+		7C5D4B332C48E68B00F121C9 /* startrek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D4B322C48E68B00F121C9 /* startrek.jpg */; };
 		7C6A05222ABC2DD300CADB31 /* swLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A05212ABC2DD300CADB31 /* swLogo.png */; };
 		7C6A054C2ABEBF2B00CADB31 /* Jedi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */; };
 		7C6A054F2ABEC26000CADB31 /* swJediPhotoPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */; };
@@ -175,6 +177,8 @@
 		7C5437262B496E78004DA1B8 /* ShipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipModel.swift; sourceTree = "<group>"; };
 		7C58ED032C4627BA004CD811 /* ChainOfResponsibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibilityViewController.swift; sourceTree = "<group>"; };
 		7C58ED072C462B4F004CD811 /* spacemap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spacemap.jpg; sourceTree = "<group>"; };
+		7C5D4B2F2C48E3D900F121C9 /* ComandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComandViewController.swift; sourceTree = "<group>"; };
+		7C5D4B322C48E68B00F121C9 /* startrek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = startrek.jpg; sourceTree = "<group>"; };
 		7C6A05212ABC2DD300CADB31 /* swLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swLogo.png; sourceTree = "<group>"; };
 		7C6A054B2ABEBF2B00CADB31 /* Jedi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jedi.swift; sourceTree = "<group>"; };
 		7C6A054D2ABEC26000CADB31 /* swJediPhotoPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swJediPhotoPlaceholder.png; sourceTree = "<group>"; };
@@ -351,6 +355,7 @@
 				7C54371D2B4924A7004DA1B8 /* Flyweight */,
 				7CF2469A2B57A66F001DFD39 /* Proxy */,
 				7C58ED052C4627CA004CD811 /* ChainOfResponsibility */,
+				7C5D4B312C48E3EA00F121C9 /* Comand */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -473,6 +478,22 @@
 				7C58ED072C462B4F004CD811 /* spacemap.jpg */,
 			);
 			path = SpaceMap;
+			sourceTree = "<group>";
+		};
+		7C5D4B312C48E3EA00F121C9 /* Comand */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D4B2F2C48E3D900F121C9 /* ComandViewController.swift */,
+			);
+			path = Comand;
+			sourceTree = "<group>";
+		};
+		7C5D4B342C48E69600F121C9 /* Startrek */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D4B322C48E68B00F121C9 /* startrek.jpg */,
+			);
+			path = Startrek;
 			sourceTree = "<group>";
 		};
 		7C6A05532ABEC2E800CADB31 /* Model */ = {
@@ -910,6 +931,7 @@
 		7CCCE3AE2A90924600B3229F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7C5D4B342C48E69600F121C9 /* Startrek */,
 				7CC6D08A2ADA695A0030B396 /* Airplane */,
 				7C89CCEA2ACAD7DF00C644CC /* Batman */,
 				7CF2469B2B57B0AC001DFD39 /* Grinch */,
@@ -1072,6 +1094,7 @@
 				7C6A054F2ABEC26000CADB31 /* swJediPhotoPlaceholder.png in Resources */,
 				7CCCE3AA2A90921C00B3229F /* mkScorpion.png in Resources */,
 				7CCAA0D32A99CF9E006549D5 /* Mike_50.png in Resources */,
+				7C5D4B332C48E68B00F121C9 /* startrek.jpg in Resources */,
 				7C97FAE82AB6CA9600EADC3B /* sai.png in Resources */,
 				7CE8FE772B416FAC0027EB21 /* nfsBG.jpg in Resources */,
 				7C97FADA2AB6C3AA00EADC3B /* Don2.png in Resources */,
@@ -1194,6 +1217,7 @@
 				7CF246992B57A664001DFD39 /* ProxyViewController.swift in Sources */,
 				7C4A4C792B4041FA008ECD0E /* WarCraftModel.swift in Sources */,
 				7CE8FE742B416C680027EB21 /* DecoratorViewController.swift in Sources */,
+				7C5D4B302C48E3D900F121C9 /* ComandViewController.swift in Sources */,
 				7C439A6C2A7523820093CE64 /* SceneDelegate.swift in Sources */,
 				7C58ED042C4627BA004CD811 /* ChainOfResponsibilityViewController.swift in Sources */,
 				7C4A4C6E2B400680008ECD0E /* CompositePresenter.swift in Sources */,

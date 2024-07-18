@@ -190,4 +190,9 @@ class ImagesProvider {
     static var spacemap: UIImage {
         return UIImage(named: "spacemap.jpg")!
     }
+    
+    // MARK: - Startrek
+    static var startrek: UIImage {
+        return UIImage(named: "startrek.jpg")!
+    }
 }

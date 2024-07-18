@@ -55,6 +55,9 @@ class MasterRouter {
         case PatternsNames.ChainOfResponsibility.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(ChainOfResponsibilityViewController(),
                                                                                sender: self)
+        case PatternsNames.Command.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(ComandViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()
