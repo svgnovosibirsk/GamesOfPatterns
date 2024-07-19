@@ -132,9 +132,13 @@ private extension ComandViewController {
     
     @objc func routeButtonDidPress() {
         print(#function)
+        let comand = RouteComand(label: routeLabel)
+        comand.execute()
     }
     
     @objc func warpButtonDidPress() {
         print(#function)
+        let comand = WarpComand(label: warpLabel)
+        comand.execute()
     }
 }

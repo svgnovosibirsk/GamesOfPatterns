@@ -68,6 +68,7 @@
 		7C78B15A2B43F20A005CEC4D /* FacadeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78B1592B43F20A005CEC4D /* FacadeModel.swift */; };
 		7C89CCE62ACAD5C300C644CC /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C89CCE52ACAD5C300C644CC /* AdapterViewController.swift */; };
 		7C89CCE92ACAD7D800C644CC /* btmQuestionMarkBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C89CCE82ACAD7D800C644CC /* btmQuestionMarkBg.png */; };
+		7C8E3DC52C4A5FD20057AF20 /* Comand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E3DC42C4A5FD20057AF20 /* Comand.swift */; };
 		7C8E47572AE4E84F00281EC7 /* OpenMeteoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E47562AE4E84F00281EC7 /* OpenMeteoResponse.swift */; };
 		7C97FAD62AB6C3AA00EADC3B /* Mike2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD12AB6C3AA00EADC3B /* Mike2.png */; };
 		7C97FAD72AB6C3AA00EADC3B /* Raph2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FAD22AB6C3AA00EADC3B /* Raph2.png */; };
@@ -209,6 +210,7 @@
 		7C78B1592B43F20A005CEC4D /* FacadeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeModel.swift; sourceTree = "<group>"; };
 		7C89CCE52ACAD5C300C644CC /* AdapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
 		7C89CCE82ACAD7D800C644CC /* btmQuestionMarkBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btmQuestionMarkBg.png; sourceTree = "<group>"; };
+		7C8E3DC42C4A5FD20057AF20 /* Comand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comand.swift; sourceTree = "<group>"; };
 		7C8E47562AE4E84F00281EC7 /* OpenMeteoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMeteoResponse.swift; sourceTree = "<group>"; };
 		7C97FAD12AB6C3AA00EADC3B /* Mike2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mike2.png; sourceTree = "<group>"; };
 		7C97FAD22AB6C3AA00EADC3B /* Raph2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raph2.png; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				7C5D4B2F2C48E3D900F121C9 /* ComandViewController.swift */,
+				7C8E3DC42C4A5FD20057AF20 /* Comand.swift */,
 			);
 			path = Comand;
 			sourceTree = "<group>";
@@ -1179,6 +1182,7 @@
 				7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */,
 				7C4A4C7D2B4042F2008ECD0E /* HumansModel.swift in Sources */,
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
+				7C8E3DC52C4A5FD20057AF20 /* Comand.swift in Sources */,
 				7C4454722B427C4100ED9A6F /* DecoratorPresenter.swift in Sources */,
 				7CC84ECB2B58DBE20046C28D /* ProxiViewModel.swift in Sources */,
 				7C6A05872AC193B300CADB31 /* PrototypeViewController.swift in Sources */,
