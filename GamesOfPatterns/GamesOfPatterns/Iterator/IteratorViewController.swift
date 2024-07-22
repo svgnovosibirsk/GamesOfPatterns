@@ -8,6 +8,8 @@
 import UIKit
 
 class IteratorViewController: UIViewController {
+    // MARK: Properties
+    
     let backgoundImageView: UIImageView = {
         let imageView = UIImageView(image: ImagesProvider.safe)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -22,7 +24,7 @@ class IteratorViewController: UIViewController {
         label.textColor = .systemBlue
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "_ _ _ _ _ _ _ _ _ _"
+        label.text = "_ _ _ _ _ _ _"
         label.backgroundColor = UIColor(white: 1, alpha: 0.5)
         label.layer.cornerRadius = 20
         label.clipsToBounds = true
@@ -32,7 +34,7 @@ class IteratorViewController: UIViewController {
     let firstButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Try 1", for: .normal)
+        button.setTitle("Try in-order", for: .normal)
         button.setTitleColor(.systemBlue, for: .normal)
         button.setTitleColor(.systemGray, for: .highlighted)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
@@ -46,7 +48,7 @@ class IteratorViewController: UIViewController {
     let secondButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Try 2", for: .normal)
+        button.setTitle("Try pos-torder", for: .normal)
         button.setTitleColor(.systemBlue, for: .normal)
         button.setTitleColor(.systemGray, for: .highlighted)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
@@ -60,7 +62,7 @@ class IteratorViewController: UIViewController {
     let thirdButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Try 2", for: .normal)
+        button.setTitle("Try pre-order", for: .normal)
         button.setTitleColor(.systemBlue, for: .normal)
         button.setTitleColor(.systemGray, for: .highlighted)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
@@ -70,15 +72,33 @@ class IteratorViewController: UIViewController {
         button.clipsToBounds = true
         return button
     }()
+    
+    var passwordManager: PasswordManagerProtocol?
 
+    // MARK: Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
+        setupPasswordManager()
     }
 }
 
+// MARK: Private methods
+
 private extension IteratorViewController {
+    func setupPasswordManager() {
+        let head = TreeNode("C")
+        head.left = TreeNode("O")
+        head.right = TreeNode("E")
+        head.left?.left = TreeNode("R")
+        head.left?.right = TreeNode("R")
+        head.right?.left = TreeNode("C")
+        head.right?.right = TreeNode("T")
+        passwordManager = PasswordManager(passwordTree: head)
+    }
+    
     func setupUI() {
         setupBackgroundView()
         setupPasswordLabel()
@@ -139,14 +159,29 @@ private extension IteratorViewController {
     }
     
     @objc func firstButtonDidPress() {
-        print(#function)
+        restoreLabelUI()
+        let iterator = passwordManager?.createInorderIterator()
+        let string = iterator?.traverse()
+        passwordLabel.text = string
     }
     
     @objc func secondButtonDidPress() {
-        print(#function)
+        restoreLabelUI()
+        let iterator = passwordManager?.createPostorderIterator()
+        let string = iterator?.traverse()
+        passwordLabel.text = string
     }
     
     @objc func thirdButtonDidPress() {
-        print(#function)
+        let iterator = passwordManager?.createPreorderIterator()
+        let string = iterator?.traverse()
+        passwordLabel.text = string
+        passwordLabel.textColor = .systemMint
+        passwordLabel.backgroundColor = UIColor(white: 1, alpha: 1)
+    }
+    
+    func restoreLabelUI() {
+        passwordLabel.textColor = .systemBlue
+        passwordLabel.backgroundColor = UIColor(white: 1, alpha: 0.5)
     }
 }

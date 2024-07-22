@@ -29,6 +29,8 @@
 		7C4A4C7B2B4042E5008ECD0E /* OrcsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C7A2B4042E5008ECD0E /* OrcsModel.swift */; };
 		7C4A4C7D2B4042F2008ECD0E /* HumansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C7C2B4042F2008ECD0E /* HumansModel.swift */; };
 		7C4A4C7F2B404332008ECD0E /* CompositeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C7E2B404332008ECD0E /* CompositeProtocol.swift */; };
+		7C5155352C4E153400553287 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5155342C4E153400553287 /* PasswordManager.swift */; };
+		7C5155372C4E158B00553287 /* PasswordIteratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5155362C4E158B00553287 /* PasswordIteratorProtocol.swift */; };
 		7C54371F2B4924C7004DA1B8 /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C54371E2B4924C7004DA1B8 /* FlyweightViewController.swift */; };
 		7C5437212B492B74004DA1B8 /* swBgShip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C5437202B492B74004DA1B8 /* swBgShip.jpg */; };
 		7C5437232B492B8A004DA1B8 /* swShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5437222B492B8A004DA1B8 /* swShip.png */; };
@@ -173,6 +175,8 @@
 		7C4A4C7A2B4042E5008ECD0E /* OrcsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrcsModel.swift; sourceTree = "<group>"; };
 		7C4A4C7C2B4042F2008ECD0E /* HumansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumansModel.swift; sourceTree = "<group>"; };
 		7C4A4C7E2B404332008ECD0E /* CompositeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeProtocol.swift; sourceTree = "<group>"; };
+		7C5155342C4E153400553287 /* PasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
+		7C5155362C4E158B00553287 /* PasswordIteratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordIteratorProtocol.swift; sourceTree = "<group>"; };
 		7C54371E2B4924C7004DA1B8 /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		7C5437202B492B74004DA1B8 /* swBgShip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swBgShip.jpg; sourceTree = "<group>"; };
 		7C5437222B492B8A004DA1B8 /* swShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swShip.png; sourceTree = "<group>"; };
@@ -653,6 +657,8 @@
 			isa = PBXGroup;
 			children = (
 				7C8A83382C4D1CB3003D797C /* IteratorViewController.swift */,
+				7C5155342C4E153400553287 /* PasswordManager.swift */,
+				7C5155362C4E158B00553287 /* PasswordIteratorProtocol.swift */,
 			);
 			path = Iterator;
 			sourceTree = "<group>";
@@ -1199,6 +1205,7 @@
 			files = (
 				7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */,
 				7C6A054C2ABEBF2B00CADB31 /* Jedi.swift in Sources */,
+				7C5155372C4E158B00553287 /* PasswordIteratorProtocol.swift in Sources */,
 				7C6A059E2AC548BD00CADB31 /* SingletonViewController.swift in Sources */,
 				7CCAA0D82A99DADD006549D5 /* TurtlesModel.swift in Sources */,
 				7C4A4C7B2B4042E5008ECD0E /* OrcsModel.swift in Sources */,
@@ -1238,6 +1245,7 @@
 				7C6A05A42AC6A9C300CADB31 /* Extensions.swift in Sources */,
 				7CCCE3A32A907B8800B3229F /* FightersModel.swift in Sources */,
 				7C4A4C7F2B404332008ECD0E /* CompositeProtocol.swift in Sources */,
+				7C5155352C4E153400553287 /* PasswordManager.swift in Sources */,
 				7CC6D0032AD12B240030B396 /* QuestionModelAdapter.swift in Sources */,
 				7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */,
 				7CC6D0842ADA62320030B396 /* BridgeViewController.swift in Sources */,
