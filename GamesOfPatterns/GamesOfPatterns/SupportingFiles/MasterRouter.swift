@@ -61,6 +61,9 @@ class MasterRouter {
         case PatternsNames.Iterator.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(IteratorViewController(),
                                                                                sender: self)
+        case PatternsNames.Mediator.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(MediatorViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()

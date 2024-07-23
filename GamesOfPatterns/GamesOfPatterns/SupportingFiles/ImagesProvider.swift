@@ -107,6 +107,14 @@ class ImagesProvider {
         return UIImage(named: "swShip")!
     }
     
+    static var swYoda: UIImage {
+        return UIImage(named: "swYoda")!
+    }
+    
+    static var swDarthMaul: UIImage {
+        return UIImage(named: "swDarthMaul.jpg")!
+    }
+    
     // MARK: - Matrix
     static var mxBackground: UIImage {
         return UIImage(named: "mxMatrixBg")!
