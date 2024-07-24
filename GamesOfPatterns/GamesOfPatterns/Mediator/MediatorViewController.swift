@@ -45,6 +45,8 @@ class MediatorViewController: UIViewController {
         button.clipsToBounds = true
         return button
     }()
+    
+    let mediator = Mediator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,21 +97,10 @@ private extension MediatorViewController {
     }
     
     @objc func lightButtonDidPress() {
-        print(#function)
-        // TODO: move logic to Mediator
-        imageView.image = ImagesProvider.swYoda
-        view.backgroundColor = .white
-        lightButton.backgroundColor = .secondarySystemBackground
-        darkButton.backgroundColor = .secondarySystemBackground
-        
+        mediator.notify(sender: self, event: Events.lightButtonDidPress)
     }
     
     @objc func darkButtonDidPress() {
-        print(#function)
-        // TODO: move logic to Mediator
-        imageView.image = ImagesProvider.swDarthMaul
-        view.backgroundColor = .black
-        lightButton.backgroundColor = .lightGray
-        darkButton.backgroundColor = .lightGray
+        mediator.notify(sender: self, event: Events.darkButtonDidPress)
     }
 }
