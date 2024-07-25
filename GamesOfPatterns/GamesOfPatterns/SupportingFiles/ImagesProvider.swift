@@ -208,4 +208,13 @@ class ImagesProvider {
     static var safe: UIImage {
         return UIImage(named: "safe.jpg")!
     }
+    
+    // MARK: - Harry Potter
+    static var hpGer: UIImage {
+        return UIImage(named: "hpGer")!
+    }
+    
+    static var hpHat: UIImage {
+        return UIImage(named: "hpHat")!
+    }
 }
