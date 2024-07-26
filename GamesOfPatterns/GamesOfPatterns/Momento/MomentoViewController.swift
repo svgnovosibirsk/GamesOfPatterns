@@ -92,6 +92,8 @@ class MomentoViewController: UIViewController {
         return button
     }()
 
+    let mediator = MomentoMediator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
@@ -184,18 +186,18 @@ private extension MomentoViewController {
     }
     
     @objc func studentButtonDidPress() {
-        print(#function)
+        mediator.notify(sender: self, event: MomentoEvents.studentButtonDidPress)
     }
     
     @objc func facultyButtonDidPress() {
-        print(#function)
+        mediator.notify(sender: self, event: MomentoEvents.facultyButtonDidPress)
     }
     
     @objc func saveButtonDidPress() {
-        print(#function)
+        mediator.notify(sender: self, event: MomentoEvents.saveButtonDidPress)
     }
     
     @objc func undoButtonDidPress() {
-        print(#function)
+        mediator.notify(sender: self, event: MomentoEvents.undoButtonDidPress)
     }
 }

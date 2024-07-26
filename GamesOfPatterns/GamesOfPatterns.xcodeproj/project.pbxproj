@@ -34,6 +34,8 @@
 		7C4A4C7F2B404332008ECD0E /* CompositeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A4C7E2B404332008ECD0E /* CompositeProtocol.swift */; };
 		7C5155352C4E153400553287 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5155342C4E153400553287 /* PasswordManager.swift */; };
 		7C5155372C4E158B00553287 /* PasswordIteratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5155362C4E158B00553287 /* PasswordIteratorProtocol.swift */; };
+		7C51962A2C534E5600DFCDAB /* Momento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5196292C534E5600DFCDAB /* Momento.swift */; };
+		7C51962C2C534FBA00DFCDAB /* MomentoMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C51962B2C534FBA00DFCDAB /* MomentoMediator.swift */; };
 		7C54371F2B4924C7004DA1B8 /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C54371E2B4924C7004DA1B8 /* FlyweightViewController.swift */; };
 		7C5437212B492B74004DA1B8 /* swBgShip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C5437202B492B74004DA1B8 /* swBgShip.jpg */; };
 		7C5437232B492B8A004DA1B8 /* swShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5437222B492B8A004DA1B8 /* swShip.png */; };
@@ -187,6 +189,8 @@
 		7C4A4C7E2B404332008ECD0E /* CompositeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeProtocol.swift; sourceTree = "<group>"; };
 		7C5155342C4E153400553287 /* PasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
 		7C5155362C4E158B00553287 /* PasswordIteratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordIteratorProtocol.swift; sourceTree = "<group>"; };
+		7C5196292C534E5600DFCDAB /* Momento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Momento.swift; sourceTree = "<group>"; };
+		7C51962B2C534FBA00DFCDAB /* MomentoMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentoMediator.swift; sourceTree = "<group>"; };
 		7C54371E2B4924C7004DA1B8 /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		7C5437202B492B74004DA1B8 /* swBgShip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swBgShip.jpg; sourceTree = "<group>"; };
 		7C5437222B492B8A004DA1B8 /* swShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swShip.png; sourceTree = "<group>"; };
@@ -344,6 +348,8 @@
 			isa = PBXGroup;
 			children = (
 				7C28823A2C523DE900E8C582 /* MomentoViewController.swift */,
+				7C5196292C534E5600DFCDAB /* Momento.swift */,
+				7C51962B2C534FBA00DFCDAB /* MomentoMediator.swift */,
 			);
 			path = Momento;
 			sourceTree = "<group>";
@@ -1259,6 +1265,7 @@
 				7CCAA0D82A99DADD006549D5 /* TurtlesModel.swift in Sources */,
 				7C4A4C7B2B4042E5008ECD0E /* OrcsModel.swift in Sources */,
 				7CAD85172A7E5C7F00B43252 /* AbstractFactoryViewController.swift in Sources */,
+				7C51962A2C534E5600DFCDAB /* Momento.swift in Sources */,
 				7C4A4C7D2B4042F2008ECD0E /* HumansModel.swift in Sources */,
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
 				7C9640C12C4FB405001244D1 /* MediatorViewController.swift in Sources */,
@@ -1271,6 +1278,7 @@
 				7CAD851B2A7E5EA100B43252 /* MasterRouter.swift in Sources */,
 				7C439A6E2A7523820093CE64 /* MasterViewController.swift in Sources */,
 				7C3E7A4A2AE3B9200054CF1F /* WeatherModel.swift in Sources */,
+				7C51962C2C534FBA00DFCDAB /* MomentoMediator.swift in Sources */,
 				7C6A05992AC3F08700CADB31 /* SmithModel.swift in Sources */,
 				7C28823B2C523DE900E8C582 /* MomentoViewController.swift in Sources */,
 				7C6A05582ABEC6BB00CADB31 /* BuilderPresenter.swift in Sources */,
