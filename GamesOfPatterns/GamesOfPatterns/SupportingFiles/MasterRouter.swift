@@ -67,6 +67,9 @@ class MasterRouter {
         case PatternsNames.Momento.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(MomentoViewController(),
                                                                                sender: self)
+        case PatternsNames.Observer.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(ObserverViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()
