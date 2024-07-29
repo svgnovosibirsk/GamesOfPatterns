@@ -15,8 +15,8 @@ class ObserverViewController: UIViewController {
         return imageView
     }()
     
-    let infoLabel: UILabel = {
-        let label = UILabel()
+    let infoLabel: InfoLabel = {
+        let label = InfoLabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 30)
         label.textColor = .white
@@ -29,8 +29,8 @@ class ObserverViewController: UIViewController {
         return label
     }()
     
-    let weaponLabel: UILabel = {
-        let label = UILabel()
+    let weaponLabel: WeaponLabel = {
+        let label = WeaponLabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 30)
         label.textColor = .white
@@ -43,8 +43,8 @@ class ObserverViewController: UIViewController {
         return label
     }()
     
-    let shieldLabel: UILabel = {
-        let label = UILabel()
+    let shieldLabel: ShieldLabel = {
+        let label = ShieldLabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 30)
         label.textColor = .white
@@ -70,11 +70,14 @@ class ObserverViewController: UIViewController {
         button.clipsToBounds = true
         return button
     }()
-
+    
+    let monitor = Monitor()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       setupUI()
+        
+        setupUI()
+        setupObserver()
     }
 }
 
@@ -139,6 +142,13 @@ private extension ObserverViewController {
     }
     
     @objc func scanButtonDidPress() {
-        print(#function)
+        monitor.scan()
+        monitor.notify()
+    }
+    
+    func setupObserver() {
+        monitor.addObserver(observer: infoLabel)
+        monitor.addObserver(observer: weaponLabel)
+        monitor.addObserver(observer: shieldLabel)
     }
 }
