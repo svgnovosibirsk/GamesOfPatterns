@@ -217,4 +217,13 @@ class ImagesProvider {
     static var hpHat: UIImage {
         return UIImage(named: "hpHat")!
     }
+    
+    // MARK: - Dr Strange
+    static var dsDot: UIImage {
+        return UIImage(named: "dsDot")!
+    }
+    
+    static var dsPortal: UIImage {
+        return UIImage(named: "dsPortal.jpg")!
+    }
 }
