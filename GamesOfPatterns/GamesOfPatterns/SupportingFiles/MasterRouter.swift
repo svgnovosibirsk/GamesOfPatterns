@@ -73,6 +73,10 @@ class MasterRouter {
         case PatternsNames.State.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(StateViewController(),
                                                                                sender: self)
+            
+        case PatternsNames.Strategy.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(StrategyViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()

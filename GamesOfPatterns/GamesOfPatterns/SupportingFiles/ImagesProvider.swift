@@ -115,6 +115,9 @@ class ImagesProvider {
         return UIImage(named: "swDarthMaul.jpg")!
     }
     
+    static var swR2D2: UIImage {
+        return UIImage(named: "swR2D2.jpeg")!
+    }
     // MARK: - Matrix
     static var mxBackground: UIImage {
         return UIImage(named: "mxMatrixBg")!
