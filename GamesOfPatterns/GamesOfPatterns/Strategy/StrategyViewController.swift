@@ -22,7 +22,7 @@ class StrategyViewController: UIViewController {
         label.textColor = .systemBlue
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "Hello world!"
+        label.text = "Hello World!"
         label.backgroundColor = .white
         return label
     }()
@@ -73,6 +73,8 @@ class StrategyViewController: UIViewController {
         
         return stack
     }()
+    
+    let translator = Translator(strategy: EnglishTranslationStrategy())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,14 +125,17 @@ private extension StrategyViewController {
     }
     
     @objc func russianButtonDidPress() {
-        print(#function)
+        translator.setStrategy(strategy: RussianTranslationStrategy())
+        textLabel.text = translator.translate()
     }
     
     @objc func englishButtonDidPress() {
-        print(#function)
+        translator.setStrategy(strategy: EnglishTranslationStrategy())
+        textLabel.text = translator.translate()
     }
     
     @objc func spanishButtonDidPress() {
-        print(#function)
+        translator.setStrategy(strategy: SpanishTranslationStrategy())
+        textLabel.text = translator.translate()
     }
 }
