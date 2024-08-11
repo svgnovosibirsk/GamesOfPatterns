@@ -175,6 +175,14 @@ class ImagesProvider {
         return UIImage(named: "WCBackground.jpg")!
     }
     
+    static var wcOrk: UIImage {
+        return UIImage(named: "wcOrk")!
+    }
+    
+    static var wcKnight: UIImage {
+        return UIImage(named: "wcKnight")!
+    }
+    
     // MARK: - Need for Speed
     static var nfsBackground: UIImage {
         return UIImage(named: "nfsBG.jpg")!

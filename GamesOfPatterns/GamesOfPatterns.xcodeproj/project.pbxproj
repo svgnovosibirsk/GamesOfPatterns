@@ -74,6 +74,9 @@
 		7C6A40672C5E5DCA00DC7F47 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6A40662C5E5DCA00DC7F47 /* StateViewController.swift */; };
 		7C6A40742C5E640400DC7F47 /* dsPortal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A40722C5E640300DC7F47 /* dsPortal.jpg */; };
 		7C6A40752C5E640400DC7F47 /* dsDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6A40732C5E640300DC7F47 /* dsDot.png */; };
+		7C6ECD542C68AE45001B287A /* TemplateMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ECD532C68AE45001B287A /* TemplateMethodViewController.swift */; };
+		7C6ECD582C68AEC8001B287A /* wcKnight.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ECD562C68AEC8001B287A /* wcKnight.png */; };
+		7C6ECD592C68AEC8001B287A /* wcOrk.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ECD572C68AEC8001B287A /* wcOrk.png */; };
 		7C78B1542B43E229005CEC4D /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78B1532B43E229005CEC4D /* FacadeViewController.swift */; };
 		7C78B1562B43E6F7005CEC4D /* swDeathStar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C78B1552B43E6F7005CEC4D /* swDeathStar.jpg */; };
 		7C78B1582B43EF41005CEC4D /* FacadePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78B1572B43EF41005CEC4D /* FacadePresenter.swift */; };
@@ -238,6 +241,9 @@
 		7C6A40662C5E5DCA00DC7F47 /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
 		7C6A40722C5E640300DC7F47 /* dsPortal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dsPortal.jpg; sourceTree = "<group>"; };
 		7C6A40732C5E640300DC7F47 /* dsDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dsDot.png; sourceTree = "<group>"; };
+		7C6ECD532C68AE45001B287A /* TemplateMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodViewController.swift; sourceTree = "<group>"; };
+		7C6ECD562C68AEC8001B287A /* wcKnight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wcKnight.png; sourceTree = "<group>"; };
+		7C6ECD572C68AEC8001B287A /* wcOrk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wcOrk.png; sourceTree = "<group>"; };
 		7C78B1532B43E229005CEC4D /* FacadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
 		7C78B1552B43E6F7005CEC4D /* swDeathStar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swDeathStar.jpg; sourceTree = "<group>"; };
 		7C78B1572B43EF41005CEC4D /* FacadePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadePresenter.swift; sourceTree = "<group>"; };
@@ -427,6 +433,7 @@
 				7C90DA652C54B192009A4EEB /* Observer */,
 				7C6A40682C5E5DD200DC7F47 /* State */,
 				7C98DBC12C6386B600C2A5FC /* Strategy */,
+				7C6ECD552C68AE4E001B287A /* TemplateMethod */,
 				7C439A6F2A7523820093CE64 /* Main.storyboard */,
 				7C439A722A7523840093CE64 /* Assets.xcassets */,
 				7C439A742A7523840093CE64 /* LaunchScreen.storyboard */,
@@ -518,6 +525,8 @@
 		7C4A4C6F2B4007B6008ECD0E /* WarCraft */ = {
 			isa = PBXGroup;
 			children = (
+				7C6ECD562C68AEC8001B287A /* wcKnight.png */,
+				7C6ECD572C68AEC8001B287A /* wcOrk.png */,
 				7C4A4C702B4007D2008ECD0E /* WCLogo.png */,
 				7C4A4C762B400AE0008ECD0E /* WCBackground.jpg */,
 			);
@@ -699,6 +708,14 @@
 				7C6A40722C5E640300DC7F47 /* dsPortal.jpg */,
 			);
 			path = DrStrange;
+			sourceTree = "<group>";
+		};
+		7C6ECD552C68AE4E001B287A /* TemplateMethod */ = {
+			isa = PBXGroup;
+			children = (
+				7C6ECD532C68AE45001B287A /* TemplateMethodViewController.swift */,
+			);
+			path = TemplateMethod;
 			sourceTree = "<group>";
 		};
 		7C78B1522B43E213005CEC4D /* Facade */ = {
@@ -1282,6 +1299,7 @@
 				7C439A732A7523840093CE64 /* Assets.xcassets in Resources */,
 				7C439A712A7523820093CE64 /* Main.storyboard in Resources */,
 				7C28823E2C523FC700E8C582 /* hpGer.png in Resources */,
+				7C6ECD592C68AEC8001B287A /* wcOrk.png in Resources */,
 				7C6A05A12AC550F900CADB31 /* jb007.png in Resources */,
 				7C97FAE72AB6CA9600EADC3B /* bo.png in Resources */,
 				7CCAA10F2A9B27AF006549D5 /* TurtlesLogo.png in Resources */,
@@ -1295,6 +1313,7 @@
 				7C6A05912AC1963000CADB31 /* mxSmith1.png in Resources */,
 				7C97FAE52AB6CA9600EADC3B /* katana.png in Resources */,
 				7CCAA10C2A9B25C7006549D5 /* Mike.png in Resources */,
+				7C6ECD582C68AEC8001B287A /* wcKnight.png in Resources */,
 				7C97FAE42AB6CA9600EADC3B /* weapons.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1333,6 +1352,7 @@
 				7CCCE3B02A9092FC00B3229F /* ImagesProvider.swift in Sources */,
 				7C9640C12C4FB405001244D1 /* MediatorViewController.swift in Sources */,
 				7C8E3DC52C4A5FD20057AF20 /* Comand.swift in Sources */,
+				7C6ECD542C68AE45001B287A /* TemplateMethodViewController.swift in Sources */,
 				7C4454722B427C4100ED9A6F /* DecoratorPresenter.swift in Sources */,
 				7C8A83392C4D1CB3003D797C /* IteratorViewController.swift in Sources */,
 				7CC84ECB2B58DBE20046C28D /* ProxiViewModel.swift in Sources */,
