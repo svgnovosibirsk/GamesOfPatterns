@@ -109,6 +109,7 @@
 		7C97FB052ABAB54200EADC3B /* swBgBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C97FB042ABAB54200EADC3B /* swBgBlack.png */; };
 		7C98DBC02C6386AA00C2A5FC /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C98DBBF2C6386AA00C2A5FC /* StrategyViewController.swift */; };
 		7C98DBC32C63886800C2A5FC /* swR2D2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7C98DBC22C63886700C2A5FC /* swR2D2.jpeg */; };
+		7C9D79DF2C69CAA300E0159A /* TemplateMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D79DE2C69CAA300E0159A /* TemplateMethod.swift */; };
 		7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */; };
 		7CAD85122A7E44D600B43252 /* MasterVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */; };
 		7CAD85152A7E5C3E00B43252 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */; };
@@ -276,6 +277,7 @@
 		7C97FB042ABAB54200EADC3B /* swBgBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swBgBlack.png; sourceTree = "<group>"; };
 		7C98DBBF2C6386AA00C2A5FC /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
 		7C98DBC22C63886700C2A5FC /* swR2D2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swR2D2.jpeg; sourceTree = "<group>"; };
+		7C9D79DE2C69CAA300E0159A /* TemplateMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethod.swift; sourceTree = "<group>"; };
 		7CAD850F2A7E421500B43252 /* PatternsNamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsNamesModel.swift; sourceTree = "<group>"; };
 		7CAD85112A7E44D600B43252 /* MasterVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVCPresenter.swift; sourceTree = "<group>"; };
 		7CAD85142A7E5C3E00B43252 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
@@ -714,6 +716,7 @@
 			isa = PBXGroup;
 			children = (
 				7C6ECD532C68AE45001B287A /* TemplateMethodViewController.swift */,
+				7C9D79DE2C69CAA300E0159A /* TemplateMethod.swift */,
 			);
 			path = TemplateMethod;
 			sourceTree = "<group>";
@@ -1374,6 +1377,7 @@
 				7CCAA0DF2A99E150006549D5 /* TurtleFactory.swift in Sources */,
 				7C5B0AE42C50B3F70045480D /* Mediator.swift in Sources */,
 				7CC84EC82B58D93D0046C28D /* Bindable.swift in Sources */,
+				7C9D79DF2C69CAA300E0159A /* TemplateMethod.swift in Sources */,
 				7C8E47572AE4E84F00281EC7 /* OpenMeteoResponse.swift in Sources */,
 				7CAD85102A7E421500B43252 /* PatternsNamesModel.swift in Sources */,
 				7C80BC542C5754030054A3AE /* Observer.swift in Sources */,

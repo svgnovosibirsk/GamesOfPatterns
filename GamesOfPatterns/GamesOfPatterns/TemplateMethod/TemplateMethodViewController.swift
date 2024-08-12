@@ -89,9 +89,16 @@ private extension TemplateMethodViewController {
     
     @objc func knightButtonDidPress() {
         print(#function)
+        imageView.image = ImagesProvider.wcKnight
+        let knight = Knight()
+        knight.attack()
+        
     }
     
     @objc func orkButtonDidPress() {
         print(#function)
+        imageView.image = ImagesProvider.wcOrk
+        let ork = GreenOrk()
+        ork.attack()
     }
 }
