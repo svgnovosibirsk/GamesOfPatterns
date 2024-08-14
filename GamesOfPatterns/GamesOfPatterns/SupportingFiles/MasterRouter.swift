@@ -80,6 +80,9 @@ class MasterRouter {
         case PatternsNames.TemplateMethod.rawValue:
             masterPresenter.view.splitViewController?.showDetailViewController(TemplateMethodViewController(),
                                                                                sender: self)
+        case PatternsNames.Visitor.rawValue:
+            masterPresenter.view.splitViewController?.showDetailViewController(VisitorViewController(),
+                                                                               sender: self)
         default:
             print("UNKNOWN VIEW CONTROLLER NAME")
             //fatalError()

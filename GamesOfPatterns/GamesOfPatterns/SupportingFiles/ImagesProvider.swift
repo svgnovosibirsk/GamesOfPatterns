@@ -215,6 +215,10 @@ class ImagesProvider {
         return UIImage(named: "startrek.jpg")!
     }
     
+    static var startrekLogo: UIImage {
+        return UIImage(named: "stLogo")!
+    }
+    
     // MARK: - Safe
     static var safe: UIImage {
         return UIImage(named: "safe.jpg")!
